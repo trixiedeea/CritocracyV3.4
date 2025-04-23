@@ -1,0 +1,97 @@
+/* Trade Prompt Modal Styles */
+#trade-prompt-modal .modal-content {
+    width: 400px; /* Or adjust as needed */
+}
+
+#trade-prompt-details {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Ensure modal styles are sufficient */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#trade-accept-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+#trade-reject-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+/* Game log / Message Area */
+#messageContainer {
+    /* ... existing styles like height, border, overflow ... */
+    display: none; /* Hide the message log */
+}
+
+/* Card Popup Styles */
+/* ... existing general card popup styles ... */
+
+/* Specific styles for End of Turn card popup */
+/* 
+.card-popup.card-end_of_turn {
+     You might adjust width/height here if needed 
+} 
+*/
+
+.card-popup.card-end_of_turn #card-effects {
+    font-size: 0.9em; /* Slightly smaller font for explanations */
+    line-height: 1.4; /* Adjust line spacing if needed */
+}
+
+.card-popup.card-end_of_turn #card-effects ul {
+    padding-left: 20px; /* Indent list slightly */
+    margin-top: 5px;
+}
+
+.card-popup.card-end_of_turn .modal-buttons button {
+    padding: 8px 15px; /* Smaller padding for buttons */
+    font-size: 0.9em; /* Smaller font for buttons */
+}
+
+/* Ensure button IDs are targeted if needed, but class approach is better */
+/* 
+.card-popup.card-end_of_turn #show-card-details-btn,
+.card-popup.card-end_of_turn #close-card-btn {
+    padding: 8px 15px;
+    font-size: 0.9em; 
+}
+*/
+
+/* ... rest of styles ... */ 

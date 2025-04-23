@@ -1,0 +1,349 @@
+const: End Of Turn Cards
+
+"The Reclamation of Historical Spaces"
+Disrupting Colonial Memory 
+Discourse on Colonialism
+Césaire urges a reexamination of the spaces that uphold colonial memory, calling for the reclamation of monuments and land. The battle for who controls these spaces remains central to decolonization.
+Consequences:
+Colonialist: Lose 6 Money Explanation: Your monuments are defaced or removed.
+Revolutionary: Gain 6 Influence Explanation: You lead a movement to reclaim historical spaces.
+Historian: Gain 5 Knowledge Explanation: You document the transformation of historical spaces.
+Entrepreneur: Lose 5 Money Explanation: You face backlash from clients opposed to historical erasure.
+Politician: Gain 5 Influence Explanation: You enact laws that protect cultural monuments.
+Artist: Gain 6 Influence Explanation: Your work supports the reclamation of historical spaces.
+ 
+"The Rise of Historical Revisionism"
+The Power of Historical Narratives Explanation: Barthes, Césaire
+The Death of the Author and Discourse on Colonialism
+Historical revisionism emerges as a dominant force in shaping current ideologies. Barthes suggests that all texts are open to reinterpretation, while Césaire emphasizes the revision of colonial narratives.
+Consequences:
+Colonialist: Gain 6 Money Explanation: Your version of history gains traction in the public sphere.
+Revolutionary: Lose 5 Influence Explanation: Your resistance is undermined by revised narratives.
+Historian: Gain 7 Knowledge Explanation: You chronicle the emergence of revisionist histories.
+Entrepreneur: Gain 5 Money Explanation: You profit from the demand for revised historical content.
+Politician: Gain 6 Influence Explanation: You use revisionism to consolidate power.
+Artist: Lose 5 Influence Explanation: Your critical art is dismissed by revisionist forces.
+ 
+"Digital Archives and the Battle for History"
+The Digital Revolution and Memory Explanation: Benjamin
+The Work of Art in the Age of Its Technological Reproducibility
+Digital archives democratize access to history, but also raise questions about who controls these records. Benjamin’s theory on technological reproducibility highlights the impact of mass media in reshaping art and history.
+Consequences:
+Colonialist: Lose 6 Influence Explanation: You lose control over historical narratives due to public access to digital archives.
+Revolutionary: Gain 6 Influence Explanation: You leverage digital platforms to spread your message.
+Historian: Gain 6 Knowledge Explanation: You curate digital archives to rewrite history.
+Entrepreneur: Lose 5 Money Explanation: You face competition from free digital archives.
+Politician: Lose 5 Influence Explanation: Digital records expose your questionable policies.
+Artist: Gain 7 Influence Explanation: Your art thrives in the digital age.
+ 
+"Colonial Monuments and the Battle for Public Memory"
+Reclaiming Public Spaces 
+Discourse on Colonialism
+The debate around the removal or preservation of colonial monuments escalates. Césaire calls for the rejection of symbols that perpetuate colonial dominance.
+Consequences:
+Colonialist: Lose 6 Money Explanation: You are forced to protect colonial monuments at great expense.
+Revolutionary: Gain 6 Influence Explanation: You lead protests that demand the removal of colonial symbols.
+Historian: Gain 5 Knowledge Explanation: You research the history of colonial monuments.
+Entrepreneur: Lose 5 Money Explanation: You face financial fallout from your association with colonial symbols.
+Politician: Gain 5 Influence Explanation: You pass legislation to protect colonial monuments.
+Artist: Gain 6 Influence Explanation: Your work advocates for the removal of colonial monuments.
+ 
+"Social Media Debates on Colonial Legacies"
+Digital Platforms and Cultural Conflict Explanation: Benjamin, Barthes
+The Concept of History and The Death of the Author
+Social media becomes a battleground for debates about colonialism and its legacies. Benjamin’s critique of historical narrative and Barthes’ notion of authorship become central to the conversation.
+Consequences:
+Colonialist: Lose 5 Influence Explanation: Public backlash against your role in colonial history spreads on social media.
+Revolutionary: Gain 7 Influence Explanation: Your voice is amplified on digital platforms.
+Historian: Gain 6 Knowledge Explanation: You document the heated debates around colonial legacies.
+Entrepreneur: Lose 5 Money Explanation: Your business faces a boycott due to its association with colonial history.
+Politician: Gain 6 Influence Explanation: You take advantage of social media to promote your policies.
+Artist: Gain 5 Influence Explanation: Your work provokes thought on colonial legacies on social media.
+ 
+"Historians vs. Victims of History"
+The Role of the Historian Explanation: Benjamin, Césaire
+The Concept of History and Discourse on Colonialism
+The historian’s role in interpreting history is contested. Benjamin’s "Angel of History" is caught in the winds of progress, unable to change the past, while Césaire demands that history be reinterpreted from the perspectives of the oppressed.
+Consequences:
+Colonialist: Lose 5 Money Explanation: You can’t control the narrative as effectively.
+Revolutionary: Gain 6 Knowledge Explanation: Your arguments resonate in the contest over historical interpretation.
+Historian: Lose 6 Knowledge Explanation: You are caught in the crossfire between the victims and the perpetrators.
+Entrepreneur: Lose 5 Money Explanation: You lose clients who favor the reinterpretation of history.
+Politician: Gain 5 Influence Explanation: You ally with historians to shape the narrative in your favor.
+Artist: Gain 5 Influence Explanation: Your art supports the voice of the oppressed.
+ 
+"Repatriation of Cultural Artifacts"
+Postcolonial Reparation Explanation: Césaire, Tuck & Yang
+Discourse on Colonialism and Decolonization Is Not a Metaphor
+The call for the return of looted cultural artifacts from colonial powers gains traction. Césaire and Tuck & Yang advocate for reparations that include cultural restitution.
+Consequences:
+Colonialist: Lose 6 Money Explanation: You are forced to return cultural artifacts, reducing your wealth.
+Revolutionary: Gain 6 Influence Explanation: Your activism drives the push for reparations.
+Historian: Gain 5 Knowledge Explanation: You contribute to the academic discourse on repatriation.
+Entrepreneur: Lose 5 Money Explanation: Your profits decline as demand for stolen artifacts wanes.
+Politician: Gain 5 Influence Explanation: You oversee the repatriation process and gain political capital.
+Artist: Gain 7 Influence Explanation: Your work supports the call for cultural repatriation.
+ 
+"Artificial Intelligence and the Question of Identity"
+Technology and the Construction of Identity Explanation: Butler, Mulvey
+Performative Acts and Gender Constitution and Visual Pleasure and Narrative Cinema
+AI challenges traditional notions of identity, as algorithms start to shape perceptions of gender and race. Butler’s theory of performative identity and Mulvey’s concept of the male gaze are essential for understanding how these technologies might reinforce or subvert social norms.
+Consequences:
+Colonialist: Lose 5 Influence Explanation: AI is used to challenge colonial ideologies.
+Revolutionary: Gain 6 Knowledge Explanation: You study AI’s impact on identity formation.
+Historian: Gain 5 Knowledge Explanation: You document the intersection of AI and identity.
+Entrepreneur: Gain 7 Money Explanation: You capitalize on the growing AI industry.
+Politician: Lose 5 Influence Explanation: AI challenges your control over the political landscape.
+Artist: Gain 6 Influence Explanation: You critique the role of AI in shaping cultural narratives.
+ 
+"The Globalization of Resistance"
+Transnational Movements Explanation: Tuck & Yang, Benjamin
+Decolonization Is Not a Metaphor and The Concept of History
+Global movements for justice and decolonization intersect, transcending national borders. Tuck & Yang stress that decolonization is a process, not just a metaphor, and Benjamin's "Angel of History" observes the international nature of resistance.
+Consequences:
+Colonialist: Lose 6 Money Explanation: Your global influence is weakened by rising resistance.
+Revolutionary: Gain 7 Influence Explanation: Your international alliances strengthen your cause.
+Historian: Gain 5 Knowledge Explanation: You document the rise of transnational resistance.
+Entrepreneur: Lose 5 Money Explanation: Global instability threatens your business.
+Politician: Gain 6 Influence Explanation: You align with international powers to suppress revolts.
+Artist: Gain 5 Influence Explanation: Your art spreads the message of global solidarity.
+ 
+"Gender and the Performance of Power"
+Power Structures and Gender Explanation: Butler, Césaire
+Performative Acts and Gender Constitution and Discourse on Colonialism
+Gender as a social performance intersects with power dynamics. Butler’s theory of gender performativity is applied to how power is exercised through gendered performances, while Césaire critiques the colonial systems that reinforced gender norms.
+Consequences:
+Colonialist: Lose 5 Influence Explanation: You are caught in a backlash against patriarchal colonial systems.
+Revolutionary: Gain 6 Knowledge Explanation: You adopt gender as a revolutionary tool.
+Historian: Gain 5 Knowledge Explanation: You analyze the gendered power dynamics in colonial history.
+Entrepreneur: Lose 5 Money Explanation: Your gendered advertising strategies are criticized.
+Politician: Gain 6 Influence Explanation: You use gender politics to consolidate power.
+Artist: Gain 7 Influence Explanation: Your work critiques the performance of gendered power.
+ 
+"The Spectacle of Colonial Violence"
+Colonial Violence and Memory Explanation: Benjamin, Césaire
+The Concept of History and Discourse on Colonialism
+The spectacle of colonial violence, captured in media, is revisited. Benjamin’s idea of the historical "spectacle" forces a reconsideration of colonial violence and its ongoing impact.
+Consequences:
+Colonialist: Lose 6 Influence Explanation: Your actions are exposed and criticized for their violence.
+Revolutionary: Gain 6 Knowledge Explanation: You expose the violence as a tool for resistance.
+Historian: Gain 5 Knowledge Explanation: You document the ongoing impact of colonial violence.
+Entrepreneur: Lose 5 Money Explanation: You are targeted for profiteering from violence.
+Politician: Gain 5 Influence Explanation: You use the spectacle to manipulate public opinion.
+Artist: Gain 7 Influence Explanation: Your art sparks a public outcry over colonial violence.
+ 
+"The Rise of Neo-Colonialism"
+Neo-Colonialism and Economic Control Explanation: Césaire, Tuck & Yang
+Discourse on Colonialism and Decolonization Is Not a Metaphor
+Neo-colonialism rises as multinational corporations and political structures continue to dominate formerly colonized nations. Césaire’s critique of economic exploitation and Tuck & Yang’s ideas about decolonization are at the heart of this phenomenon.
+Consequences:
+Colonialist: Gain 7 Money Explanation: You benefit from economic domination in a neo-colonial system.
+Revolutionary: Lose 5 Influence Explanation: Your resistance is hindered by neo-colonial systems.
+Historian: Gain 6 Knowledge Explanation: You analyze the rise of neo-colonialism in modern contexts.
+Entrepreneur: Lose 5 Money Explanation: You face backlash against neo-colonial business practices.
+Politician: Gain 6 Influence Explanation: You implement policies that support neo-colonial interests.
+Artist: Lose 5 Influence Explanation: Your critique is marginalized in the face of neo-colonial power.
+ 
+"The Rise of Queer Theories"
+Queer Theory and Identity Explanation: Sedgwick, Butler
+Queer and Now and Performative Acts and Gender Constitution
+Queer theory emerges as a powerful critique of normative structures. Sedgwick’s exploration of queer identity and Butler’s theory of gender as performative action challenge conventional ideas about gender and sexuality.
+Consequences:
+Colonialist: Lose 6 Influence Explanation: Your patriarchal system is challenged by queer theories.
+Revolutionary: Gain 6 Knowledge Explanation: You incorporate queer theory into your resistance movements.
+Historian: Gain 5 Knowledge Explanation: You document the influence of queer theory on modern struggles.
+Entrepreneur: Gain 7 Money Explanation: You profit from the emerging demand for queer-inclusive products.
+Politician: Gain 5 Influence Explanation: You use queer theory to connect with marginalized groups.
+Artist: Gain 6 Influence Explanation: Your art incorporates and critiques normative gender roles.
+ 
+"Revolutionary Movements and the State’s Reaction"
+Repression and Revolution Explanation: Benjamin, Césaire
+The Concept of History and Discourse on Colonialism
+Revolutionary movements are met with increasing repression. Benjamin’s critique of state violence and Césaire’s call for anti-colonial resistance highlight the tension between revolutionary acts and state control.
+Consequences:
+Colonialist: Lose 5 Money Explanation: You are forced to fund counterinsurgency efforts.
+Revolutionary: Gain 6 Influence Explanation: Your movement grows despite state repression.
+Historian: Gain 5 Knowledge Explanation: You document the state’s response to revolutionary movements.
+Entrepreneur: Lose 5 Money Explanation: Your business is targeted by revolutionary movements.
+Politician: Gain 7 Influence Explanation: You use repression to suppress revolutionaries.
+Artist: Gain 6 Influence Explanation: Your art inspires revolutionary movements.
+ 
+"The Ethics of Representation in Postcolonial Art"
+Art and Postcolonial Identity Explanation: Césaire, Mulvey
+Discourse on Colonialism and Visual Pleasure and Narrative Cinema
+Postcolonial artists grapple with representing their identities within a Western framework. Césaire calls for a reclamation of representation, while Mulvey critiques the ways in which Western cinema constructs the "Other."
+Consequences:
+Colonialist: Lose 5 Money Explanation: Your depictions of the "Other" are now widely criticized.
+Revolutionary: Gain 7 Influence Explanation: Your postcolonial art inspires resistance.
+Historian: Gain 5 Knowledge Explanation: You analyze the ethical implications of art in postcolonial contexts.
+Entrepreneur: Lose 6 Money Explanation: You lose clients who are alienated by postcolonial art.
+Politician: Lose 5 Influence Explanation: Your propaganda is challenged by critical art.
+Artist: Gain 6 Influence Explanation: You gain recognition for your postcolonial critique.
+ 
+"Neocolonial Media and the Reproduction of Ideology"
+Media and Ideology Explanation: Benjamin, Barthes
+The Work of Art in the Age of Its Technological Reproducibility and The Death of the Author
+Media, particularly film and television, is used to reproduce colonial ideologies. Benjamin’s theory of the technological reproducibility of art and Barthes’ concept of authorship highlight the role of media in shaping public perception.
+Consequences:
+Colonialist: Gain 6 Influence Explanation: You control the media and continue to shape colonial narratives.
+Revolutionary: Lose 5 Influence Explanation: Your message is overshadowed by dominant media ideologies.
+Historian: Gain 5 Knowledge Explanation: You study the role of media in perpetuating colonial ideologies.
+Entrepreneur: Gain 5 Money Explanation: You capitalize on media that supports colonial narratives.
+Politician: Gain 6 Influence Explanation: You manipulate media to further your political agenda.
+Artist: Lose 6 Influence Explanation: Your critiques of media representation are ignored.
+ 
+"The Colonial Gaze in Popular Cinema"
+Representation and the Male Gaze Explanation: Mulvey, Césaire
+Visual Pleasure and Narrative Cinema and Discourse on Colonialism
+The colonial gaze persists in contemporary media, objectifying and infantilizing colonized peoples. Mulvey’s concept of the male gaze and Césaire’s critique of colonial objectification intersect in the film industry’s portrayal of the colonized.
+Consequences:
+Colonialist: Gain 5 Influence Explanation: You continue to profit from the colonial gaze in media.
+Revolutionary: Lose 6 Influence Explanation: Your critiques of the gaze are overshadowed by popular media.
+Historian: Gain 6 Knowledge Explanation: You analyze the colonial gaze in historical and modern cinema.
+Entrepreneur: Lose 5 Money Explanation: You face a backlash from consumers demanding decolonized media.
+Politician: Gain 5 Influence Explanation: You exploit media to reinforce the colonial gaze.
+Artist: Gain 7 Influence Explanation: Your work critiques and challenges colonial representation in media.
+ 
+"Technology and the Commodification of History"
+Technology and Memory Explanation: Benjamin
+The Concept of History
+Technology transforms how history is recorded and remembered. Benjamin critiques the technological reproduction of history, which reduces it to a commodity.
+Consequences:
+Colonialist: Lose 6 Influence Explanation: The commodification of history exposes your narratives as false.
+Revolutionary: Gain 6 Knowledge Explanation: You leverage technology to spread alternative histories.
+Historian: Gain 5 Knowledge Explanation: You document the commodification of historical memory.
+Entrepreneur: Gain 5 Money Explanation: You profit from the demand for digital history.
+Politician: Lose 5 Influence Explanation: Your manipulation of historical memory is exposed.
+Artist: Gain 6 Influence Explanation: Your art critiques the commodification of history.
+ 
+"The Politics of Memory in Postcolonial Societies"
+Memory and Power Explanation: Césaire, Tuck & Yang
+Discourse on Colonialism and Decolonization Is Not a Metaphor
+Memory is a powerful tool in postcolonial societies. Tuck & Yang emphasize the importance of how the past is remembered and reclaimed in decolonization, while Césaire calls for the erasure of colonial memory.
+Consequences:
+Colonialist: Lose 5 Money Explanation: You face resistance from movements reclaiming history.
+Revolutionary: Gain 6 Influence Explanation: Your movement thrives by controlling memory.
+Historian: Gain 5 Knowledge Explanation: You contribute to memory studies in postcolonial contexts.
+Entrepreneur: Lose 5 Money Explanation: Your business is boycotted for perpetuating colonial memory.
+Politician: Gain 5 Influence Explanation: You use memory politics to maintain power.
+Artist: Gain 7 Influence Explanation: Your work reclaims and reshapes historical memory.
+ 
+"Reclaiming Indigenous Spaces"
+Space and Colonialism Explanation: Césaire, Tuck & Yang
+Discourse on Colonialism and Decolonization Is Not a Metaphor
+Indigenous communities work to reclaim their ancestral lands and territories. Tuck & Yang argue that decolonization requires the return of land, while Césaire critiques the colonial occupation of space and the violence it enacts on Indigenous populations.
+Consequences:
+Colonialist: Lose 6 Money Explanation: Your colonial interests are undermined by land reclamation movements.
+Revolutionary: Gain 7 Knowledge Explanation: You gain insights on land reclamation movements.
+Historian: Gain 5 Knowledge Explanation: You document the impact of land reclamation on colonial power.
+Entrepreneur: Lose 5 Money Explanation: Your resources are threatened by land reclamation campaigns.
+Politician: Lose 5 Influence Explanation: Your government is forced to address land disputes.
+Artist: Gain 6 Influence Explanation: Your work advocates for the reclamation of Indigenous spaces.
+ 
+"The Capitalist Co-option of Resistance"
+Capitalism and Resistance Explanation: Benjamin, Césaire
+The Concept of History and Discourse on Colonialism
+Capitalism co-opts revolutionary movements by incorporating resistance narratives into profitable ventures. Benjamin critiques how systems of power take revolutionary discourse and commodify it, while Césaire emphasizes the need for true resistance beyond profit motives.
+Consequences:
+Colonialist: Gain 6 Money Explanation: You profit from the commodification of resistance.
+Revolutionary: Lose 6 Knowledge Explanation: Your movement is co-opted by capitalist forces.
+Historian: Gain 5 Knowledge Explanation: You analyze the commodification of resistance narratives.
+Entrepreneur: Gain 7 Money Explanation: You capitalize on selling resistance-themed products.
+Politician: Gain 6 Influence Explanation: You use the commodified resistance to strengthen your political power.
+Artist: Lose 5 Influence Explanation: Your work is commodified and loses its radical impact.
+ 
+"Postcolonial Feminism"
+Feminism and Colonialism Explanation: Sedgwick, Tuck & Yang
+Queer and Now and Decolonization Is Not a Metaphor
+Postcolonial feminism addresses the intersection of gender, race, and colonial histories. Tuck & Yang call for a reimagining of feminist struggles within the context of decolonization, while Sedgwick emphasizes how queer theory can inform feminist thought in postcolonial settings.
+Consequences:
+Colonialist: Lose 6 Influence Explanation: Your patriarchal systems are under attack by feminist movements.
+Revolutionary: Gain 7 Knowledge Explanation: You incorporate feminist theory into your decolonial struggle.
+Historian: Gain 5 Knowledge Explanation: You document the intersection of feminism and postcolonial struggles.
+Entrepreneur: Lose 5 Money Explanation: Your capitalist endeavors are challenged by feminist critiques.
+Politician: Lose 5 Influence Explanation: You face feminist opposition to your policies.
+Artist: Gain 6 Influence Explanation: Your art challenges colonial and patriarchal norms.
+ 
+"The Repression of Memory"
+Memory and Trauma Explanation: Benjamin, Césaire
+The Concept of History and Discourse on Colonialism
+Repression of collective memory prevents the healing of colonial trauma. Benjamin critiques the selective memory of history, while Césaire calls for confronting the brutalities of colonization.
+Consequences:
+Colonialist: Gain 5 Influence Explanation: You suppress inconvenient memories of colonial violence.
+Revolutionary: Lose 5 Influence Explanation: Your efforts to bring colonial trauma to light face resistance.
+Historian: Gain 6 Knowledge Explanation: You uncover and document suppressed colonial histories.
+Entrepreneur: Lose 5 Money Explanation: Your business suffers as collective memory demands reparations.
+Politician: Lose 6 Influence Explanation: Your attempts to repress historical trauma are exposed.
+Artist: Gain 7 Influence Explanation: Your work brings suppressed colonial memories to the surface.
+ 
+"The Author’s Death and Revolutionary Speech"
+Authorship and Revolution Explanation: Barthes, Benjamin
+The Death of the Author and The Concept of History
+The death of the author implies that the revolutionary voice must be collective, no longer defined by a singular figure. Barthes’ theory that the author’s identity is irrelevant to the text challenges the notion of singular authority, while Benjamin’s focus on collective memory emphasizes shared histories.
+Consequences:
+Colonialist: Lose 5 Influence Explanation: The authorial voice is now contested, weakening your narrative.
+Revolutionary: Gain 7 Knowledge Explanation: You embrace the power of collective revolutionary speech.
+Historian: Gain 6 Knowledge Explanation: You document the shift from individual to collective revolutionary voices.
+Entrepreneur: Lose 5 Money Explanation: Your reliance on authoritative figures in marketing fails.
+Politician: Gain 6 Influence Explanation: You control the collective narrative, shaping public discourse.
+Artist: Gain 6 Influence Explanation: Your collective art speaks for the revolution.
+ 
+"The Technology of Memory"
+Technology and History Explanation: Benjamin
+The Work of Art in the Age of Its Technological Reproducibility
+The reproduction of history through technology allows for collective remembering but also distorts the past. Benjamin critiques the technological reproducibility of art, suggesting that memory is shaped by the technologies of its reproduction.
+Consequences:
+Colonialist: Lose 6 Money Explanation: Technological reproduction exposes the colonial past.
+Revolutionary: Gain 6 Knowledge Explanation: You harness technology to disseminate alternative histories.
+Historian: Gain 5 Knowledge Explanation: You analyze the role of technology in shaping historical memory.
+Entrepreneur: Lose 5 Money Explanation: Your business suffers as new technologies challenge historical narratives.
+Politician: Gain 5 Influence Explanation: You control the technological reproduction of history to your benefit.
+Artist: Gain 7 Influence Explanation: Your art challenges the distorted technological representations of history.
+ 
+"The Colonial Economy and Its Dismantling"
+Economic Systems and Colonialism Explanation: Césaire, Tuck & Yang
+Discourse on Colonialism and Decolonization Is Not a Metaphor
+The colonial economy must be dismantled for true decolonization to occur. Césaire critiques the capitalist underpinnings of colonialism, while Tuck & Yang emphasize that decolonization involves transforming economic systems.
+Consequences:
+Colonialist: Lose 7 Money Explanation: The colonial economy is dismantled, and your wealth is stripped.
+Revolutionary: Gain 7 Influence Explanation: You push for economic justice and decolonization.
+Historian: Gain 6 Knowledge Explanation: You document the economic aspects of colonialism and its dismantling.
+Entrepreneur: Lose 6 Money Explanation: Your capitalist ventures are threatened by decolonization movements.
+Politician: Lose 5 Influence Explanation: You struggle to maintain the colonial economic system.
+Artist: Gain 5 Influence Explanation: Your work critiques and advocates for the dismantling of colonial economics.
+ 
+"The Failure of Postcolonial States"
+Postcolonial Struggles Explanation: Césaire, Tuck & Yang
+Discourse on Colonialism and Decolonization Is Not a Metaphor
+Many postcolonial states fail to achieve true sovereignty, often falling victim to neocolonialism or internal divisions. Césaire critiques the superficial independence achieved by many nations, while Tuck & Yang stress the need for ongoing decolonial work.
+Consequences:
+Colonialist: Gain 6 Influence Explanation: You benefit from the continued weakness of postcolonial states.
+Revolutionary: Lose 5 Knowledge Explanation: Your movement faces setbacks in the face of state failure.
+Historian: Gain 6 Knowledge Explanation: You document the failures and challenges of postcolonial states.
+Entrepreneur: Gain 5 Money Explanation: You capitalize on the instability of postcolonial nations.
+Politician: Lose 6 Influence Explanation: Your government fails to bring about true independence.
+Artist: Gain 5 Influence Explanation: Your art critiques the failure of postcolonial states.
+ 
+"Decolonial Movements in the Age of Technology"
+Decolonization and Technology Explanation: Benjamin, Tuck & Yang
+Decolonization Is Not a Metaphor and The Concept of History
+Decolonial movements are influenced by technology, which both enables and complicates resistance. Tuck & Yang emphasize the digital dimensions of decolonization, while Benjamin critiques technological systems that perpetuate coloniality.
+Consequences:
+Colonialist: Lose 5 Influence Explanation: Your technological control is threatened by decolonial movements.
+Revolutionary: Gain 7 Knowledge Explanation: You use technology to spread decolonial ideas.
+Historian: Gain 5 Knowledge Explanation: You analyze how technology shapes decolonial struggles.
+Entrepreneur: Lose 6 Money Explanation: Your digital platforms are targeted by activists.
+Politician: Gain 6 Influence Explanation: You use technology to suppress resistance.
+Artist: Gain 5 Influence Explanation: Your digital art spreads decolonial messages.
+ 
+"Revolutions and the Power of Narrative"
+Narrative and Revolution Explanation: Barthes, Benjamin
+The Death of the Author and The Concept of History
+Revolutions are not only fought on the ground but also in narratives. Barthes' critique of authorship and Benjamin's focus on historical memory show that revolutions also need to control and reframe historical narratives.
+Consequences:
+Colonialist: Lose 6 Influence Explanation: You are losing control of the narrative.
+Revolutionary: Gain 7 Influence Explanation: You successfully rewrite history in favor of the revolution.
+Historian: Gain 5 Knowledge Explanation: You document the role of narrative in revolutions.
+Entrepreneur: Lose 5 Money Explanation: Your narrative-based campaigns fail.
+Politician: Gain 6 Influence Explanation: You control the dominant historical narrative.
+Artist: Gain 6 Influence Explanation: Your art influences the revolutionary narrative. 

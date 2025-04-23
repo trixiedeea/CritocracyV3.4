@@ -1,0 +1,20 @@
+critocracy/
+├── index.html
+├── css/
+│       ├── style.css  ← placeholder
+│       └── tokenB.png  ← placeholder
+├── js/
+│       ├── board.js  ← placeholder
+│       └── cards.js  ← placeholder
+│       ├── game.js  ← placeholder
+│       └── players.js  ← placeholder
+│       ├── ui.js  ← placeholder
+├── assets/
+│   ├── board.png       ← placeholder image
+│   └── tokens/
+│       ├── h.png.png  ← placeholder
+│       ├── a.png  ← placeholder
+│       └── e.png  ← placeholder
+│       ├── p.png  ← placeholder
+│       └── c.png  ← placeholder
+│       ├── r.png  ← placeholder

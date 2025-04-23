@@ -1,0 +1,606 @@
+const EndofTurnCards:  
+The Scramble for Africa Intensifies scrambleForAfrica   
+           %name:  The Scramble for Africa Intensifies   
+ description:  Aim Cesaire critiques the brutal logic of colonialism that dehumanizes native populations and justifies exploitation through a colonial gaze. The conquest of Africa is an example of how imperial powers rationalized violence to accumulate wealth and control.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money +6; Explanation: Secures more land and resources for the Empire    
+ Revolutionary : player.knowledge -5; Explanation: Movement is stifled under colonial power    
+ Historian : player.knowledge +5; Explanation: New historical sources emerge    
+ entrepreneur : player.knowledge -5; Explanation: Ethical backlash affects the market   
+ politician : player.influence -5; Explanation: Imperial expansion policy is challenged    
+  Artist : player.influence -5; Explanation: Critique of colonialism faces censorship   player:  role:  
+ Revolutionary   money: 12,  knowledge: 8,  influence: 6 
+  indigenousDisplacement:  
+           %name:  Indigenous Displacement   
+ description:  Cesaire discusses the colonial system's systematic displacement of indigenous people for the expansion of European colonies. The forced migration and land appropriation leave a legacy of social and cultural devastation.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -5; Explanation: Resistance causes economic instability    
+ Revolutionary : player.influence +6; Explanation: Gains support as a voice of liberation    
+ Historian : player.knowledge -5; Explanation: Historical records are destroyed or altered    
+ entrepreneur : player.money +5; Explanation: Profits from new land and resources    
+ politician : player.influence +5; Explanation: Justifies the displacement as necessary    
+ Artist : player.influence -6; Explanation: Work is targeted as subversive and repressed  
+  slaveTradeProfitsSoar:  
+           %name:  Slave Trade Profits Soar   
+ description:  Cesaire highlights the economic roots of colonialism, showing that the colonial system relies on the dehumanization of enslaved peoples to build wealth for the colonizers. The transatlantic slave trade is a key example of this system in action.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money +7; Explanation: Profits fuel empire's expansion    
+ Revolutionary : player.knowledge -5; Explanation: Calls for liberation are undermined    
+ Historian : player.knowledge -5; Explanation: Historical narratives are suppressed    
+ entrepreneur : player.money +5; Explanation: Capitalizes on the slave trade economy    
+ politician : player.influence +5; Explanation: Support for the trade strengthens power    
+ Artist : player.influence -5; Explanation: Works are criticized for challenging status quo  
+  
+ ColonialNarrativesReshaped:  
+           %name:  
+ Colonial Narratives Reshaped   
+ description:  Cesaire critiques the ideological justification for colonialism, often framed as a 'civilizing mission' for native peoples. This false narrative seeks to mask the exploitation and violence inherent in colonization.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -6; Explanation: Empire's narrative is increasingly discredited    
+ Revolutionary : player.knowledge +6; Explanation: Anti-colonial theories emerge    
+ Historian : player.knowledge +5; Explanation: Contributions to new historiography    
+ entrepreneur : player.money -5; Explanation: Backlash against industries    
+ politician : player.influence -5; Explanation: Civilizing myth loses power in public discourse    
+ Artist : player.influence +5; Explanation: Critique of colonialism resonates  
+  
+ ColonialResistanceGrows:  
+           %name:   Colonial Resistance Grows   
+ description:  As colonial power structures become more oppressive, resistance movements grow. This tension leads to revolts, uprisings, and efforts to disrupt the colonial machine. Cesaire emphasizes the importance of this resistance in dismantling colonial domination.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -6; Explanation: Economic instability due to uprisings    
+ Revolutionary : player.influence +7; Explanation: Resistance movement gains strength    
+ Historian : player.knowledge -5; Explanation: Struggles to fully document resistance    
+ entrepreneur : player.knowledge -5; Explanation: Loss of imperial support    
+ politician : player.influence -5; Explanation: Policies questioned in wake of revolt    
+ Artist : player.influence +6; Explanation: Art becomes symbol of rebellion  
+  haitianRevolutionInspires:  
+           %name:  The Haitian Revolution Inspires   
+ description:  Walter Benjamins Angel of History reflects on how historical moments of resistance u2014like the Haitian Revolution u2014challenge the narrative of progress and force a reevaluation of colonial power structures.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -6; Explanation: Control threatened by revolutionary movements    
+ Revolutionary : player.knowledge +7; Explanation: Revolution fuels ideological growth    
+ Historian : player.knowledge +5; Explanation: Documents upheaval, reshaping history    
+ entrepreneur : player.money -5; Explanation: Trade routes disrupted by revolt    
+ politician : player.influence -6; Explanation: Political landscape shifts    
+ Artist : player.influence +5; Explanation: Art resonates with revolutionary spirit  
+  printingPressKnowledge1:  
+           %name:  The Printing Press Revolutionizes Knowledge   
+ description:  The invention of the printing press plays a key role in spreading revolutionary ideas and intellectual movements. Walter Benjamin examines how mass-produced texts reshape our relationship to knowledge and politics.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -5; Explanation: Control over information weakens    
+ Revolutionary : player.knowledge +6; Explanation: Access to radical ideas increases    
+ Historian : player.knowledge +5; Explanation: Gains new materials for documenting history    
+ entrepreneur : player.money +5; Explanation: Profits from demand for printed works    
+ politician : player.influence -5; Explanation: Unable to control flow of new ideas    
+ Artist : player.influence +5; Explanation: Ideas spread through print media  
+  printingPressKnowledge2:  
+           %name:  The Printing Press Revolutionizes Knowledge   
+ description:  The invention of the printing press spreads revolutionary ideas. Benjamin reflects on how the mass production of texts reshapes knowledge, empowering movements while threatening traditional power structures.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -5; Explanation: Monopoly over information weakens    
+ Revolutionary : player.knowledge +6; Explanation: Access to radical, unfiltered texts    
+ Historian : player.knowledge +5; Explanation: Gains a new source of historical evidence    
+ entrepreneur : player.money +5; Explanation: Profits from publication of revolutionary ideas    
+ politician : player.influence -5; Explanation: Control over discourse is under siege    
+ Artist : player.influence +5; Explanation: Work gains visibility through new media  
+  gandhisSaltMarchInspires:  
+           %name:  Gandhis Salt March Inspires   
+ description:  Benjamin discusses the importance of nonviolent resistance in re-imagining historical narratives. Gandhis Salt March is an example of how symbolic acts of defiance challenge oppressive systems and create new historical moments.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -5; Explanation: Imperial policies are questioned    
+ Revolutionary : player.influence +7; Explanation: Activism inspired by Gandhis methods    
+ Historian : player.knowledge +5; Explanation: Documents pivotal act of resistance    
+ entrepreneur : player.money -5; Explanation: Colonial enterprises disrupted by resistance    
+ politician : player.influence -5; Explanation: Governing tactics challenged    
+ Artist : player.influence +6; Explanation: Art becomes emblem of peaceful resistance  
+  haitianRevolutionResurfaces:  
+           %name:  The Haitian Revolution Resurfaces   
+ description:  The Haitian Revolution is a powerful reminder that historical change often comes through violent upheavals. Benjamins Angel of History represents the constant struggle between progress and destruction.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -6; Explanation: Empire shaken by revolts legacy    
+ Revolutionary : player.knowledge +7; Explanation: Studies successful revolt as a model    
+ Historian : player.knowledge +6; Explanation: Documents significance of slave revolts    
+ entrepreneur : player.money -5; Explanation: Trade networks disrupted    
+ politician : player.influence -6; Explanation: Revolutionary movements cannot be ignored    
+ Artist : player.influence +5; Explanation: Art reflects triumph of oppressed peoples  
+  battleForNarrativeBegins:  
+           %name:  The Battle for Historical Narrative Begins   
+ description:  Barthes' theory asserts that the identity of the creator should not limit the interpretation of the work. This challenge to authorship mirrors the fight over who controls historical narratives and how theyre remembered.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -6; Explanation: Control over narratives weakens    
+ Revolutionary : player.knowledge +6; Explanation: New interpretations fuel revolutionary cause    
+ Historian : player.knowledge +5; Explanation: Questions established historical narratives    
+ entrepreneur : player.money -5; Explanation: Market shifts weaken product control    
+ politician : player.influence -5; Explanation: Public begins questioning historical claims    
+ Artist : player.influence +5; Explanation: Art challenges accepted histories  
+  revoltAgainstEmpireSpreads:  
+           %name:  Revolt Against the Empire Spreads   
+ description:  Benjamin discusses the cyclical nature of revolutions and the way historical progress is often stalled by ruling powers. Revolts spread, and the global struggle continues, with no clear end in sight.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -6; Explanation: Revolt undermines economic hold    
+ Revolutionary : player.influence +7; Explanation: Global traction for the cause    
+ Historian : player.knowledge +5; Explanation: Documents resistance spreading worldwide    
+ entrepreneur : player.money -5; Explanation: Trade disruptions from revolts    
+ politician : player.influence -6; Explanation: Increasingly viewed as part of old regime    
+ Artist : player.influence +6; Explanation: Work reflects worldwide revolution  
+  battleForRepresentationPress:  
+           %name:  The Battle for Representation in the Press   
+ description:  The rise of mass media alters the way social movements are represented. The press becomes an ideological battleground where the meaning of events is shaped and contested.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -5; Explanation: Media exposure erodes control    
+ Revolutionary : player.knowledge +5; Explanation: Media manipulation strengthens cause    
+ Historian : player.knowledge +6; Explanation: Studies evolving role of media    
+ entrepreneur : player.money +6; Explanation: Profits from new media formats    
+ politician : player.influence -5; Explanation: Political decisions scrutinized in press    
+ Artist : player.influence +5; Explanation: Work becomes part of media discourse  
+  riseOfAntiColonialLit:  
+           %name:  The Rise of Anti-Colonial Literature   
+ description:  Postcolonial literature rises as an antidote to colonial oppression, reclaiming voices once silenced by the colonial system. This literary movement forces a re-examination of both history and identity.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -5; Explanation: Anti-colonial narratives undermine power    
+ Revolutionary : player.knowledge +6; Explanation: Inspired by literary resistance    
+ Historian : player.knowledge +5; Explanation: Documents rise of anti-colonial literature    
+ entrepreneur : player.money -5; Explanation: Investments in colonial narratives suffer    
+ politician : player.influence -6; Explanation: Public opinion shifts against colonialism    
+ Artist : player.influence +6; Explanation: Work aligns with anti-colonial movement  
+  culturalAppropriationDiscontent:  
+           %name:  Cultural Appropriation Fuels Global Discontent   
+ description:  The global rise of cultural appropriation sparks outrage. Cesaire criticizes the colonial theft of cultural identities, while Barthes suggests that cultural meanings are produced by readers, not authors. The struggle for authenticity and control over culture escalates.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -6; Explanation: Cultural exploitation faces backlash    
+ Revolutionary : player.knowledge +5; Explanation: Uncovers new theories of cultural resistance    
+ Historian : player.knowledge +5; Explanation: Documents global impact of cultural theft    
+ entrepreneur : player.money -5; Explanation: Cultural appropriation becomes financial liability    
+ politician : player.influence -6; Explanation: Pressured to address cultural issues    
+ Artist : player.influence +5; Explanation: Challenges politics of cultural representation  
+  endOfApartheid:  
+           %name:  End of Apartheid in South Africa   
+ description:  The fall of apartheid represents the rejection of colonial logic, with the nation's struggle to reconcile its history and create new narratives of identity. Barthes' notion of the death of the author parallels the idea of rejecting official histories imposed by the state.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -6; Explanation: Imperial dominance crumbles    
+ Revolutionary : player.knowledge +7; Explanation: Studies successful decolonization strategies    
+ Historian : player.knowledge +5; Explanation: New challenges for historical interpretation    
+ entrepreneur : player.money -5; Explanation: Business affected by end of apartheid regime    
+ politician : player.influence +6; Explanation: Adapts to post-apartheid political landscape    
+ Artist : player.influence +5; Explanation: Art serves as vehicle for post-apartheid discourse  
+  repatriationOfArtifacts:  
+           %name:  Repatriation of Cultural Artifacts   
+ description:  The call for the return of looted cultural artifacts from colonial powers gains traction. Cesaire and Tuck & Yang advocate for reparations that include cultural restitution.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -6; Explanation: Wealth reduced by artifact return    
+ Revolutionary : player.influence +6; Explanation: Activism drives push for reparations    
+ Historian : player.knowledge +5; Explanation: Contributes to academic discourse    
+ entrepreneur : player.money -5; Explanation: Profits decline from waning demand    
+ politician : player.influence +5; Explanation: Gains political capital by overseeing process    
+ Artist : player.influence +7; Explanation: Supports call for repatriation through art  
+  decolonizationBacklash:  
+           %name:  Decolonization Efforts Face Backlash   
+ description:  As countries attempt to decolonize, they face intense resistance from former colonial powers. Benjamin argues that true liberation requires battling the historical weight of the colonial past, which manifests in ongoing struggles.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money +5; Explanation: Manipulates global backlash to maintain influence    
+ Revolutionary : player.influence -6; Explanation: Efforts stifled by counter-revolutionary forces    
+ Historian : player.knowledge +5; Explanation: Records complex narrative of resistance    
+ entrepreneur : player.money -5; Explanation: Market strategies falter due to unrest    
+ politician : player.influence -5; Explanation: Policies seen as in
+ effective    
+ Artist : player.influence +6; Explanation: Captures struggle for freedom in art  
+  rejectionOfColonialPast:  
+           %name:  The Rejection of the Colonial Past   
+ description:  Cesaire highlights the psychological and social trauma left by colonial rule. This rejection signifies a collective turning point as societies reclaim their identities and question imposed systems of power.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -7; Explanation: Legacy erodes wealth    
+ Revolutionary : player.influence +6; Explanation: Call for liberation gains support    
+ Historian : player.knowledge +6; Explanation: Records collective resistance    
+ entrepreneur : player.money -6; Explanation: Ventures are devalued    
+ politician : player.influence -5; Explanation: Power challenged by colonial rejection    
+ Artist : player.influence +7; Explanation: Art symbolizes postcolonial identity  
+  riseOfPostcolonialLit:  
+           %name:  The Rise of Postcolonial Literature   
+ description:  As writers from formerly colonized countries gain prominence, their works become vehicles for reinterpreting history and identity. Barthes' idea of the death of the author challenges established literary canons.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -5; Explanation: Narratives increasingly disregarded    
+ Revolutionary : player.knowledge +7; Explanation: Studies and propagates postcolonial works    
+ Historian : player.knowledge +5; Explanation: Accesses rich body of postcolonial literature    
+ entrepreneur : player.money +6; Explanation: Profits from growing interest in literature    
+ politician : player.influence -5; Explanation: Struggles to silence postcolonial voices    
+ Artist : player.influence +6; Explanation: Inspired by postcolonial literary movements  
+  struggleOverEducation:  
+           %name:  The Struggle Over Education Systems   
+ description:  Cesaire critiques the colonial education system for perpetuating inferiority among colonized people. The struggle over education becomes central to decolonization as people demand a return to indigenous knowledge.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -5; Explanation: Control over institutions diminishes    
+ Revolutionary : player.influence +6; Explanation: Inspires movement for educational reform    
+ Historian : player.knowledge +5; Explanation: Examines perpetuation of colonial control    
+ entrepreneur : player.money -5; Explanation: Business model is challenged    
+ politician : player.influence -5; Explanation: Reforms render policies obsolete    
+ Artist : player.influence +5; Explanation: Art critiques colonial education  
+  riseOfGlobalization:  
+           %name:  The Rise of Globalization   
+ description:  As the world becomes more interconnected, globalization spreads capitalist ideologies. Benjamins critiques of capitalism in history suggest that true liberation requires challenging both past and contemporary economic systems.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money +6; Explanation: Thrives in global capitalist system    
+ Revolutionary : player.knowledge -6; Explanation: Message diluted by spread of ideologies    
+ Historian : player.knowledge +5; Explanation: Analyzes rise of global capitalism    
+ entrepreneur : player.money +7; Explanation: Capitalizes on interconnected market    
+ politician : player.influence +6; Explanation: Gains popularity through pro-globalization stance    
+ Artist : player.influence -5; Explanation: Anti-globalization art is marginalized  
+  fightOverHistoricalMemory:  
+           %name:  The Fight Over Historical Memory   
+ description:  Benjamins concept of historical materialism touches on how history is constructed. The fight over what is remembered and forgotten is central to decolonization, as former imperial powers attempt to suppress the truth.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -5; Explanation: Historical version being questioned    
+ Revolutionary : player.knowledge +6; Explanation: Exposes injustices and revisionism    
+ Historian : player.knowledge +6; Explanation: Contributes to battle over memory    
+ entrepreneur : player.money -5; Explanation: Competing narratives hurt customer base    
+ politician : player.influence -6; Explanation: Public distrusts version of history    
+ Artist : player.influence +5; Explanation: Reclaims suppressed histories through art  
+
+  questionOfReparations: 
+           %name:  The Question of Reparations , 
+ description: Cesaire discusses reparations as a form of moral restitution for the atrocities committed during colonial rule. The fight for reparations is part of the decolonization process, with increasing calls for financial and cultural reparation. ,
+ effect: (player) >  switch (player.role)    
+ Colonialist : player.money -7; Explanation: Forced to pay reparations for harm    
+ Revolutionary : player.influence +7; Explanation: Advocacy gains widespread support    
+ Historian : player.knowledge +5; Explanation: Examines legal and moral implications    
+ entrepreneur : player.money -6; Explanation: Assets redirected to reparations    
+ politician : player.influence -5; Explanation: Public demands action break; 
+ Artist : player.influence +6; Explanation: Work highlights need for reparations  
+ 
+  emergenceOfTransnationalMovements:  
+           %name:  The Emergence of Transnational Movements   
+ description:  Transnational movements rise in response to global struggles for justice. Tuck and Yang emphasize that decolonization isnt just a metaphor but a process rooted in global solidarity. Benjamin highlights the importance of the collective struggle against oppressive historical structures.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -5; Explanation: Solidarity weakens imperial hold    
+ Revolutionary : player.influence +7; Explanation: Gains recognition in global movement    
+ Historian : player.knowledge +5; Explanation: Documents growing transnational solidarity    
+ entrepreneur : player.money -5; Explanation: Forced to reconsider trade practices    
+ politician : player.influence +6; Explanation: Policies seen as part of global movement    
+ Artist : player.influence +6; Explanation: Becomes voice within solidarity movement  
+  neoliberalismGlobalAscendancy:  
+           %name:  Neoliberalism's Global Ascendancy   
+ description:  The rise of neoliberal policies shapes a new imperialism, where market-driven agendas replace colonial governance. Cesaire and Benjamin critique the continuation of exploitation under the guise of market freedom.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money +6; Explanation: Thrives under neoliberal system    
+ Revolutionary : player.knowledge -6; Explanation: Revolutionary ideas suppressed    
+ Historian : player.knowledge +5; Explanation: Chronicles growing influence of neoliberalism    
+ entrepreneur : player.money +7; Explanation: Capitalizes on expanding market    
+ politician : player.influence +6; Explanation: Gains power by aligning with policies    
+ Artist : player.influence -5; Explanation: Art overshadowed by agendas  
+  rejectionOfWesternCulturalHegemony:  
+           %name:  Rejection of Western Cultural Hegemony   
+ description:  The rejection of Western cultural hegemony signals a return to indigenous knowledge and practices. Cesaires call for liberation and Barthes emphasis on the collective over the individual creator align with this rejection.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -6; Explanation: Cultural dominance contested    
+ Revolutionary : player.influence +6; Explanation: Ideas about cultural liberation gain momentum    
+ Historian : player.knowledge +5; Explanation: Explores roots of cultural resistance    
+ entrepreneur : player.money -5; Explanation: Market disrupted by cultural wave    
+ politician : player.influence -5; Explanation: Control over cultural tide diminishes    
+ Artist : player.influence +7; Explanation: Art becomes part of indigenous reclamation  
+  riseOfPostcolonialCriticism:  
+           %name:  The Rise of Postcolonial Criticism   
+ description:  Postcolonial criticism emerges to question the authority of Western literary canons. Barthes and Cesaire argue that history and literature should be rewritten by those who have been marginalized.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -6; Explanation: Historical dominance challenged    
+ Revolutionary : player.knowledge +7; Explanation: Strengthens cause through study    
+ Historian : player.knowledge +6; Explanation: Delves into postcolonial literature    
+ entrepreneur : player.money -5; Explanation: Business threatened by new perspectives    
+ politician : player.influence -6; Explanation: Movements diminish power    
+ Artist : player.influence +6; Explanation: Embodies postcolonial critique  
+  roleOfTechInPostcolonialMovements:  
+           %name:  The Role of Technology in Postcolonial Movements   
+ description:  The role of mass media and technology in the dissemination of postcolonial ideas is critical. Benjamins notion of technology reshaping arts aura becomes a tool for activism.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -5; Explanation: Control over information diminishes    
+ Revolutionary : player.influence +7; Explanation: Leverages tech to spread message    
+ Historian : player.knowledge +6; Explanation: Analyzes impact of tech on narratives    
+ entrepreneur : player.money +6; Explanation: Profits from postcolonial tech investments    
+ politician : player.influence -5; Explanation: Struggles to control technologys power    
+ Artist : player.influence +5; Explanation: Art widely circulated via technology  
+  globalNetworksOfResistance:  
+           %name:  Global Networks of Resistance   
+ description:  Decolonization is not just a local or national effort but a global struggle. Tuck and Yang highlight the importance of international solidarity in dismantling colonial structures.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -5; Explanation: Resources drained by global resistance    
+ Revolutionary : player.influence +7; Explanation: Unites global movements under common cause    
+ Historian : player.knowledge +5; Explanation: Studies networks and strategies    
+ entrepreneur : player.money -6; Explanation: Boycotts impact business    
+ politician : player.influence +5; Explanation: Stabilizes situation with diplomacy    
+ Artist : player.influence +6; Explanation: Art spreads message of resistance  
+  historyWrittenByVictors:  
+           %name:  History is Written by the Victors   
+ description:  The narrative of history is shaped by those who hold power. Barthes and Benjamin challenge the idea that history is impartial or fixed, proposing that it is always a product of power dynamics.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money +5; Explanation: Benefits from dominant historical narrative    
+ Revolutionary : player.knowledge -6; Explanation: Narrative suppresses revolutionary efforts    
+ Historian : player.knowledge +7; Explanation: Uncovers hidden histories of the oppressed    
+ entrepreneur : player.money -5; Explanation: Profits from morally questionable history    
+ politician : player.influence -6; Explanation: Public questions role in shaping narratives    
+ Artist : player.influence +5; Explanation: Challenges dominant historical perspective  
+  reclamationOfHistoricalSpaces:  
+           %name:  The Reclamation of Historical Spaces   
+ description:  Cesaire urges a reexamination of the spaces that uphold colonial memory, calling for the reclamation of monuments and land. The battle for who controls these spaces remains central to decolonization.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -6; Explanation: Monuments defaced or removed    
+ Revolutionary : player.influence +6; Explanation: Leads movement to reclaim spaces    
+ Historian : player.knowledge +5; Explanation: Documents transformation of spaces    
+ entrepreneur : player.money -5; Explanation: Faces backlash over historical erasure    
+ politician : player.influence +5; Explanation: Enacts laws protecting cultural monuments    
+ Artist : player.influence +6; Explanation: Supports reclamation of spaces through art  
+  riseOfHistoricalRevisionism:  
+           %name:  The Rise of Historical Revisionism   
+ description:  Historical revisionism emerges as a dominant force in shaping current ideologies. Barthes suggests that all texts are open to reinterpretation, while Cesaire emphasizes the revision of colonial narratives.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money +6; Explanation: Historical version gains traction    
+ Revolutionary : player.influence -5; Explanation: Resistance undermined by revised narratives    
+ Historian : player.knowledge +7; Explanation: Chronicles emergence of revisionist histories    
+ entrepreneur : player.money +5; Explanation: Profits from demand for revised content    
+ politician : player.influence +6; Explanation: Uses revisionism to consolidate power    
+ Artist : player.influence -5; Explanation: Dismissed by revisionist forces  
+  digitalArchivesBattleForHistory:  
+           %name:  Digital Archives and the Battle for History   
+ description:  Digital archives democratize access to history, but also raise questions about who controls these records. Benjamins theory on technological reproducibility highlights the impact of mass media in reshaping art and history.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -6; Explanation: Loses control over narratives    
+ Revolutionary : player.influence +6; Explanation: Leverages digital platforms to spread message    
+ Historian : player.knowledge +6; Explanation: Curates archives to rewrite history    
+ entrepreneur : player.money -5; Explanation: Faces competition from free archives    
+ politician : player.influence -5; Explanation: Digital records expose questionable policies    
+ Artist : player.influence +7; Explanation: Thrives in digital age  
+  
+ ColonialMonumentsBattleForMemory:  
+           %name: Colonial Monuments and the Battle for Public Memory   
+ description:  The debate around the removal or preservation of colonial monuments escalates. Cesaire calls for the rejection of symbols that perpetuate colonial dominance.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -6; Explanation: Protects monuments at great expense    
+ Revolutionary : player.influence +6; Explanation: Leads protests for removal    
+ Historian : player.knowledge +5; Explanation: Researches history of monuments    
+ entrepreneur : player.money -5; Explanation: Faces fallout from association with symbols    
+ politician : player.influence +5; Explanation: Passes legislation to protect monuments    
+ Artist : player.influence +6; Explanation: Advocates for removal through art  
+  socialMediaDebatesColonialLegacies:  
+           %name:  Social Media Debates on Colonial Legacies   
+ description:  Social media becomes a battleground for debates about colonialism and its legacies. Benjamins critique of historical narrative and Barthes notion of authorship become central to the conversation.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -5; Explanation: Faces public backlash    
+ Revolutionary : player.influence +7; Explanation: Amplifies voice on digital platforms    
+ Historian : player.knowledge +6; Explanation: Documents debates around colonialism    
+ entrepreneur : player.money -5; Explanation: Boycott impacts business    
+ politician : player.influence +6; Explanation: Promotes policies through social media    
+ Artist : player.influence +5; Explanation: Art provokes thought on colonial legacies  
+  
+ HistoriansVsVictims:  
+           %name:  Historians vs. Victims of History   
+ description:  The historians role in interpreting history is contested. Benjamins 'Angel of History' is caught in the winds of progress, unable to change the past, while Cesaire demands that history be reinterpreted from the perspectives of the oppressed.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -5; Explanation: Control over narrative diminishes    
+ Revolutionary : player.knowledge +6; Explanation: Arguments resonate in historical contest    
+ Historian : player.knowledge -6; Explanation: Caught in the crossfire    
+ entrepreneur : player.money -5; Explanation: Loses clients favoring reinterpretation    
+ politician : player.influence +5; Explanation: Shapes narrative in favor through alliance    
+ Artist : player.influence +5; Explanation: Supports voice of oppressed through art  
+  aiQuestionOfIdentity:  
+           %name:  Artificial Intelligence and the Question of Identity   
+ description:  AI challenges traditional notions of identity, as algorithms start to shape perceptions of gender and race. Butlers theory of performative identity and Mulveys concept of the male gaze are essential for understanding how these technologies might reinforce or subvert social norms.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -5; Explanation: AI challenges colonial ideologies    
+ Revolutionary : player.knowledge +6; Explanation: Studies AIs impact on identity formation    
+ Historian : player.knowledge +5; Explanation: Documents intersection of AI and identity    
+ entrepreneur : player.money +7; Explanation: Capitalizes on growing AI industry    
+ politician : player.influence -5; Explanation: Control over landscape challenged    
+ Artist : player.influence +6; Explanation: Critiques AIs role in shaping narratives  
+  globalizationOfResistance:  
+           %name:  The Globalization of Resistance   
+ description:  Global movements for justice and decolonization intersect, transcending national borders. Tuck & Yang stress that decolonization is a process, not just a metaphor, and Benjamin's 'Angel of History' observes the international nature of resistance.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -6; Explanation: Influence weakened by resistance    
+ Revolutionary : player.influence +7; Explanation: Strengthened by international alliances    
+ Historian : player.knowledge +5; Explanation: Documents rise of resistance    
+ entrepreneur : player.money -5; Explanation: Business threatened by instability    
+ politician : player.influence +6; Explanation: Aligns with powers to suppress revolts    
+ Artist : player.influence +5; Explanation: Spreads message of solidarity  
+  genderAndPower:  
+           %name:  Gender and the Performance of Power   
+ description:  Gender as a social performance intersects with power dynamics. Butlers theory of gender performativity is applied to how power is exercised through gendered performances, while Cesaire critiques the colonial systems that reinforced gender norms.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -5; Explanation: Faces backlash against patriarchal systems    
+ Revolutionary : player.knowledge +6; Explanation: Adopts gender as revolutionary tool    
+ Historian : player.knowledge +5; Explanation: Analyzes gendered power dynamics    
+ entrepreneur : player.money -5; Explanation: Advertising strategies criticized    
+ politician : player.influence +6; Explanation: Uses gender politics to gain power    
+ Artist : player.influence +7; Explanation: Critiques gendered power structures  
+  spectacleOfColonialViolence:  
+           %name:  The Spectacle of Colonial Violence   
+ description:  The spectacle of colonial violence, captured in media, is revisited. Benjamins idea of the historical 'spectacle' forces a reconsideration of colonial violence and its ongoing impact.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -6; Explanation: Actions exposed and criticized    
+ Revolutionary : player.knowledge +6; Explanation: Exposes violence as tool of resistance    
+ Historian : player.knowledge +5; Explanation: Documents ongoing impact    
+ entrepreneur : player.money -5; Explanation: Targeted for profiteering from violence    
+ politician : player.influence +5; Explanation: Manipulates public opinion    
+ Artist : player.influence +7; Explanation: Sparks public outcry with art  
+  riseOfNeoColonialism:  
+           %name:  The Rise of Neo-Colonialism   
+ description:  Neo-colonialism rises as multinational corporations and political structures continue to dominate formerly colonized nations. Cesaires critique of economic exploitation and Tuck & Yangs ideas about decolonization are at the heart of this phenomenon.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money +7; Explanation: Benefits from economic domination    
+ Revolutionary : player.influence -5; Explanation: Resistance hindered by systems    
+ Historian : player.knowledge +6; Explanation: Analyzes rise in modern contexts    
+ entrepreneur : player.money -5; Explanation: Faces backlash for practices    
+ politician : player.influence +6; Explanation: Supports neo-colonial policies    
+ Artist : player.influence -5; Explanation: Marginalized under neo-colonial power  
+  riseOfQueerTheories:  
+           %name:  The Rise of Queer Theories   
+ description:  Queer theory emerges as a powerful critique of normative structures. Sedgwicks exploration of queer identity and Butlers theory of gender as performative action challenge conventional ideas about gender and sexuality.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -6; Explanation: System challenged by theories    
+ Revolutionary : player.knowledge +6; Explanation: Incorporates theory into movements    
+ Historian : player.knowledge +5; Explanation: Documents influence on struggles    
+ entrepreneur : player.money +7; Explanation: Profits from queer-inclusive products    
+ politician : player.influence +5; Explanation: Connects with marginalized groups    
+ Artist : player.influence +6; Explanation: Art critiques normative roles  
+  
+ RevolutionaryMovementsAndStateReaction:  
+           %name:  
+ Revolutionary Movements and the States Reaction   
+ description:  
+ Revolutionary movements are met with increasing repression. Benjamins critique of state violence and Cesaires call for anti-colonial resistance highlight the tension between revolutionary acts and state control.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -5; Explanation: Funds counterinsurgency efforts    
+ Revolutionary : player.influence +6; Explanation: Movement grows under repression    
+ Historian : player.knowledge +5; Explanation: Documents states response    
+ entrepreneur : player.money -5; Explanation: Business targeted by movements    
+ politician : player.influence +7; Explanation: Suppresses revolutionaries 
+ effectively    
+ Artist : player.influence +6; Explanation: Inspires movements with art  
+  ethicsOfRepresentation:  
+           %name:  The Ethics of Representation in Postcolonial Art   
+ description:  Postcolonial artists grapple with representing their identities within a Western framework. Cesaire calls for a reclamation of representation, while Mulvey critiques the ways in which Western cinema constructs the 'Other.'   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -5; Explanation: Depictions of the  Other  widely criticized    
+ Revolutionary : player.influence +7; Explanation: Postcolonial art inspires resistance    
+ Historian : player.knowledge +5; Explanation: Analyzes art in postcolonial contexts    
+ entrepreneur : player.money -6; Explanation: Alienated clients affect business    
+ politician : player.influence -5; Explanation: Propaganda challenged by critical art    
+ Artist : player.influence +6; Explanation: Gains recognition for critique  
+  neocolonialMedia:  
+           %name:  Neocolonial Media and the Reproduction of Ideology   
+ description:  Media, particularly film and television, is used to reproduce colonial ideologies. Benjamins theory of the technological reproducibility of art and Barthes concept of authorship highlight the role of media in shaping public perception.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence +6; Explanation: Media maintains colonial narratives    
+ Revolutionary : player.influence -5; Explanation: Message overshadowed by dominant ideologies    
+ Historian : player.knowledge +5; Explanation: Studies medias role in colonial ideologies    
+ entrepreneur : player.money +5; Explanation: Profits from media supporting narratives    
+ politician : player.influence +6; Explanation: Manipulates media to gain power    
+ Artist : player.influence -6; Explanation: Critiques ignored by media representation  
+  
+ ColonialGazeCinema:  
+           %name:  The Colonial Gaze in Popular Cinema   
+ description:  The colonial gaze persists in contemporary media, objectifying and infantilizing colonized peoples. Mulveys concept of the male gaze and Cesaires critique of colonial objectification intersect in the film industrys portrayal of the colonized.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence +5; Explanation: Profits from colonial gaze in media    
+ Revolutionary : player.influence -6; Explanation: Critiques overshadowed by popular media    
+ Historian : player.knowledge +6; Explanation: Analyzes gaze in cinema    
+ entrepreneur : player.money -5; Explanation: Backlash from demand for decolonized media    
+ politician : player.influence +5; Explanation: Exploits media to reinforce gaze    
+ Artist : player.influence +7; Explanation: Critiques colonial representation  
+  technologyCommodificationHistory:  
+           %name:  Technology and the Commodification of History   
+ description:  Technology transforms how history is recorded and remembered. Benjamin critiques the technological reproduction of history, which reduces it to a commodity.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -6; Explanation: Exposed as false narratives    
+ Revolutionary : player.knowledge +6; Explanation: Spreads alternative histories    
+ Historian : player.knowledge +5; Explanation: Documents commodification of memory    
+ entrepreneur : player.money +5; Explanation: Profits from digital history demand    
+ politician : player.influence -5; Explanation: Manipulation of memory exposed    
+ Artist : player.influence +6; Explanation: Critiques commodification through art  
+  politicsOfMemoryPostcolonial:  
+           %name:  The Politics of Memory in Postcolonial Societies   
+ description:  Memory is a powerful tool in postcolonial societies. Tuck & Yang emphasize the importance of how the past is remembered and reclaimed in decolonization, while Cesaire calls for the erasure of colonial memory.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -5; Explanation: Resistance against historical narratives    
+ Revolutionary : player.influence +6; Explanation: Thrives by controlling memory    
+ Historian : player.knowledge +5; Explanation: Contributes to memory studies    
+ entrepreneur : player.money -5; Explanation: Boycott for colonial memory narratives    
+ politician : player.influence +5; Explanation: Uses memory politics for power    
+ Artist : player.influence +7; Explanation: Reclaims and reshapes memory  
+  reclaimingIndigenousSpaces:  
+           %name:  Reclaiming Indigenous Spaces   
+ description:  Indigenous communities work to reclaim their ancestral lands and territories. Tuck & Yang argue that decolonization requires the return of land, while Cesaire critiques the colonial occupation of space and the violence it enacts on Indigenous populations.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -6; Explanation: Interests undermined by reclamation    
+ Revolutionary : player.knowledge +7; Explanation: Gains insights into movements    
+ Historian : player.knowledge +5; Explanation: Documents impact on colonial power    
+ entrepreneur : player.money -5; Explanation: Resources threatened    
+ politician : player.influence -5; Explanation: Forced to address disputes    
+ Artist : player.influence +6; Explanation: Advocates through art  
+  capitalistCoOptionOfResistance:  
+           %name:  The Capitalist Co-option of Resistance   
+ description:  Capitalism co-opts revolutionary movements by incorporating resistance narratives into profitable ventures. Benjamin critiques how systems of power commodify revolutionary discourse, while Cesaire emphasizes the need for true resistance beyond profit motives.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money +6; Explanation: Profits from commodification    
+ Revolutionary : player.knowledge -6; Explanation: Movement co-opted by capitalist forces    
+ Historian : player.knowledge +5; Explanation: Analyzes commodification of narratives    
+ entrepreneur : player.money +7; Explanation: Capitalizes on resistance-themed products    
+ politician : player.influence +6; Explanation: Strengthens power through commodified resistance    
+ Artist : player.influence -5; Explanation: Loses radical impact through commodification  
+  postcolonialFeminism:  
+           %name:  Postcolonial Feminism   
+ description:  Postcolonial feminism addresses the intersection of gender, race, and colonial histories. Tuck & Yang call for a reimagining of feminist struggles in decolonial contexts, while Sedgwick emphasizes queer theorys influence on postcolonial feminism.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -6; Explanation: Patriarchal systems under attack    
+ Revolutionary : player.knowledge +7; Explanation: Incorporates feminist theory into movements    
+ Historian : player.knowledge +5; Explanation: Documents intersection of feminism and postcolonialism    
+ entrepreneur : player.money -5; Explanation: Challenged by feminist critiques    
+ politician : player.influence -5; Explanation: Faces opposition to policies    
+ Artist : player.influence +6; Explanation: Challenges colonial and patriarchal norms  
+  repressionOfMemory:  
+           %name:  The Repression of Memory   
+ description:  Repression of collective memory prevents the healing of colonial trauma. Benjamin critiques selective historical memory, while Cesaire calls for confronting colonial brutalities to heal.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence +5; Explanation: Suppresses inconvenient memories    
+ Revolutionary : player.influence -5; Explanation: Efforts face resistance    
+ Historian : player.knowledge +6; Explanation: Documents suppressed histories    
+ entrepreneur : player.money -5; Explanation: Suffers as reparations demand grows    
+ politician : player.influence -6; Explanation: Exposed for repressing trauma    
+ Artist : player.influence +7; Explanation: Highlights suppressed memories through art  
+  authorsDeathRevolutionarySpeech:  
+           %name:  The Authors Death and Revolutionary Speech   
+ description:  The death of the author implies that the revolutionary voice must be collective, no longer defined by a singular figure. Barthes challenges singular authority, while Benjamin emphasizes collective memory and shared histories.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -5; Explanation: Authorial voice contested    
+ Revolutionary : player.knowledge +7; Explanation: Embraces collective speech    
+ Historian : player.knowledge +6; Explanation: Documents shift from individual to collective voices    
+ entrepreneur : player.money -5; Explanation: Marketing failures due to loss of authoritative figures    
+ politician : player.influence +6; Explanation: Controls narrative in shaping discourse    
+ Artist : player.influence +6; Explanation: Collective art speaks for revolution  
+  technologyOfMemory:  
+           %name:  The Technology of Memory   
+ description:  Technology transforms how history is recorded and remembered. Benjamin critiques the technological reproduction of history, suggesting that memory is shaped and distorted by its means of reproduction.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -6; Explanation: Exposure of colonial past through technological reproduction    
+ Revolutionary : player.knowledge +6; Explanation: Disseminates alternative histories    
+ Historian : player.knowledge +5; Explanation: Studies technology's role in shaping memory    
+ entrepreneur : player.money -5; Explanation: Faces challenges due to historical reinterpretation    
+ politician : player.influence +5; Explanation: Controls history reproduction for political gain    
+ Artist : player.influence +7; Explanation: Challenges historical distortions through art  
+  
+ ColonialEconomyDismantling:  
+           %name:  The Colonial Economy and Its Dismantling   
+ description:  The colonial economy must be dismantled for true decolonization. Cesaire critiques capitalist colonialism, while Tuck & Yang emphasize economic transformation as crucial to decolonization.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.money -7; Explanation: Wealth stripped as colonial economy collapses    
+ Revolutionary : player.influence +7; Explanation: Pushes for economic justice and decolonization    
+ Historian : player.knowledge +6; Explanation: Documents colonialisms economic underpinnings    
+ entrepreneur : player.money -6; Explanation: Capitalist ventures threatened    
+ politician : player.influence -5; Explanation: Struggles to maintain colonial economy    
+ Artist : player.influence +5; Explanation: Advocates dismantling colonial economics through art  
+  failureOfPostcolonialStates:  
+           %name:  The Failure of Postcolonial States   
+ description:  Many postcolonial states fail to achieve true sovereignty, often falling victim to neocolonialism or internal divisions. Cesaire critiques the superficial independence achieved by many nations, while Tuck & Yang stress the need for ongoing decolonial work.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence +6; Explanation: Benefits from continued weakness    
+ Revolutionary : player.knowledge -5; Explanation: Faces setbacks from state failure    
+ Historian : player.knowledge +6; Explanation: Documents failures and challenges    
+ entrepreneur : player.money +5; Explanation: Profits from instability    
+ politician : player.influence -6; Explanation: Struggles to bring independence    
+ Artist : player.influence +5; Explanation: Critiques failure through art  
+  decolonialMovementsTechnology:  
+           %name:  Decolonial Movements in the Age of Technology   
+ description:  Decolonial movements are influenced by technology, which both enables and complicates resistance. Tuck & Yang emphasize the digital dimensions of decolonization, while Benjamin critiques technological systems that perpetuate coloniality.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -5; Explanation: Technological control threatened    
+ Revolutionary : player.knowledge +7; Explanation: Spreads decolonial ideas digitally    
+ Historian : player.knowledge +5; Explanation: Studies techs role in movements    
+ entrepreneur : player.money -6; Explanation: Platforms targeted by activists    
+ politician : player.influence +6; Explanation: Uses technology to suppress resistance    
+ Artist : player.influence +5; Explanation: Digital art spreads movement messages  
+  revolutionsPowerOfNarrative:  
+           %name:  Revolutions and the Power of Narrative   
+ description:  Revolutions are not only fought on the ground but also in narratives. Barthes critique of authorship and Benjamins focus on historical memory show that revolutions also need to control and reframe historical narratives.   
+ effect: (player) >  switch (player.role)  case  
+ Colonialist : player.influence -6; Explanation: Losing control of narrative    
+ Revolutionary : player.influence +7; Explanation: Successfully rewrites history for revolution    
+ Historian : player.knowledge +5; Explanation: Documents narrative's role in revolutions    
+ entrepreneur : player.money -5; Explanation: Narrative-based campaigns fail    
+ politician : player.influence +6; Explanation: Controls dominant historical narrative    
+ Artist : player.influence +6; Explanation: Art influences revolutionary discourse  

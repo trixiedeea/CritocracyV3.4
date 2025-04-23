@@ -1,0 +1,290 @@
+
+
+{
+  pathColor: "pink",
+  coordinates: [[167, 579]],
+  Next: [[184, 605]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[184, 605]],
+  Next: [[193, 636]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[193, 636]],
+  Next: [[206, 667]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[206, 667]],
+  Next: [[218, 698]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[218, 698]],
+  Next: [[240, 729]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[240, 729]],
+  Next: [[263, 748]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[263, 748]],
+  Next: [[286, 765]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[286, 765]],
+  Next: [[318, 777]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[318, 777]],
+  Next: [[348, 785]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[348, 785]],
+  Next: [[378, 790]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[378, 790]],
+  Next: [[419, 790]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[419, 790]],
+  Next: [[442, 793]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[442, 793]],
+  Next: [[504, 787]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[504, 787]],
+  Next: [[528, 781]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[528, 781]],
+  Next: [[562, 770]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[535,759], [577,742], [592,785], [545,804], [533,761]],
+  Next: [[590, 758]],[572,805]],
+  Type: "Choicepoint"
+},
+{
+  pathColor: "pink",
+  coordinates: [[590, 758]],
+  Next: [[613, 740]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[613, 740]],
+  Next: [[641, 720]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[641, 720]],
+  Next: [[658, 692]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[658, 692]],
+  Next: [[677, 670]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[677, 670]],
+  Next: [[700, 639]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[700, 639]],
+  Next: [[717, 613]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[715,572], [746,539], [776,572], [748,605], [715,572]],
+  Next: [[750, 574]],[773,602]]
+  Type: "Choicepoint"
+},
+{
+  pathColor: "pink",
+  coordinates: [[750, 574]],
+  Next: [[775, 538]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[775, 538]],
+  Next: [[800, 516]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[800, 516]],
+  Next: [[819, 486]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[819, 486]],
+  Next: [[834, 456]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[834, 456]],
+  Next: [[847, 428]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[847, 428]],
+  Next: [[864, 397]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[864, 397]],
+  Next: [[890, 367]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[890, 367]],
+  Next: [[903, 344]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[903, 344]],
+  Next: [[925, 328]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[925, 328]],
+  Next: [[961, 308]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[926,300], [966,274] ,[991,312] ,[950,338], [926,300]],
+  Next: [[972, 345]],[983,288]
+  Type: "Choicepoint"
+},
+{
+  pathColor: "pink",
+  coordinates: [[983, 288]],
+  Next: [[1011, 281]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[1011, 281]],
+  Next: [[1049, 273]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[1049, 273]],
+  Next: [[1075, 268]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[1075, 268]],
+  Next: [[1117, 270]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[1117, 270]],
+  Next: [[1147, 269]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[1147, 269]],
+  Next: [[1180, 278]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[1180, 278]],
+  Next: [[1209, 290]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[1209, 290]],
+  Next: [[1237, 302]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[1237, 302]],
+  Next: [[1263, 324]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[1263, 324]],
+  Next: [[1276, 351]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[1276, 351]],
+  Next: [[1298, 376]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[1298, 376]],
+  Next: [[1308, 406]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[1308, 406]],
+  Next: [[1315, 430]],
+  Type: "Regular"
+},
+{
+  pathColor: "pink",
+  coordinates: [[1315, 430]],
+  Next: [[1339, 464]],
+  Type: "Regular"
+}

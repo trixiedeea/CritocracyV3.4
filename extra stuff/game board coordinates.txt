@@ -1,0 +1,521 @@
+image Resolution: 1536x1024
+image located at c:\users\traci\board.png
+
+player spaces all transparent
+ (164,465)
+ (179,440)
+ (187,407)
+ (205,377)
+ (216,350)
+ (257,304)
+ (280,286)
+ (311,277)
+ (350,270)
+ (383,272)
+ (417,268)
+ (454,275)
+ (483,285)
+ (505,291)
+ (569,328)
+ (611,371)
+ (633,401)
+ (644,431)
+ (664,463)
+ (703,518)
+ (720,542)
+ (774,602)
+ (794,631)
+ (835,686)
+ (854,714)
+ (884,729)
+ (911,750)
+ (929,758)
+ (994,784)
+ (1049,793)
+ (1080,797)
+ (1111,796)
+ (1174,785)
+ (1207,777)
+ (1236,763)
+ (1281,724)
+ (1300,696)
+ (1319,666)
+ (1328,636)
+ (1340,576)
+
+
+ (203,492)
+ (231,468)
+ (287,416)
+ (313,383)
+ (344,356)
+ (382,340)
+ (416,337)
+ (443,367)
+ (458,402)
+ (502,529)
+ (515,565)
+ (534,636)
+ (541,676)
+ (548,705)
+ (559,743)
+ (587,837)
+ (606,871)
+ (644,896)
+ (676,908)
+ (717,919)
+ (753,916)
+ (792,916)
+ (836,909)
+ (910,868)
+ (934,843)
+ (950,811)
+ (985,711)
+ (997,679)
+ (999,647)
+ (984,579)
+ (984,543)
+ (1078,531)
+ (1090,501)
+ (1080,470)
+ (1069,409)
+ (1080,384)
+ (1107,359)
+ (1141,357)
+ (1167,370)
+ (1194,394)
+ (1216,414)
+ (1263,454)
+ (1288,475)
+
+ (205,546)
+ (224,573)
+ (243,596)
+ (266,619)
+ (324,656)
+ (351,672)
+ (387,675)
+ (412,669)
+ (434,659)
+ (458,646)
+ (456,611)
+ (450,582)
+ (435,550)
+ (453,503)
+ (523,476)
+ (532,443)
+ (523,417)
+ (512,386)
+ (516,351)
+ (566,273)
+ (585,248)
+ (638,210)
+ (672,205)
+ (705,197)
+ (739,196)
+ (803,200)
+ (833,205)
+ (864,218)
+ (919,254)
+ (941,276)
+ (980,347)
+ (989,414)
+ (996,453)
+ (996,453)
+ (999,479)
+ (1050,594)
+ (1065,620)
+ (1093,645)
+ (1124,655)
+ (1193,658)
+ (1231,639)
+ (1247,613)
+ (1273,594)
+ (1310,544)
+
+ (168,579)
+ (179,604)
+ (194,640)
+ (204,672)
+ (237,724)
+ (255,745)
+ (286,764)
+ (315,777)
+ (347,786)
+ (382,793)
+ (417,794)
+ (450,794)
+ (529,780)
+ (587,758)
+ (615,744)
+ (640,716)
+ (683,667)
+ (704,635)
+ (720,608)
+ (776,536)
+ (795,513)
+ (816,488)
+ (834,454)
+ (852,424)
+ (887,370)
+ (902,350)
+ (925,330)
+ (988,289)
+ (1050,274)
+ (1082,263)
+ (1118,270)
+ (1149,271)
+ (1181,277)
+ (1238,302)
+ (1258,322)
+ (1279,351)
+ (1308,405)
+ (1319,438)
+ (1334,459)
+
+purple special event card spaces. if a player lands on any of these they must pick a card only from Purple card box hex color code 9C54DE all transparent
+ (231,329)
+ (590,346)
+ (681,487)
+ (811,659)
+ (1019,789)
+ (1142,792)
+ (1262,746)
+ (1336,602)
+
+
+blue special event card spaces. if a player lands on any of these they must pick a card only from blue card box hex color code 1B3DE5 all transparent
+ (266,444)
+ (477,437)
+ (525,601)
+ (574,808)
+ (872,896)
+ (979,739)
+ (991,611)
+ (1051,533)
+ (1066,437)
+ (1242,438)
+ (1319,502)
+
+cyan special event card spaces. if a player lands on any of these they must pick a card only from cyan card box hex color code 00FFFF all transparent
+ (293,641)
+ (431,522)
+ (610,227)
+ (768,196)
+ (892,231)
+ (983,377)
+ (1036,573)
+ (1157,659)
+ (1293,563)
+
+pink special event card spaces. if a player lands on any of these they must pick a card only from pink card box hex color code FF66FF all transparent
+ (214,694)
+ (499,789)
+ (662,690)
+ (867,395)
+ (1015,281)
+ (1213,287)
+ (1298,374)
+
+Start box where players start all transparent
+ (8,472)
+ (185,472)
+ (188,562)
+ (7,561)
+ (7,472)
+
+Finish box where players finish all transparent
+ (1331,471)
+ (1332,559)
+ (1512,562)
+ (1511,473)
+ (1332,471)
+
+players must pick one at the end of each turn but may choose to pick frtom either box 
+End of turn card box 1 all transparent
+ (299,441)
+ (392,441)
+ (392,585)
+ (298,586)
+ (298,439)
+End of turn card box 2 all transparent
+ (1124,454)
+ (1217,454)
+ (1217,600)
+ (1121,600)
+ (1122,453)
+
+cards must match the color of box
+Purple card box hex color code 9C54DE all transparent
+ (559,469)
+ (658,468)
+ (659,624)
+ (559,624)
+ (559,469)
+
+pink card box hex color code FF66FF all transparent
+ (685,246)
+ (812,246)
+ (813,404)
+ (684,406)
+ (683,244)
+
+blue card box hex color code 1B3DE5 all transparent
+ (841,468)
+ (948,465)
+ (949,622)
+ (837,624)
+ (838,465)
+
+cyan card box hex color code 00FFFF all transparent
+ (686,694)
+ (811,693)
+ (812,870)
+ (686,874)
+ (686,692)
+ 
+ Multi-directrional space coordinates - these are not spaces players can land on but when players come to them they can choose one of two directions to travel in they are squares and there are 7 of them
+0: (460,476)
+1: (504,458)
+2: (522,506)
+3: (477,518)
+4: (460,479)
+
+0: (533,759)
+1: (540,805)
+2: (590,788)
+3: (578,745)
+4: (532,758)
+
+0: (524,276)
+1: (505,321)
+2: (547,339)
+3: (568,300)
+4: (524,276)
+
+0: (750,535)
+1: (777,566)
+2: (746,604)
+3: (716,569)
+4: (752,532)
+
+0: (962,272)
+1: (925,295)
+2: (952,334)
+3: (990,314)
+4: (970,277)
+5: (970,277)
+
+0: (980,514)
+1: (1029,513)
+2: (1044,557)
+3: (996,556)
+4: (978,517)
+
+0: (951,742)
+1: (991,758)
+2: (978,805)
+3: (932,786)
+4: (948,742)
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Historical Board Game</h1>
+    <button onclick="startGame()">Start Game</button>
+    <div class="board" id="gameBoard"></div>
+    <div class="players" id="players"></div>
+    <button onclick="rollDice()">Roll Dice</button>
+    <p id="status"></p>
+    <div class="deck gold" id="eventDeck">Special Event Deck</div>
+    <div class="deck gold" id="endTurnDeck">End Turn Deck</div>
+
+    <script>
+        const roles = ['H', 'A', 'C', 'E', 'P', 'R'];
+        let players = [];
+        let board = [];
+        let currentPlayerIndex = 0;
+        let eventDeck = [];
+        let endTurnDeck = [];
+
+        function startGame() {
+            setupBoard();
+            setupPlayers();
+            setupDecks();
+            rollToStart();
+        }
+
+        function setupBoard() {
+            const boardElement = document.getElementById('gameBoard');
+            boardElement.innerHTML = '';
+            board = [];
+            for (let i = 0; i < 40; i++) {
+                let cell = document.createElement('div');
+                cell.classList.add('cell');
+                if (i % 5 === 0) cell.classList.add('special-event');
+                boardElement.appendChild(cell);
+                board.push({ element: cell, eventSpace: i % 5 === 0 });
+            }
+        }
+
+        function setupPlayers() {
+            const humanCount = parseInt(prompt("How many human players? (1-6)"));
+            let availableRoles = [...roles];
+            players = [];
+
+            for (let i = 0; i < humanCount; i++) {
+                let role = availableRoles.splice(Math.floor(Math.random() * availableRoles.length), 1)[0];
+                players.push({ role, position: 0, money: 14, influence: 8, knowledge: 8, items: [] });
+            }
+
+            while (players.length < 6) {
+                let role = availableRoles.splice(Math.floor(Math.random() * availableRoles.length), 1)[0];
+                players.push({ role, position: 0, money: 14, influence: 8, knowledge: 8, items: [] });
+            }
+
+            renderPlayers();
+        }
+
+        function setupDecks() {
+            eventDeck = shuffleDeck(["Revolution! Gain 5 Influence", "Trade Dispute! Lose 3 Money", "Scientific Breakthrough! Gain 4 Knowledge"]);
+            endTurnDeck = shuffleDeck(["Economic Boom! Gain 2 Money", "Political Scandal! Lose 2 Influence", "Rediscovery of Texts! Gain 2 Knowledge"]);
+        }
+
+        function shuffleDeck(deck) {
+            for (let i = deck.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [deck[i], deck[j]] = [deck[j], deck[i]];
+            }
+            return deck;
+        }
+
+        function renderPlayers() {
+            const playersElement = document.getElementById('players');
+            playersElement.innerHTML = '';
+
+            players.forEach(player => {
+                let playerDiv = document.createElement('div');
+                playerDiv.classList.add('player');
+                playerDiv.innerHTML = `<div>${player.role}</div>
+                                       <div class='resources'>💰${player.money} 📖${player.knowledge} 🎭${player.influence}</div>
+                                       <div>Bag: ${player.items.join(', ') || 'Empty'}</div>`;
+                playersElement.appendChild(playerDiv);
+            });
+        }
+
+        function rollToStart() {
+            currentPlayerIndex = Math.floor(Math.random() * players.length);
+            document.getElementById('status').innerText = `Player ${players[currentPlayerIndex].role} goes first!`;
+        }
+
+        function rollDice() {
+            let roll = Math.floor(Math.random() * 6) + 1;
+            let player = players[currentPlayerIndex];
+            let newPosition = player.position + roll;
+
+            if (newPosition >= board.length) {
+                document.getElementById('status').innerText = `Player ${player.role} has finished the game!`;
+                return;
+            }
+
+            player.position = newPosition;
+            updateBoard();
+            drawCards();
+            checkTurnEnd();
+        }
+
+        function updateBoard() {
+            board.forEach(cell => cell.element.innerHTML = '');
+            players.forEach(player => {
+                let token = document.createElement('div');
+                token.innerText = player.role;
+                token.style.backgroundColor = "red";
+                token.style.borderRadius = "50%";
+                token.style.padding = "5px";
+                board[player.position].element.appendChild(token);
+            });
+        }
+
+        function drawCards() {
+            let eventCard = eventDeck.pop();
+            let endTurnCard = endTurnDeck.pop();
+            document.getElementById('status').innerText = `Event: ${eventCard} | End Turn: ${endTurnCard}`;
+        }
+
+        function checkTurnEnd() {
+            currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
+            document.getElementById('status').innerText += ` Next: Player ${players[currentPlayerIndex].role}`;
+        }
+    </script>
+</body>
+</html>
+
+function computerMove(player) {
+    let roll = Math.floor(Math.random() * 6) + 1; // Dice roll
+    let newPosition = player.position + roll;
+
+    // Ensure computer players skip event spaces
+    while (board[newPosition % board.length].eventSpace) {
+        newPosition++;
+    }
+
+    player.position = newPosition % board.length; // Wrap around the board
+    updateBoard();
+    resolveComputerTurn(player);
+}
+
+function resolveComputerTurn(player) {
+    // Example logic for computer actions
+    let randomAction = Math.floor(Math.random() * 3); // Randomly choose an action
+    switch (randomAction) {
+        case 0:
+            player.money += 2; // Gain money
+            break;
+        case 1:
+            player.influence += 1; // Gain influence
+            break;
+        case 2:
+            player.knowledge += 1; // Gain knowledge
+            break;
+    }
+    renderPlayers(); // Update visible resources
+    document.getElementById('status').innerText = `Player ${player.role} moved to position ${player.position} and gained resources.`;
+}
+
+function computerMove(player) {
+    let roll = Math.floor(Math.random() * 6) + 1; // Dice roll
+    let newPosition = player.position + roll;
+
+    // Ensure computer players skip event spaces
+    while (board[newPosition % board.length].eventSpace) {
+        newPosition++;
+    }
+
+    player.position = newPosition % board.length; // Wrap around the board
+    updateBoard();
+    resolveComputerTurn(player);
+}
+
+function resolveComputerTurn(player) {
+    // Example logic for computer actions
+    let randomAction = Math.floor(Math.random() * 3); // Randomly choose an action
+    switch (randomAction) {
+        case 0:
+            player.money += 2; // Gain money
+            break;
+        case 1:
+            player.influence += 1; // Gain influence
+            break;
+        case 2:
+            player.knowledge += 1; // Gain knowledge
+            break;
+    }
+    renderPlayers(); // Update visible resources
+    document.getElementById('status').innerText = `Player ${player.role} moved to position ${player.position} and gained resources.`;
+}
+
+
+
+

@@ -1,0 +1,331 @@
+{
+  pathColor: "cyan",
+  coordinates: [[205, 548]],
+  Next: [[225, 572]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[225, 572]],
+  Next: [[242, 598]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[242, 598]],
+  Next: [[263, 618]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[263, 618]],
+  Next: [[290, 639]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[290, 639]],
+  Next: [[320, 658]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[320, 658]],
+  Next: [[350, 669]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[350, 669]],
+  Next: [[385, 671]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[385, 671]],
+  Next: [[417, 668]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[417, 668]],
+  Next: [[435, 667]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[435, 667]],
+  Next: [[457, 644]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[457, 644]],
+  Next: [[456, 611]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[456, 611]],
+  Next: [[445, 579]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[445, 579]],
+  Next: [[430, 549]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[430, 549]],
+  Next: [[428, 519]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[428, 519]],
+  Next: [[454, 504]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[454, 504]],
+  Next: [[493, 483]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[460,475] ,[508,457] ,[524,508] ,[475,518] ,[459,478]],
+  Next: [[521, 475]], [502,534]],
+  Type: "Choicepoint"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[521, 475]],
+  Next: [[528, 442]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[528, 442]],
+  Next: [[517, 418]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[517, 418]],
+  Next: [[509, 380]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[509, 380]],
+  Next: [[517, 352]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[517, 352]],
+  Next: [[532, 309]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[527,279], [570,303], [547,342], [505,319], [527,278]],
+  Next: [[566, 273],[568,329]],
+  Type: "Choicepoint"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[566, 273]],
+  Next: [[589, 246]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[589, 246]],
+  Next: [[613, 225]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[613, 225]],
+  Next: [[640, 213]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[640, 213]],
+  Next: [[669, 200]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[669, 200]],
+  Next: [[706, 202]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[706, 202]],
+  Next: [[734, 196]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[734, 196]],
+  Next: [[767, 197]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[767, 197]],
+  Next: [[800, 198]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[800, 198]],
+  Next: [[830, 208]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[830, 208]],
+  Next: [[865, 218]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[865, 218]],
+  Next: [[893, 229]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[893, 229]],
+  Next: [[917, 250]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[917, 250]],
+  Next: [[935, 275]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[935, 275]],
+  Next: [[956, 299]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[926,300], [966,274] ,[991,312] ,[950,338], [926,300]],
+  Next: [[972, 345]],[983,288]
+  Type: "Choicepoint"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[972, 345]],
+  Next: [[980, 378]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[980, 378]],
+  Next: [[985, 415]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[985, 415]],
+  Next: [[989, 446]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[989, 446]],
+  Next: [[994, 477]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[994, 477]],
+  Next: [[1010, 527]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[983,518], [1027,516] ,[1043,555] ,[1002,556], [982,519]],
+  Next: [[1031, 574],[1045,532]]
+  Type: "Choicepoint"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[1031, 574]],
+  Next: [[1048, 598]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[1048, 598]],
+  Next: [[1064, 621]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[1064, 621]],
+  Next: [[1089, 644]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[1089, 644]],
+  Next: [[1124, 654]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[1124, 654]],
+  Next: [[1156, 664]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[1156, 664]],
+  Next: [[1194, 657]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[1194, 657]],
+  Next: [[1225, 632]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[1225, 632]],
+  Next: [[1251, 613]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[1251, 613]],
+  Next: [[1271, 592]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[1271, 592]],
+  Next: [[1287, 563]],
+  Type: "Regular"
+},
+{
+  pathColor: "cyan",
+  coordinates: [[1287, 563]],
+  Next: [[1310, 544]],
+  Type: "Regular"
+}
+

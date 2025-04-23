@@ -1,0 +1,392 @@
+// Function to create a special event Age of Expansion card styled like Monopoly Chance cards
+function createSpecialEventCard(card) {
+    return {
+        name: card.name,
+        description: card.description,
+        layout: {
+            width: "2.5 inches",
+            height: "3.5 inches",
+            borderColor: "#9C54DE", // Purple border
+            backgroundColor: "#9C54DE", // Purple background
+            textColor: "black", // Black font
+            fontStyle: "bold",
+            alignment: "center",
+            padding: "10px",
+            fontSize: "14px"
+        },
+        effects: card.effects
+    };
+}
+
+// Example of applying the layout to a special event card
+const exampleSpecialEventCard = {
+    name: "The Turning Point",
+    description: "Trigger a chain reaction that shifts the game's dynamics dramatically.",
+    effects: {
+        Any Player: { money: -5, move forward 5 spaces },
+     
+    }
+};
+
+// Array of The Age of Expansion cards
+const ageOfExpansionCards = [
+    {
+        name: "Scramble for Africa",
+        description: "Reflects Discourse on Colonialism by highlighting the violent race for African resources, rewarding Money but costing Influence due to growing resistance.",
+        effects: { money: +6, influence: -5 }
+    },
+    {
+        name: "Divide and Conquer",
+        description: "Mirrors Césaire’s critique of colonial strategies used to fracture societies, advancing players but diminishing their critical understanding.",
+        effects: { moveSpaces: 7, knowledge: -5 }
+    },
+    {
+        name: "Exploitation Justified",
+        description: "Embodies Césaire’s analysis of colonial rationalization, increasing wealth at the cost of moral legitimacy.",
+        effects: { stealMoneyFromPlayer: 6, influence: -5 }
+    },
+    {
+        name: "Colonial Enterprise",
+        description: "Reflects Césaire’s critique of colonial economic ventures that prioritized profit over justice, allowing financial gain but risking alliances.",
+        effects: { tradeResource: { money: -6, knowledge: +5 } }
+    },
+    {
+        name: "Missionary Influence",
+        description: "Represents Césaire’s view of ideological domination through religion, granting Influence but reinforcing colonial authority.",
+        effects: { moveSpaces: 6, influence: +5 }
+    },
+    {
+        name: "Revolt Suppression",
+        description: "Demonstrates colonial violence used to crush uprisings, allowing sabotage but increasing instability.",
+        effects: { sabotage: { moveOpponentBackSpaces: 6 } }
+    },
+    {
+        name: "Commodification of Labor",
+        description: "Reflects Césaire’s analysis of forced labor systems, allowing Money gain at the expense of future opportunities.",
+        effects: { money: +7, skipNextTurn: true }
+    },
+    {
+        name: "Indigenous Displacement",
+        description: "Reflects Césaire’s warning about the violence of land dispossession, advancing progress but reducing moral standing.",
+        effects: { moveToAge: "The Age of Resistance", influence: -6 }
+    },
+    {
+        name: "Control the Narrative",
+        description: "Embodies colonial propaganda described by Césaire, increasing Knowledge while reinforcing power.",
+        effects: { knowledge: +5, moveSpaces: 5 }
+    },
+    {
+        name: "Mercantile Expansion",
+        description: "Highlights colonial capitalism’s expansion, fostering temporary alliances but encouraging unequal trade.",
+        effects: { formAlliance: true, resourceExchange: 5 }
+    },
+    {
+        name: "Plantation Economy",
+        description: "Reflects Césaire’s critique of exploitative plantation economies, rewarding Money but hindering intellectual growth.",
+        effects: { knowledge: -5, money: +6 }
+    },
+    {
+        name: "Imperial Propaganda",
+        description: "Reinforces colonial dominance through narrative control, allowing suppression of opposition.",
+        effects: { suppressOpposition: true }
+    }
+];
+
+// Generate and display formatted Age of Expansion cards
+const formattedAgeOfExpansonCards = ageOfExpansioneCards.map(createAgeOfExpansionCard);
+console.log(formattedAgeOfExpansionCards);
+
+// Function to create a special event Age of Resistance card styled like Monopoly Chance cards
+function createSpecialEventCard(card) {
+    return {
+        name: card.name,
+        description: card.description,
+        layout: {
+            width: "2.5 inches",
+            height: "3.5 inches",
+            borderColor: "#1B3DE5", // Blue border
+            backgroundColor: "#1B3DE5", // Blue background
+            textColor: "black", // Black font
+            fontStyle: "bold",
+            alignment: "center",
+            padding: "10px",
+            fontSize: "14px"
+        },
+        effects: card.effects
+    };
+}
+
+// Example of applying the layout to a special event card
+const exampleSpecialEventCard = {
+    name: "The Turning Point",
+    description: "Trigger a chain reaction that shifts the game's dynamics dramatically.",
+    effects: {
+        Any Player: { money: -5, move forward 5 spaces },
+     
+    }
+};
+
+// Array of The Age of Resistance cards
+const ageOfResistanceCards = [
+    {
+        name: "Haitian Revolution",
+        description: "Reflects Benjamin’s Angel of History by showcasing the reversal of colonial power, rewarding Influence and progress.",
+        effects: { moveSpaces: 7, influence: +5 }
+    },
+    {
+        name: "Salt March",
+        description: "Embodies nonviolent resistance, advancing the cause but risking political fallout.",
+        effects: { sabotage: { takeMoney: 5 }, influence: -5 }
+    },
+    {
+        name: "Print to Power",
+        description: "Echoes Benjamin’s belief in media’s role in empowering resistance, allowing Knowledge gain and strategic movement.",
+        effects: { knowledge: +6, moveSpaces: 6 }
+    },
+    {
+        name: "Anti-Colonial Uprising",
+        description: "Reflects Benjamin’s view of history’s ruptures, advancing players but at the cost of resources.",
+        effects: { moveToAge: "The Age of Reckoning", money: -6 }
+    },
+    {
+        name: "Subaltern Voices",
+        description: "Draws on postcolonial theory’s focus on marginalized voices, increasing Knowledge but disrupting existing power.",
+        effects: { knowledge: +5, forceOpponentMoveBack: 5 }
+    },
+    {
+        name: "Angel of History",
+        description: "Embodies Benjamin’s idea that progress is built on past suffering, pushing players backward while rewarding reflection.",
+        effects: { moveSpaces: -6, influence: +6 }
+    },
+    {
+        name: "Decolonial Theory",
+        description: "Reflects Tuck and Yang’s call for real material change, allowing alliances and resource exchange.",
+        effects: { formAlliance: true, knowledgeExchange: 5 }
+    },
+    {
+        name: "Disrupting Power Structures",
+        description: "Mirrors Barthes’ Death of the Author, shifting control by trading Influence for Knowledge.",
+        effects: { tradeResource: { influence: -5, knowledge: +6 } }
+    },
+    {
+        name: "Narrative Shift",
+        description: "Reflects Benjamin’s idea of history’s reversals, allowing players to reshape their paths.",
+        effects: { moveSpaces: 5, drawEndOfTurnCard: true }
+    },
+    {
+        name: "Revolutionary Momentum",
+        description: "Embodies Benjamin’s recognition of historical upheaval, enabling sabotage of opponents.",
+        effects: { sabotage: { moveOpponentBackSpaces: 7 } }
+    },
+    {
+        name: "Counter-Hegemony",
+        description: "Draws from Gramsci’s notion of challenging dominant narratives, allowing resource swaps to destabilize power.",
+        effects: { swapResourceWithAnyPlayer: 5 }
+    },
+    {
+        name: "Intellectual Awakening",
+        description: "Reflects Benjamin’s call for critical engagement with history, giving players the power to strategically reposition.",
+        effects: { knowledge: +5, moveToCardSpaceOfChoice: true }
+    }
+];
+
+// Generate and display formatted Age of Resistance cards
+const formattedAgeOfResistanceCards = ageOfResistanceCards.map(createAgeOfResistanceCard);
+console.log(formattedAgeOfResistanceCards);
+
+
+// Function to create an Age of Reckoning card styled as Monopoly Chance cards
+function createAgeOfReckoningCard(card) {
+    return {
+        name: card.name,
+        description: card.description,
+        effects: card.effects,
+        layout: {
+            width: "2.5 inches",
+            height: "3.5 inches",
+            borderColor: "#00FFFF", // Cyan border
+            backgroundColor: "#00FFFF", // Cyan background
+            textColor: "black", // Black font
+            fontStyle: "bold",
+            alignment: "center",
+            padding: "10px",
+            fontSize: "14px"
+        }
+    };
+}
+
+// Example of applying the layout to a special event card
+const exampleSpecialEventCard = {
+    name: "The Turning Point",
+    description: "Trigger a chain reaction that shifts the game's dynamics dramatically.",
+    effects: {
+        Any Player: { money: -5, move forward 5 spaces },
+     
+    }
+};
+
+// Array of The Age of Reckoning cards
+const ageOfReckoningCards = [
+    {
+        name: "End of Apartheid",
+        description: "Reflects Barthes’ Death of the Author, allowing narrative shifts that increase Influence and progress.",
+        effects: { moveSpaces: 6, influence: +6 }
+    },
+    {
+        name: "Museum Artifact Repatriation",
+        description: "Embodies Tuck and Yang’s insistence on real restitution, enabling resource exchange.",
+        effects: { tradeResource: { money: -5, influence: +6 } }
+    },
+    {
+        name: "The Death of the Author",
+        description: "Inspired by Barthes’ work, challenging authorship and enabling Knowledge gain.",
+        effects: { moveSpaces: -5, knowledge: +5 }
+    },
+    {
+        name: "Postcolonial Critique",
+        description: "Reflects Barthes’ advocacy for multiple interpretations, advancing players while weakening opponents.",
+        effects: { moveSpaces: 7, forceOpponentLoss: { influence: -5 } }
+    },
+    {
+        name: "Decolonization Is Not a Metaphor",
+        description: "Reflects Tuck and Yang’s demand for action, enabling sabotage to ensure real change.",
+        effects: { sabotage: { takeResource: 5 } }
+    },
+    {
+        name: "Queer and Now",
+        description: "Draws on Sedgwick’s destabilization of normativity, allowing repositioning for strategic advantage.",
+        effects: { moveToSpaceInAge: true }
+    },
+    {
+        name: "Performative Acts",
+        description: "Reflects Butler’s theory of gender as performance, enabling positional swaps that challenge identity norms.",
+        effects: { swapPositionsWithinAge: true }
+    },
+    {
+        name: "Visual Pleasure and Narrative",
+        description: "Inspired by Mulvey’s critique of cinematic narratives, advancing players while disrupting knowledge structures.",
+        effects: { knowledge: +6, moveSpaces: -6 }
+    },
+    {
+        name: "Cruel Optimism",
+        description: "Reflects Berlant’s concept of attachment to harmful systems, allowing trade but incurring hidden costs.",
+        effects: { tradeResource: { knowledge: -6, influence: +5 } }
+    },
+    {
+        name: "Criticism, Inc.",
+        description: "Ties to Ransom’s advocacy for critical inquiry, encouraging alliances that reshape power.",
+        effects: { formAlliance: true, resourceSwap: 5 }
+    },
+    {
+        name: "Reckoning Through Texts",
+        description: "Inspired by Barthes’ focus on textual re-evaluation, granting strategic movement.",
+        effects: { moveSpaces: 5, drawEndOfTurnCard: true }
+    },
+    {
+        name: "Narrative Reconfiguration",
+        description: "Reflects Barthes’ idea of reshaping meaning, allowing progress but at a resource cost.",
+        effects: { moveSpaces: 6, resourceCost: true }
+    }
+];
+
+// Generate and display formatted Age of Reckoning cards
+const formattedAgeOfReckoningCards = ageOfReckoningCards.map(createAgeOfReckoningCard);
+console.log(formattedAgeOfReckoningCards);
+
+// Function to create a special event Age of Legacy card styled like Monopoly Chance cards
+function createSpecialEventCard(card) {
+    return {
+        name: card.name,
+        description: card.description,
+        layout: {
+            width: "2.5 inches",
+            height: "3.5 inches",
+            borderColor: "#FF66FF", // Pink border
+            backgroundColor: "#FF66FF", // Pink background
+            textColor: "black", // Black font
+            fontStyle: "bold",
+            alignment: "center",
+            padding: "10px",
+            fontSize: "14px"
+        },
+        effects: card.effects
+    };
+}
+
+// Example of applying the layout to a special event card
+const exampleSpecialEventCard = {
+    name: "The Turning Point",
+    description: "Trigger a chain reaction that shifts the game's dynamics dramatically.",
+    effects: {
+        Any Player: { money: -5, move forward 5 spaces },
+     
+    }
+};
+
+// Array of The Age of Legacy cards
+const ageOfLegacyCards = [
+    {
+        name: "Archives Debate",
+        description: "Reflects Benjamin’s concern with reproducibility and digital control, rewarding Knowledge but altering historical narratives.",
+        effects: { moveSpaces: 7, knowledge: +5 }
+    },
+    {
+        name: "Monument Controversy",
+        description: "Embodies debates over historical memory, enabling sabotage to rewrite legacy.",
+        effects: { sabotage: { moveOtherPlayerSpaces: -6 } }
+    },
+    {
+        name: "Social Media Narratives",
+        description: "Reflects Mulvey’s critique of media narratives, influencing others’ power dynamics.",
+        effects: { influence: +5, forceSwapResource: true }
+    },
+    {
+        name: "Historical Reproduction",
+        description: "Inspired by Benjamin’s Technological Reproducibility, allowing narrative reshaping through extra turns.",
+        effects: { moveSpaces: 5, drawEndOfTurnCard: true }
+    },
+    {
+        name: "Digital Colonialism",
+        description: "Reflects Tuck and Yang’s warning about technological imperialism, advancing progress but reducing Influence.",
+        effects: { moveSpaces: 6, influence: -5 }
+    },
+    {
+        name: "Technological Reproducibility",
+        description: "Embodies Benjamin’s insights on media’s impact, enabling position swaps.",
+        effects: { swapPositionsWithAnyPlayer: true }
+    },
+    {
+        name: "Control the Historical Narrative",
+        description: "Reflects Benjamin’s concern over historical control, increasing Money while maintaining power.",
+        effects: { money: +6, moveSpaces: 6 }
+    },
+    {
+        name: "Memory Politics",
+        description: "Ties to struggles over collective memory, encouraging alliances to influence the narrative.",
+        effects: { formAlliance: true, knowledgeExchange: 5 }
+    },
+    {
+        name: "Archival Controversies",
+        description: "Echoes Benjamin’s critique of archival authority, allowing sabotage to destabilize control.",
+        effects: { sabotage: { moveOtherPlayerSpaces: -7 } }
+    },
+    {
+        name: "Concept of History",
+        description: "Reflects Benjamin’s Concept of History, allowing strategic control over positioning.",
+        effects: { moveToSpecialSpace: true }
+    },
+    {
+        name: "Authorial Death in the Digital Era",
+        description: "Extends Barthes’ ideas to the digital age, facilitating Knowledge-based resource shifts.",
+        effects: { swapResourceWithAnyPlayer: 5 }
+    },
+    {
+        name: "Rewrite the Legacy",
+        description: "Embodies Barthes’ call for narrative reinterpretation, granting strategic control over historical outcomes.",
+        effects: { moveSpaces: 6, drawSpecialSpaceCard: true }
+    }
+];
+
+// Generate the styled Age of Legacy card
+const formattedSpecialEventCard = createSpecialEventCard(exampleSpecialEventCard);
+console.log(formattedSpecialEventCard);

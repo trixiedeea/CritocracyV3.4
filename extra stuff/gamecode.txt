@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critocracy Board Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(10, 50px);
+            grid-gap: 5px;
+            margin: 20px auto;
+            width: 520px;
+        }
+        .cell {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .special-event {
+            background-color: lightblue;
+        }
+        .gold {
+            background-color: gold;
+        }
+        .players {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        .player {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .resources {
+            margin-top: 5px;
+        }
+        .deck {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            display: inline-block;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Critocracy Board Game</h1>
+    <button onclick="startGame()">Start Game</button>
+    <div class="board" id="gameBoard"></div>
+    <div class="players" id="players"></div>
+    <div class="deck gold" id="eventDeck">Special Event Deck</div>
+    <div class="deck gold" id="endTurnDeck">End Turn Deck</div>
+    <p id="status"></p>
+
+    <script>
+        const roles = ['R', 'H', 'C', 'E', 'P', 'A']; // Revolutionary, Historian, Colonialist, Entrepreneur, Politician, Artist
+        let players = [];
+        let board = [];
+        let currentPlayerIndex = 0;
+        let eventDeck = [];
+        let endTurnDeck = [];
+
+        function startGame() {
+            setupBoard();
+            setupPlayers();
+            setupDecks();
+            rollToStart();
+        }
+
+        function setupBoard() {
+            const boardElement = document.getElementById('gameBoard');
+            boardElement.innerHTML = '';
+            board = [];
+            for (let i = 0; i < 40; i++) {
+                let cell = document.createElement('div');
+                cell.classList.add('cell');
+                if (i % 5 === 0) cell.classList.add('special-event');
+                boardElement.appendChild(cell);
+                board.push({ element: cell, eventSpace: i % 5 === 0 });
+            }
+        }
+
+        function setupPlayers() {
+            let humanCount = parseInt(prompt("How many human players? (1-6)"));
+            let availableRoles = [...roles];
+            players = [];
+
+            for (let i = 0; i < humanCount; i++) {
+                let role = availableRoles.splice(Math.floor(Math.random() * availableRoles.length), 1)[0];
+                players.push({ role, position: 0, money: role === 'R' ? 14 : 8, influence: role === 'P' ? 14 : 8, knowledge: role === 'H' ? 14 : 8, items: [] });
+            }
+
+            while (players.length < 6) {
+                let role = availableRoles.splice(Math.floor(Math.random() * availableRoles.length), 1)[0];
+                players.push({ role, position: 0, money: role === 'R' ? 14 : 8, influence: role === 'P' ? 14 : 8, knowledge: role === 'H' ? 14 : 8, items: [] });
+            }
+
+            renderPlayers();
+        }
+
+        function setupDecks() {
+            eventDeck = shuffleDeck(["Revolution! Gain 5 Influence", "Trade Dispute! Lose 3 Money", "Scientific Breakthrough! Gain 4 Knowledge"]);
+            endTurnDeck = shuffleDeck(["Economic Boom! Gain 2 Money", "Political Scandal! Lose 2 Influence", "Rediscovery of Texts! Gain 2 Knowledge"]);
+        }
+
+        function shuffleDeck(deck) {
+            for (let i = deck.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [deck[i], deck[j]] = [deck[j], deck[i]];
+            }
+            return deck;
+        }
+
+        function renderPlayers() {
+            const playersElement = document.getElementById('players');
+            playersElement.innerHTML = '';
+
+            players.forEach(player => {
+                let playerDiv = document.createElement('div');
+                playerDiv.classList.add('player');
+                playerDiv.innerHTML = `<div>${player.role}</div>
+                                       <div class='resources'>💰${player.money} 📖${player.knowledge} 🎭${player.influence}</div>
+                                       <div>Bag: ${player.items.join(', ') || 'Empty'}</div>`;
+                playersElement.appendChild(playerDiv);
+            });
+        }
+
+        function rollToStart() {
+            currentPlayerIndex = Math.floor(Math.random() * players.length);
+            document.getElementById('status').innerText = `Player ${players[currentPlayerIndex].role} goes first!`;
+        }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Board Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(10, 50px);
+            grid-gap: 5px;
+            margin: 20px auto;
+            width: 520px;
+        }
+        .cell {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+        }
+        .special-event {
+            background-color: lightblue;
+        }
+        .gold {
+            background-color: gold;
+        }
+        .players {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        .player {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .resources {
+            margin-top: 5px;
+        }
+        .deck {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            display: inline-block;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Historical Board Game</h1>
+    <button onclick="startGame()">Start Game</button>
+    <div class="board" id="gameBoard"></div>
+    <div class="players" id="players"></div>
+    <button onclick="rollDice()">Roll Dice</button>
+    <p id="status"></p>
+    <div class="deck gold" id="eventDeck">Special Event Deck</div>
+    <div class="deck gold" id="endTurnDeck">End Turn Deck</div>
+
+    <script>
+        const roles = ['H', 'A', 'C', 'E', 'P', 'R'];
+        let players = [];
+        let board = [];
+        let currentPlayerIndex = 0;
+        let eventDeck = [];
+        let endTurnDeck = [];
+
+        function startGame() {
+            setupBoard();
+            setupPlayers();
+            setupDecks();
+            rollToStart();
+        }
+
+        function setupBoard() {
+            const boardElement = document.getElementById('gameBoard');
+            boardElement.innerHTML = '';
+            board = [];
+            for (let i = 0; i < 40; i++) {
+                let cell = document.createElement('div');
+                cell.classList.add('cell');
+                if (i % 5 === 0) cell.classList.add('special-event');
+                boardElement.appendChild(cell);
+                board.push({ element: cell, eventSpace: i % 5 === 0 });
+            }
+        }
+
+        function setupPlayers() {
+            const humanCount = parseInt(prompt("How many human players? (1-6)"));
+            let availableRoles = [...roles];
+            players = [];
+
+            for (let i = 0; i < humanCount; i++) {
+                let role = availableRoles.splice(Math.floor(Math.random() * availableRoles.length), 1)[0];
+                players.push({ role, position: 0, money: 14, influence: 8, knowledge: 8, items: [] });
+            }
+
+            while (players.length < 6) {
+                let role = availableRoles.splice(Math.floor(Math.random() * availableRoles.length), 1)[0];
+                players.push({ role, position: 0, money: 14, influence: 8, knowledge: 8, items: [] });
+            }
+
+            renderPlayers();
+        }
+
+        function setupDecks() {
+            eventDeck = shuffleDeck(["Revolution! Gain 5 Influence", "Trade Dispute! Lose 3 Money", "Scientific Breakthrough! Gain 4 Knowledge"]);
+            endTurnDeck = shuffleDeck(["Economic Boom! Gain 2 Money", "Political Scandal! Lose 2 Influence", "Rediscovery of Texts! Gain 2 Knowledge"]);
+        }
+
+        function shuffleDeck(deck) {
+            for (let i = deck.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [deck[i], deck[j]] = [deck[j], deck[i]];
+            }
+            return deck;
+        }
+
+        function renderPlayers() {
+            const playersElement = document.getElementById('players');
+            playersElement.innerHTML = '';
+
+            players.forEach(player => {
+                let playerDiv = document.createElement('div');
+                playerDiv.classList.add('player');
+                playerDiv.innerHTML = `<div>${player.role}</div>
+                                       <div class='resources'>💰${player.money} 📖${player.knowledge} 🎭${player.influence}</div>
+                                       <div>Bag: ${player.items.join(', ') || 'Empty'}</div>`;
+                playersElement.appendChild(playerDiv);
+            });
+        }
+
+        function rollToStart() {
+            currentPlayerIndex = Math.floor(Math.random() * players.length);
+            document.getElementById('status').innerText = `Player ${players[currentPlayerIndex].role} goes first!`;
+        }
+
+        function rollDice() {
+            let roll = Math.floor(Math.random() * 6) + 1;
+            let player = players[currentPlayerIndex];
+            let newPosition = player.position + roll;
+
+            if (newPosition >= board.length) {
+                document.getElementById('status').innerText = `Player ${player.role} has finished the game!`;
+                return;
+            }
+
+            player.position = newPosition;
+            updateBoard();
+            drawCards();
+            checkTurnEnd();
+        }
+
+        function updateBoard() {
+            board.forEach(cell => cell.element.innerHTML = '');
+            players.forEach(player => {
+                let token = document.createElement('div');
+                token.innerText = player.role;
+                token.style.backgroundColor = "red";
+                token.style.borderRadius = "50%";
+                token.style.padding = "5px";
+                board[player.position].element.appendChild(token);
+            });
+        }
+
+        function drawCards() {
+            let eventCard = eventDeck.pop();
+            let endTurnCard = endTurnDeck.pop();
+            document.getElementById('status').innerText = `Event: ${eventCard} | End Turn: ${endTurnCard}`;
+        }
+
+        function checkTurnEnd() {
+            currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
+            document.getElementById('status').innerText += ` Next: Player ${players[currentPlayerIndex].role}`;
+        }
+    </script>
+</body>
+</html>
+
+function computerMove(player) {
+    let roll = Math.floor(Math.random() * 6) + 1; // Dice roll
+    let newPosition = player.position + roll;
+
+    // Ensure computer players skip event spaces
+    while (board[newPosition % board.length].eventSpace) {
+        newPosition++;
+    }
+
+    player.position = newPosition % board.length; // Wrap around the board
+    updateBoard();
+    resolveComputerTurn(player);
+}
+
+function resolveComputerTurn(player) {
+    // Example logic for computer actions
+    let randomAction = Math.floor(Math.random() * 3); // Randomly choose an action
+    switch (randomAction) {
+        case 0:
+            player.money += 2; // Gain money
+            break;
+        case 1:
+            player.influence += 1; // Gain influence
+            break;
+        case 2:
+            player.knowledge += 1; // Gain knowledge
+            break;
+    }
+    renderPlayers(); // Update visible resources
+    document.getElementById('status').innerText = `Player ${player.role} moved to position ${player.position} and gained resources.`;
+}
+
+function computerMove(player) {
+    let roll = Math.floor(Math.random() * 6) + 1; // Dice roll
+    let newPosition = player.position + roll;
+
+    // Ensure computer players skip event spaces
+    while (board[newPosition % board.length].eventSpace) {
+        newPosition++;
+    }
+
+    player.position = newPosition % board.length; // Wrap around the board
+    updateBoard();
+    resolveComputerTurn(player);
+}
+
+function resolveComputerTurn(player) {
+    // Example logic for computer actions
+    let randomAction = Math.floor(Math.random() * 3); // Randomly choose an action
+    switch (randomAction) {
+        case 0:
+            player.money += 2; // Gain money
+            break;
+        case 1:
+            player.influence += 1; // Gain influence
+            break;
+        case 2:
+            player.knowledge += 1; // Gain knowledge
+            break;
+    }
+    renderPlayers(); // Update visible resources
+    document.getElementById('status').innerText = `Player ${player.role} moved to position ${player.position} and gained resources.`;
+}

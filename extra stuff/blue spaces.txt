@@ -1,0 +1,338 @@
+const bluePath = [
+{
+  pathColor: "blue",
+  coordinates: [201, 498],
+  Next: [230, 470],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [230, 470],
+  Next: [262, 441],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [262, 441],
+  Next: [290, 418],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [290, 418],
+  Next: [318, 379],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [318, 379],
+  Next: [352, 356],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [352, 356],
+  Next: [383, 345],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [383, 345],
+  Next: [416, 332],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [416, 332],
+  Next: [445, 368],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [445, 368],
+  Next: [458, 398],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [458, 398],
+  Next: [474, 442],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [474, 442],
+  Next: [460, 475],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+ coordinates: [[460,475] ,[508,457] ,[524,508] ,[475,518] ,[459,478]],
+  Next: [[521, 475]], [502,534]],
+  Type: "Choicepoint"
+},
+{
+  pathColor: "blue",
+  coordinates: [502, 534],
+  Next: [512, 563],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [512, 563],
+  Next: [523, 606],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [523, 606],
+  Next: [541, 641],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [541, 641],
+  Next: [542, 679],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [542, 679],
+  Next: [550, 709],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [550, 709],
+  Next: [559, 746],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [[535,759], [577,742], [592,785], [545,804], [533,761]],
+  Next: [[590, 758]],[572,805]],
+  Type: "Choicepoint"
+},
+{
+  pathColor: "blue",
+  coordinates: [572, 805],
+  Next: [589, 838],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [589, 838],
+  Next: [602, 866],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [602, 866],
+  Next: [647, 896],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [647, 896],
+  Next: [681, 910],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [681, 910],
+  Next: [719, 916],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [719, 916],
+  Next: [757, 917],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [757, 917],
+  Next: [794, 915],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [794, 915],
+  Next: [838, 907],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [838, 907],
+  Next: [878, 903],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [878, 903],
+  Next: [905, 873],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [905, 873],
+  Next: [925, 844],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [925, 844],
+  Next: [945, 808],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [945, 808],
+  Next: [950, 744],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+   coordinates: [[950, 744], [992, 759], [978, 806], [931, 786], [950, 744]],
+  Next: [[992, 785],[972,738]],
+  Type: "Choicepoint"
+},
+{
+  pathColor: "blue",
+  coordinates: [972, 738],
+  Next: [986, 707],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [986, 707],
+  Next: [994, 678],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [994, 678],
+  Next: [997, 646],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [997, 646],
+  Next: [994, 611],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [994, 611],
+  Next: [986, 580],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [986, 580],
+  Next: [983, 544],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [983, 544],
+  Next: [983, 518],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [[983,518], [1027,516] ,[1043,555] ,[1002,556], [982,519]],
+  Next: [[1031, 574],[1045,532]]
+  Type: "Choicepoint"
+},
+{
+  pathColor: "blue",
+  coordinates: [1045, 532],
+  Next: [1079, 531],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [1079, 531],
+  Next: [1091, 503],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [1091, 503],
+  Next: [1077, 474],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [1077, 474],
+  Next: [1067, 442],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [1067, 442],
+  Next: [1070, 406],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [1070, 406],
+  Next: [1082, 383],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [1082, 383],
+  Next: [1109, 353],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [1109, 353],
+  Next: [1138, 358],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [1138, 358],
+  Next: [1166, 370],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [1166, 370],
+  Next: [1196, 395],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [1196, 395],
+  Next: [1219, 413],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [1219, 413],
+  Next: [1240, 435],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [1240, 435],
+  Next: [1261, 455],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [1261, 455],
+  Next: [1286, 485],
+  Type: "Regular"
+},
+{
+  pathColor: "blue",
+  coordinates: [1286, 485],
+  Next: [1307, 492],
+  Type: "Regular"
+}
+
