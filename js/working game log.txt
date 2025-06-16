@@ -1,0 +1,206 @@
+Loaded Special Event Cards: (5) ['BLUE_CARDS', 'CYAN_CARDS', 'PINK_CARDS', 'PURPLE_CARDS', 'SPECIAL_EVENT_CARDS']
+main.js:10 DOM fully loaded and parsed. Initializing Critocracy...
+game.js:85 Initializing game...
+players.js:71 Player state reset.
+board.js:338 Setting up board...
+board.js:356 Loading board image from: assets/board.png
+board.js:358 ✓ Successfully loaded board image ( 1536 x 1024 )
+board.js:361 Canvas size set to: 1536x1024
+board.js:320  Loaded token: http://localhost:8085/assets/tokens/H.png
+board.js:320  Loaded token: http://localhost:8085/assets/tokens/E.png
+board.js:320  Loaded token: http://localhost:8085/assets/tokens/A.png
+board.js:320  Loaded token: http://localhost:8085/assets/tokens/P.png
+board.js:320  Loaded token: http://localhost:8085/assets/tokens/C.png
+board.js:320  Loaded token: http://localhost:8085/assets/tokens/R.png
+board.js:330 All player token images loaded.
+board.js:410 Board drawing complete
+board.js:382 Board setup complete.
+cards.js:85 Setting up card decks...
+cards.js:152 Shuffling PURPLE deck...
+cards.js:99  Deck PURPLE loaded with 12 cards (color added).
+cards.js:152 Shuffling BLUE deck...
+cards.js:99  Deck BLUE loaded with 12 cards (color added).
+cards.js:152 Shuffling CYAN deck...
+cards.js:99  Deck CYAN loaded with 12 cards (color added).
+cards.js:152 Shuffling PINK deck...
+cards.js:99  Deck PINK loaded with 12 cards (color added).
+cards.js:152 Shuffling END_OF_TURN deck...
+cards.js:129  Deck END_OF_TURN loaded with 57 cards.
+cards.js:136 Card decks setup complete.
+game.js:103 Game initialization complete.
+ui.js:128 Initializing UI...
+ui.js:185 Setting up UI event listeners...
+ui.js:429 --- showScreen called with: start ---
+ui.js:433   Showing screen element: start
+ui.js:132 UI Initialized.
+board.js:410 Board drawing complete
+main.js:36 Critocracy initialization sequence complete. Ready for user interaction.
+ui.js:188 Start Game button clicked
+ui.js:160 Updated human player options for 2 total players for the player avatars and then board.Js finishes the drawing of the board boards that have complete then ui dot JS comes back updates UI for current player UI controls updated roll dice button clicked Animating dice rolls for final value two position dice animation in center with styles dice animation area display set to block
+ui.js:429 --- showScreen called with: playerCount ---
+ui.js:433   Showing screen element: playerCount
+ui.js:204 Player count confirm: Total=2, Human=1
+game.js:121 Setting up for 2 total players (1 human).
+ui.js:429 --- showScreen called with: roleSelection ---
+ui.js:433   Showing screen element: roleSelection
+ui.js:516 Player 1 attempting to select HISTORIAN
+game.js:148 Adding player 1/2: Player 1 (HISTORIAN), Human: true
+players.js:126 Created player Player 1 (HISTORIAN), Human: true, starting at (undefined,undefined)
+ui.js:531 All human roles selected. Triggering CPU assignment...
+game.js:176 Assigning roles for 1 CPU players...
+game.js:148 Adding player 2/2: CPU 1 (ENT) (ENTREPRENEUR), Human: false
+players.js:126 Created player CPU 1 (ENT) (ENTREPRENEUR), Human: false, starting at (undefined,undefined)
+game.js:205 Finished assigning CPU roles.
+ui.js:533 CPU assignment complete. Attempting to advance to turn order phase...
+game.js:222 Advancing game state to TURN_ORDER phase.
+ui.js:535 Successfully advanced to TURN_ORDER phase. Setting up UI.
+ui.js:429 --- showScreen called with: turnOrder ---
+ui.js:433   Showing screen element: turnOrder
+ui.js:223 Roll Turn Order button clicked
+game.js:238 Determining turn order...
+game.js:245 Initial rolls: (2) ['Player 1: 4', 'CPU 1 (ENT): 2']
+game.js:262 Turn order determined: (2) ['Player 1', 'CPU 1 (ENT)']
+game.js:263 Starting game. Current player: Player 1
+ui.js:234 Turn order determined. Starting game.
+ui.js:429 --- showScreen called with: gameBoard ---
+ui.js:433   Showing screen element: gameBoard
+board.js:410 Board drawing complete
+ui.js:588 Updating UI for current player: Player 1
+ui.js:890 UI Controls Updated: Roll=true, EndTurn=false, Phase=PLAYING
+ui.js:441 Forcing board redraw on gameBoard show
+board.js:338 Setting up board...
+board.js:356 Loading board image from: assets/board.png
+board.js:358 ✓ Successfully loaded board image ( 1536 x 1024 )
+board.js:361 Canvas size set to: 1536x1024
+board.js:320  Loaded token: http://localhost:8085/assets/tokens/H.png
+board.js:320  Loaded token: http://localhost:8085/assets/tokens/E.png
+board.js:320  Loaded token: http://localhost:8085/assets/tokens/A.png
+board.js:320  Loaded token: http://localhost:8085/assets/tokens/P.png
+board.js:320  Loaded token: http://localhost:8085/assets/tokens/R.png
+board.js:320  Loaded token: http://localhost:8085/assets/tokens/C.png
+board.js:330 All player token images loaded.
+board.js:410 Board drawing complete
+board.js:382 Board setup complete.
+board.js:410 Board drawing complete
+ui.js:588 Updating UI for current player: Player 1
+ui.js:890 UI Controls Updated: Roll=true, EndTurn=false, Phase=PLAYING
+ui.js:251 Roll Dice button clicked
+ui.js:949 Animating dice roll, final value: 2
+ui.js:1063 Positioned dice animation in center. Styles: absolute 9999 150px 150px
+ui.js:972 Dice animation area display set to: block
+ui.js:931 Cannot load dice images - will use text fallback!
+testImg.onerror @ ui.js:931Understand this error
+ui.js:917 Rendered text-based die with value 2
+ui.js:996 Dice animation frame 0, showing value 2
+ui.js:917 Rendered text-based die with value 6
+ui.js:996 Dice animation frame 1, showing value 6
+ui.js:917 Rendered text-based die with value 3
+ui.js:996 Dice animation frame 2, showing value 3
+ui.js:917 Rendered text-based die with value 6
+ui.js:996 Dice animation frame 3, showing value 6
+ui.js:917 Rendered text-based die with value 3
+ui.js:996 Dice animation frame 4, showing value 3
+ui.js:917 Rendered text-based die with value 2
+ui.js:996 Dice animation frame 5, showing value 2
+ui.js:938 Dice image load timed out - using text fallback
+(anonymous) @ ui.js:938
+setTimeout
+(anonymous) @ ui.js:937
+checkDiceImagesExist @ ui.js:924
+animateDiceRoll @ ui.js:980
+(anonymous) @ ui.js:261Understand this warning
+ui.js:917 Rendered text-based die with value 3
+ui.js:996 Dice animation frame 6, showing value 3
+ui.js:917 Rendered text-based die with value 3
+ui.js:996 Dice animation frame 7, showing value 3
+ui.js:917 Rendered text-based die with value 2
+ui.js:996 Dice animation frame 8, showing value 2
+ui.js:917 Rendered text-based die with value 6
+ui.js:996 Dice animation frame 9, showing value 6
+ui.js:917 Rendered text-based die with value 4
+ui.js:996 Dice animation frame 10, showing value 4
+ui.js:917 Rendered text-based die with value 5
+ui.js:996 Dice animation frame 11, showing value 5
+ui.js:917 Rendered text-based die with value 2
+ui.js:996 Dice animation frame 12, showing value 2
+ui.js:917 Rendered text-based die with value 6
+ui.js:996 Dice animation frame 13, showing value 6
+ui.js:917 Rendered text-based die with value 5
+ui.js:996 Dice animation frame 14, showing value 5
+ui.js:917 Rendered text-based die with value 1
+ui.js:996 Dice animation frame 15, showing value 1
+ui.js:917 Rendered text-based die with value 6
+ui.js:996 Dice animation frame 16, showing value 6
+ui.js:917 Rendered text-based die with value 4
+ui.js:996 Dice animation frame 17, showing value 4
+ui.js:917 Rendered text-based die with value 2
+ui.js:996 Dice animation frame 18, showing value 2
+game.js:297 --- handlePlayerAction ---
+game.js:308 Player Player 1's turn (Index: 0, Actual Index: 0)
+game.js:323 Player Player 1 rolled a 2
+game.js:330 Player Player 1 is at Start. Needs to choose a path.
+game.js:348 Prompting human for start path choice with options: (4) [{…}, {…}, {…}, {…}]
+ui.js:1099 Prompting for path choice with options: (4) [{…}, {…}, {…}, {…}]
+ui.js:588 Updating UI for current player: Player 1
+ui.js:890 UI Controls Updated: Roll=false, EndTurn=false, Phase=AWAITING_PATH_CHOICE
+ui.js:1126 Path choice selected: Age Of Legacy, Coords: {x: 167, y: 579}
+game.js:380 --- handlePathChoice ---
+game.js:393 Player Player 1 chose path starting at: {x: 167, y: 579} Continuing with roll: 2
+board.js:410 Board drawing complete
+game.js:446 Starting animation for remaining 1 steps.
+board.js:721 ANIMATE: Starting move sequence for Player 1 from (167,579) for 1 steps.
+board.js:167 PATH DEBUG: Finding next step from (167.0, 579.0)
+board.js:177 PATH DEBUG: Found space with pathColor "pink", Type "Regular"
+board.js:203 PATH DEBUG: Regular space with Next: [184, 605]
+board.js:753 ANIMATE DEBUG: Step 1, nextOptions: {type: 'Regular', nextCoords: Array(2)}
+board.js:814 ANIMATE: Step 1/1: (167,579) -> (184,605) (Target Type: draw, Interrupt: true)
+board.js:594 TOKEN DEBUG: Animating player Player 1 movement from (167.0, 579.0) to (184.0, 605.0)
+board.js:645 TOKEN DEBUG: Distance to travel: 31.1 pixels
+board.js:652 TOKEN DEBUG: Animation duration: 50ms
+board.js:410 Board drawing complete
+8board.js:410 Board drawing complete
+board.js:678 TOKEN DEBUG: Animation complete for player Player 1
+board.js:685 TOKEN DEBUG: Player position updated to (184.0, 605.0)
+board.js:410 Board drawing complete
+board.js:692 TOKEN DEBUG: Calling onComplete callback
+board.js:739 ANIMATE: Completing at (184,605). Reason: interrupt_draw, Steps Taken: 1/1
+game.js:536 --- handleEndOfMove --- Reason: interrupt_draw, Steps Taken: 1
+game.js:537 Player Player 1 finished movement at coords: {x: 184, y: 605}
+game.js:586 Landed on space: {pathColor: 'pink', coordinates: Array(1), Next: Array(1), Type: 'Draw'}
+game.js:588 Landed on space type: Draw
+game.js:608 Landed on Draw space. Determining Age deck...
+game.js:610 Space details: {
+  "pathColor": "pink",
+  "coordinates": [
+    [
+      184,
+      605
+    ]
+  ],
+  "Next": [
+    [
+      193,
+      636
+    ]
+  ],
+  "Type": "Draw"
+}
+game.js:635 Path color determined: "PINK" (from "pink")
+game.js:639 Mapped to deck type: PINK (null/undefined means not found)
+game.js:642 Drawing from Age deck: PINK
+cards.js:195 Drawn card from PINK: Victors Write History
+ui.js:1401 Game Log Message (Hidden from UI): HISTORIAN landed on Draw and drew: Victors Write History
+ui.js:615 Showing card: {name: 'Victors Write History', description: 'Reinforces dominant narratives, rewarding players aligned with power.', layout: {…}, effects: Array(1), pathColor: 'PINK', …} Deck: PINK Player: {id: 'player_1745718565526_597', name: 'Player 1', role: 'HISTORIAN', isHuman: true, currentCoords: {…}, …}
+ui.js:627 Showing card popup for: Victors Write History
+cards.js:236 Applying effects of card "Victors Write History" to player Player 1...
+cards.js:294  Processing effect: {"type":"RESOURCE_CHANGE","changes":{"money":5,"influence":5}} for target Player 1 from source Player 1
+cards.js:435  Applying RESOURCE_CHANGE to Player 1: {money: 5, influence: 5}
+players.js:186 Resources updated for Player 1: {knowledge: 14, money: 13, influence: 5}
+ui.js:588 Updating UI for current player: Player 1
+game.js:821 GAME: Ending turn for Player player_1745718565526_597 (HISTORIAN).
+ui.js:1401 Game Log Message (Hidden from UI): Turn ended for HISTORIAN.
+ui.js:1401 Game Log Message (Hidden from UI): Click on an End of Turn deck to draw a card.
+14board.js:410 Board drawing complete
+ui.js:776 Hiding card popup
+board.js:410 Board drawing complete
+board.js:410 Board drawing complete

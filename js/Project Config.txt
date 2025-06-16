@@ -1,0 +1,593 @@
+
+1. **ES6 Standards Only**:
+   - All JavaScript code must follow ES6 standards
+   - Use arrow functions instead of traditional function declarations
+   - Use const/let instead of var
+   - Use ES6 module syntax (import/export) for dependencies
+   - Use template literals for string interpolation
+   - Use destructuring assignment, rest/spread operators, and other ES6 features
+   - Avoid pre-ES6 practices like IIFE patterns or function hoisting
+
+2. **Dependency Management**:
+   - Scripts must be included in the correct order in the HTML
+   - Use ES6 import/export syntax for module dependencies
+   - Functions should be exported using named exports or default exportsp
+   -Do not create circular dependencies
+   -Do nor add or remove functions without adding or removing them to or from the entire path
+
+
+3. **Browser Compatibility**:
+   - Code must run directly in the browser without a build step
+   - Avoid features requiring transpilation or polyfills
+   - Ensure all ES6 features used are supported by modern browsers
+
+## Code Quality Standards
+
+1. **Pre-commit Verification**:
+   - All code must be checked for duplicate functions before inclusion
+   - Circular dependencies must be identified and eliminated
+   - Code redundancies must be refactored before committing
+   - All code must be syntax-checked to prevent errors
+   - No code shall be committed that breaks existing functionality
+
+2. **Maintenance Guidelines**:
+   - When adding functionality, check if similar functions already exist
+   - Document dependencies clearly to prevent circular references
+   - Prioritize reuse of existing code over creating new implementations
+   - Run syntax validation tools before submitting any code changes
+   = Do not create anything new norintroduce any new concepts, mechanics, players, resources, tokens, roles ideas etc on your own. 
+
+## File Structure
+
+- `js/` - JavaScript files (ES6 module format)
+- `css/` - Stylesheets
+- `assets/` - Images, fonts, and other media files
+
+## Browser Support
+- This project aims to work on modern browsers without requiring a server
+- Files are loaded directly from the filesystem 
+- All browsers must support ES6 modules and features 
+
+## CSS Amalgamation Strategy
+
+1. **Base File Priority**:
+   - Use css/styles.css as the base file for amalgamation
+   - Prioritize and preserve styles from css/styles.css when conflicts occur
+
+2. **Role Selection Screen Styling**:
+   - Incorporate background image setup from styles(2).css (`background-image: url('../assets/Critocracy.jpg')`)
+   - Use the flexible grid layout for role cards from styles(2).css
+   - Include improved hover effects and transitions from styles(2).css
+   - Adopt the role card styling with blue background (#7fb2e1) for better contrast
+
+3. **General Styling Priorities**:
+   - Maintain responsive layouts from css/styles.css
+   - Keep consistent color scheme from css/styles.css
+   - Incorporate enhanced animation effects from styles(2).css
+   - Preserve accessibility features (text contrast, button sizes)
+   - Retain media queries for responsive design
+
+4. **Conflict Resolution Approach**:
+   - When styles conflict, prioritize css/styles.css
+   - For visual enhancements, take the better option regardless of source
+   - For functional CSS (layouts, positioning), keep what best supports the HTML structure
+   - Preserve vendor prefixes for better browser compatibility 
+
+   
+
+## ui.js Responsibilities (Chronological Game Flow)
+1. App Initialization
+   - initializeUI(): configure DOM pool, initialize canvas context, board, and dice animation area
+   - domPool.configure(), domPool.initialize(), domPool.initializePool()
+   - Load element references (in `elements` namespace):
+     - gameBoard: boardCanvas ('board-canvas'), playerInfoPanel ('player-info-panel'), messageLog ('message-log'), diceContainer ('dice-container'), diceAnimationArea ('dice-animation-area'), diceFace ('dice-face'), diceRollDisplay ('dice-roll'), rolldicebutton ('roll-dice-button'), endTurnbutton ('end-turn-button'), useAbilitybutton ('use-ability-button')
+     - popups: diceDisplay ('dice-display'), cardPopup ('card-popup'), cardTitle ('card-title'), cardDescription ('card-description'), cardRoleExplanation ('card-effects'), showExplanationbutton ('show-card-details-button'), closeCardbutton ('close-card-button'), trade ('trade-prompt-modal'), tradePromptText ('trade-prompt-details'), tradeAccept ('trade-accept-button'), tradeReject ('trade-reject-button'), tradePlayerResources ('trade-player-resources'), targetSelection ('target-selection-modal'), targetDescription ('target-selection-description'), targetPlayerList ('target-player-list'), cancelTargetbutton ('cancel-target-button')
+     - endGame: endboardcontainer ('end-board-container'), newGamebutton ('new-game-button')
+     - screens: startScreen ('start-screen'), playerCountScreen ('player-count-screen'), roleSelectionScreen ('role-selection-screen'), gameBoardScreen ('game-board-screen'), endGameScreen ('end-game-screen')
+   - Initialize canvas context: `elements.gameBoard.ctx = boardCanvas.getContext('2d')`
+   - Call `initializeBoard()`, `initializediceAnimationArea()` and `showScreen('start-screen')`
+2. UI Scaling & Resize Handling
+   - scaleUIValue(), scaleUIContainer(), safeResizeCanvas()
+   - debounce window resize to updateGameComponents()
+3. Event Listeners Setup (setupEventListeners)
+   - Attach handlers for: start-game-button, player count confirm, role confirm, board canvas clicks, roll/end/ability buttons, card popups, trade accept/reject, spaces toggle, popup controls
+4. Screen Navigation
+   - showScreen(), hideScreen()
+5. Player Count & Role Selection Flow
+   - setupPlayerCountUI(): fix total players, populate human options
+   - setupRoleSelectionUI(): render and select role cards
+   - startGameWithSelectedRoles(): import players/game modules, create players, initializeGame, advanceToTurnOrderPhase
+6. Turn Order Interface
+   - initialSetupTurnOrderUI(): display roll order prompt
+   - setupTurnOrderUI(): render roll button and explanatory text
+   - roll-turn-order-button click → determineTurnOrder(), show game-board, drawBoard(), updatePlayerInfo(), updateresourceDisplaysContainer()
+   - updateTurnOrderDisplay(), enableTurnOrderRollButton(), createTemporaryRollButton()
+7. Player Token & Board Rendering
+   - createPlayerTokenElement(), createPlayerTokenElements(), createTokenElementsForPlayers(), updateTokenImage(), drawAllPlayerTokens(), refreshPlayerTokens(), managePlayerTokens()
+8. Player Info & Highlighting
+   - updatePlayerInfo(): update info panel per player
+   - highlightActivePlayer(): animate current player highlight
+9. resource Displays Management
+   - setupresourceDisplaysContainer(): attach rolldice/endTurn/useAbility handlers
+   - updateresourceDisplaysContainer(): show/hide and enable/disable controls based on turnState, prompt for end-of-turn card
+10. Turn Transitions
+    - animateTurnTransition(): fade/animate between players
+11. dice Roll UI
+    - showdiceRollAnimation(): start/stop dice animation with sound
+    - hidediceRollAnimation(): fade out dice display
+    - animatediceRoll(diceElement, finalValue, duration) / animatediceRoll(value, onComplete): specialized dice-roll animations from animations.js
+12. Movement & Choice Highlighting
+    - handleCanvasClick(): translate clicks to board coords and delegate based on turnState
+    - handleBoardClick(): global canvas click handler to resolve choices or fallback to resolveBoardClick
+    - handleEndOfTurnCardClick(): detect EOT card box clicks → handlePlayerAction('DRAW_END_OF_TURN_CARD')
+    - handleBoardChoiceClick(): detect junction clicks → handlePlayerAction('MAKE_CHOICE_POINT_CHOICE')
+    - animatePlayerMovement(): move tokens with animateTokenToPosition, manage/refresh tokens, bounce effect
+    - highlightChoices(), clearHighlights(): draw pulsing circles, arrows, path labels via drawPulsingCircle(), drawAnimatedArrow(), drawPathLabel(), animateHighlights(), stopHighlightAnimation()
+13. Card Interactions
+    - showCard(): createCard, display frontContent, flip to backContent, attach close handler
+    - showCardPopup(): scale and animate card popup, animateCardDrawFromDeck(), populate effects via formatEffect()
+    - hideCard(), closeCardView(): animate out popup, releaseCard(), forceRoleCardsVisible()
+    - showpathcard(), hidepathcard(), showpathcardCard(), hidepathcardCard(), addpathcardStyles() for special event cards
+    - animateTypeText(): optional typewriter effect for path/action card messages
+14. Trade & Target Prompts
+    - promptForTradeResponse(): scale trade modal, format offer/request text, handle accept/reject via callback
+    - promptTargetSelection(): scale target modal, list possibleTargets, set click and escape handlers, cleanup
+    - hideTargetSelection(): hide target selection modal
+15. Resource & Effect Animations
+    - displayResourceChangeEffect(): animateResourceChange() or fallback, floating indicator, logUIEvent('RESOURCE_CHANGE')
+    - formatEffect(): format effect objects into user-facing text
+16. Messaging & Logging
+    - logMessage(), clearMessages(), updateGameLog(): manage in-UI message log with timestamps and animations
+    - logUIEvent(), logGameEvent(), logPlayerAction(), logPlayerMovement(), logResourceChange(): record UI events
+    - handleMessageAnimationEnd(): cleanup UI elements after fadeOut animations
+    - handleCardAnimationEnd(): remove card elements after flip-out animations
+17. Validation & Miscellaneous
+    - validatePlayerCounts(): ensure valid counts
+    - forceRoleCardsVisible(): ensure role cards remain visible when needed
+    - Document load and interval to enforce visibility: DOMContentLoaded listener & setInterval(forceRoleCardsVisible)
+18. Utility Functions & Cleanup
+    - getDOMPoolMetrics(), cleanupDOMPool(): DOM pool maintenance
+    - unscaleCoordinates(), getScreenCoordinates(): coordinate conversions
+    - createCard(), releaseCard(): card element pool utilities
+
+## board.js Responsibilities (Chronological Game Flow)
+1. Board Initialization
+   - setupBoard(): sets up canvas dimensions, loads board image, calculates scale, initializes context, resolves when ready
+   - ensureBoardCanvasListeners(): attaches or re-attaches the canvas click handler for space selection
+   - waitForCanvas(maxRetries, delay, callback): polls for the board-canvas element before initialization, then triggers setupBoard resolve
+
+2. Canvas Drawing & Scaling
+   - drawBoard(): clears the canvas, draws the board image, path connections, invisible spaces, card decks, and highlights
+   - safeResizeCanvas(): recalculates canvas size on image load or container resize
+   - resizeCanvas(): adjusts canvas size based on container dimensions and current scale
+   - drawRoundedRect(ctx, x, y, width, height, radius): low-level helper to draw rounded rectangle outlines for elements and hitboxes
+   - drawScaledPoint(x, y, color, radius): helper to draw scaled dot markers for hit-testing or previews
+   - drawScaledPolygon(polygonCoords, fillColor, strokeColor): helper to draw scaled polygon shapes for path segments or hitboxes
+   - isPointInPolygon(point, polygon): utility to test if a point lies within a polygon for junction and path intersection detection
+
+3. Coordinate Conversions
+   - convertClickToGameCoords(event): translates DOM click events into game coordinates
+   - scaleCoordinates(x, y): converts game coordinates to canvas coordinates using board scale
+   - unscaleCoordinates(canvasX, canvasY): converts canvas coordinates back to game coordinates
+
+4. Hitbox Setup & Space Rendering
+   - drawAllPlayerSpaces(): draws transparent circles for every board space to enable hit testing and records spaces in boardState.spaces
+   - drawInvisibleSpaces(): alias for drawAllPlayerSpaces for compatibility
+   - drawPathConnections(): low-level helper for drawing path connection lines
+   - drawPathSpaces(): low-level helper for drawing individual path segments for hit detection
+   - showPlayerSpaces(enable): toggles transparent space hitbox rendering on or off and redraws the board
+
+5. Space Detection & Lookup
+   - findSpaceDetailsByCoords(targetCoords, tolerance): returns space details (start, finish, draw, junction, regular) for a given coordinate
+   - findSpaceByCoordinates(x, y): alias lookup returning space by exact coordinates
+   - getNextStepOptions(currentCoords): lists possible next step coordinates and pathColor based on currentCoords
+   - getPathColorFromCoords(x, y): returns path color or special space type at given coordinates
+   - getClickedCardRectangle(clickCoords): identifies which deck or end-of-turn box was clicked
+
+6. Highlighting & Choice Visuals
+   - drawPathHighlight(ctx, coords, color, radius): draws pulsing highlight circles at given position
+   - highlightChoicePoints(): highlights valid path choices and draws path labels at start and junctions
+   - highlightEndOfTurnCardBoxes(ctx): pulses EOT card boxes when a draw is required
+   - highlightDeck(pathColor): pulses and labels the special event deck for the player's path
+   - clearDeckHighlights(): clears any ongoing deck highlight animation
+   - highlightPlayerChoices(options): delegates to UI module to visually present choice options
+
+7. Player Tokens & Movement
+   - drawPlayerToken(player): draws or refreshes a single player token
+   - managePlayerTokens(playersArray): positions or creates DOM elements for all players' tokens
+   - refreshPlayerTokens(playerId): updates token positions for one or all players based on gameState
+   - synchronizePlayerCoordinates(player): updates internal coordinates for smooth movement interpolation
+
+8. Movement Preview
+   - showMovementPathPreview(player, steps): computes and displays a preview path based on dice roll
+   - drawMovementPreview(coordinates): draws dashed lines and numbered circles along a path
+   - animatePathPreview(coordinates): animates particles moving along the preview path
+   - clearMovementPreview(): stops preview animations and restores board state
+
+9. Movement Animation
+   - animateTokenToPosition(player, startCoords, targetCoords, duration, callback): smoothly moves a token DOM element
+   - startMoveAnimation(player, steps, onComplete): steps through multiple moves, handles interruptions (choicepoints, junctions, special spaces), and calls callback on completion
+
+10. Game Space Logic Helpers
+   - getNextStepCoordinates(currentCoords): internal helper picking the next coordinate for movement
+
+11. Utility & Miscellaneous
+   - delay(ms): simple Promise-based timer
+   - hexToRgb(hex): converts hex color codes to "r, g, b" strings
+   - getPlayerDetails(playerId): returns a sanitized player object with id, name, role, resources, coords
+   - getCurrentPlayer(): retrieves the current player from gameState
+   - showMessage(message): delegates to UI to display in-game messages or logs
+
+12. Event Callback Registration
+   - setupBoardSpaceSelectListener(callback): sets the onBoardSpaceSelected callback for external code
+   - setOnBoardSpaceSelectCallback(callback): internal name for listener registration
+   - loadTokenImages(): asynchronously loads token images into memory
+   - handleCanvasClick(event): core click listener attached to the canvas to detect card and space clicks and invoke the registered selection callback
+
+## players.js Responsibilities (Chronological Game Flow)
+-1. Module Initialization (Script Load)
+-   - PLAYER_ROLES: defines each role's name, description, startingResources, opposingRole, ability identifiers, tokens, ability text
+-   - RESOURCES: list of valid resource types for validation
+-
+-2. Player State Setup (Pre-Game after Role Selection)
+-   - resetPlayers(): clears any existing players
+-   - createPlayer(name, role, isHuman): normalizes and validates role, initializes id, name, resources, coords at START_SPACE, and adds to players array
+-
+-3. Player Lookup & Utilities (Post-Creation, Throughout Game)
+-   - getPlayers(): returns current players list for rendering and processing
+-   - getPlayerById(playerId): retrieves specific player for updates or display
+-   - getPlayerByRole(role): finds opponent or team references
+-   - getRandomOtherPlayer(currentPlayer): used by AI targeting
+-   - normalizeRole(role): ensures consistent role string comparisons
+-
+-4. Resource Adjustments & Immunities (During Card Resolution and Abilities)
+-   - updatePlayerResources(playerId, changes, source, metadata): applies resource deltas, enforces theft immunity, logs and updates UI
+-   - isImmuneToTheft(player, resourceType): checks and nullifies theft effects for roles or temporary immunity
+-   - isImmuneToSabotage(player): handles one-time and temporary sabotage immunities
+-
+-5. Turn Modifiers & Path Immunities (During Gameplay Effects)
+-   - setPlayerSkipTurn(playerId, turns, source): marks skip-turn status, honoring entrepreneur immunity
+-   - forceSkipTurn(player): tries to enforce a skip-turn, checking relevant immunities
+-   - canBeForcePathChange(player): guards against forced path changes (artist immunity)
+-   - setPlayerForcedPathChange(playerId, force): toggles forced-path-change flags
+-
+-6. Player Abilities (Triggered via UI or AI)
+-   - useSpecialAbility(playerId): executes role-specific active ability, prompts humans or auto-chooses for AI
+-
+-7. Temporary Effects Lifecycle (End-of-Round Cleanup)
+-   - grantTemporaryImmunity(playerId, turns): applies temporary immunity from card or ability effects
+-   - hasTemporaryImmunity(playerId): checks if player is currently immune
+-   - decrementImmunityTurns(): called once per turn to expire temporary immunities
+-   - blockTrade(playerId, turns): applies trade-block status
+-   - isTradeBlocked(playerId): checks if trade is currently blocked
+-   - decrementTradeBlockTurns(): called once per turn to expire trade blocks
+-
+-8. Game Completion & Scoring (End-of-Game)
+-   - markPlayerFinished(playerId): flags player as finished and logs action
+-   - allPlayersFinished(): checks if all players have finished for game end
+-   - getPlayerScore(player): computes placeholder score based on finish bonus and resources
+-   - getPlayerRanking(): sorts players for final rankings by finish status and name
+
+## cards.js Responsibilities (Chronological Game Flow)
+1. Module Setup & Constants
+   - Imports: special-event card arrays (`PURPLE_CARDS`, `BLUE_CARDS`, `CYAN_CARDS`, `PINK_CARDS`) from `Specialeventcards.js` and end-of-turn array (`formattedEndOfTurnCards`) from `Endofturncards.js`
+   - DECK_TYPES, PATH_COLOR_TO_DECK: define deck types and color-to-deck mapping
+   - cardDecks, discardPiles, endOfTurnDraws: internal state for decks and end-of-turn tracking
+
+2. Deck Initialization (At Game Start)
+   - setupDecks(): orchestrates resetDecks, populateDecks, and initial shuffling
+   - resetDecks(): empties all cardDecks and discardPiles
+   - populateDecks(): fills decks from imported card arrays (special-event & end-of-turn)
+
+3. Deck Management
+   - shuffleAllDecks(): iterates through each deck and calls shuffleDeck
+   - shuffleDeck(deckType): Fisher–Yates shuffle algorithm for one deck
+   - doesDeckExist(deckType): checks for the existence and array status of a deck
+   - getDeckTypeForSpace(spaceDetails): returns deck type for draw spaces based on path color
+   - getpathcards(deckType): retrieves cards array for specified path deck
+   - getEndOfTurnCards(): retrieves cards from END_OF_TURN deck
+
+4. End-of-Turn Draw Tracking (During Turn Resolution)
+   - resetEndOfTurnDraws(): clears end-of-turn draw flags at start of each round
+   - hasDrawnEndOfTurnCard(playerId): checks if a player has drawn their EOT card this round
+   - markEndOfTurnCardDrawn(playerId): marks a player's EOT draw status
+
+5. Card Operations (During Draw Actions)
+   - drawCard(deckType): draws a card, reshuffles discard pile when empty, logs draw or empty state
+   - discardCard(card): places a card into its discard pile
+   - logCardDraw(playerId, card, deckType): logs UI and console events for card draws
+
+6. Card Effect Application (After Draw)
+   - applyEndOfTurnCardEffects(card, player): synchronously applies EOT card logic and resource effects
+   - applyCardEffects(card, player): asynchronously applies special-event card logic with immunity checks
+   - applyCardEffect(card, player): alias for applyCardEffects for compatibility
+   - applyEffect(effect, player): helper for individual effect application (resources, movement, immunities)
+
+7. Utilities & Miscellaneous
+   - displayResourceChangeEffect(playerId, resourceType, amount): delegates UI for floating resource indicators
+   - hasTemporaryImmunity(playerId): dynamic-import wrapper to check player's temp immunity
+   - useSpecialAbility(playerId): dynamic-import wrapper to invoke player's special ability
+
+## utils.js Responsibilities (Chronological Game Flow)
+1. Module Load & Pool Setup
+   - Define `DOMElementPool` class:
+     • constructor(): initialize `pools`, `config` (maxPoolSize, initialSize, autoGrow), `metrics` (created, reused, returned)
+     • configure(options): override pool settings
+     • initializePool(type, setupFn, count): pre-create elements for reuse
+     • get(type, setupFn): acquire or new element, reset state, apply setupFn
+     • release(element): clean and return element to pool
+     • resetElement(element): clear content, listeners, attributes, styles, classes
+     • drain(type): clear one or all pools
+     • getMetrics(): report current pool sizes and usage
+   - Export singleton `domPool`
+
+2. UI Element & Card Utilities
+   - getGameUIDiv(className, text): get/configure a pooled DIV for UI
+   - createToken(tokenData): get/configure a pooled `div.game-token` with data attributes
+   - releaseToken(tokenElement): return token element to pool
+   - createCard(cardData): get/configure a pooled `div.game-card` with structured content (title, description)
+   - releaseCard(cardElement): return card element to pool
+
+3. Render Scheduler
+   - Define `RenderScheduler` class:
+     • constructor(): initialize render queue, RAF id, performance metrics
+     • setDebug(enabled): toggle debug logging
+     • requestRender(context, priority): enqueue draw context with priority
+     • renderAll(timestamp): flush queue on RAF, call draw/cleanup, track metrics, clear queue
+     • cancelAll(): cancel pending RAF and clear queue
+     • logMetrics(): output average frame time and efficiency
+   - Export singleton `renderScheduler`
+   - scheduleRender(drawFunction, priority): wrapper for `renderScheduler.requestRender`
+   - drawBoardOptimized(drawBoardFn), drawUIOptimized(drawUIFn), drawBackgroundOptimized(drawBackgroundFn)
+
+4. Validation & Player Configuration
+   - `playerConfigSchema`: static schema for validating player objects
+   - getPlayerRoles(): dynamic import of `PLAYER_ROLES` from players.js
+   - getPlayerRoleKeys(): fetch or cache valid role keys asynchronously
+   - validateField(value, fieldSchema, fieldName): internal helper for one-field validation
+   - validateSchema(object, schema): validate an object against a schema, return `{ valid, errors }`
+   - validatePlayerConfig(config): async full config validation including role existence
+   - sanitizePlayerConfig(config): async default-filling and type-correction of player config
+
+5. Animation Controller & Effects
+   - Define `AnimationController` class:
+     • constructor(): initialize token set and animationFrames map
+     • createToken(id): generate cancellation token
+     • registerAnimationFrame(token, frameId): associate frame ID with token
+     • cancel(token): abort specific animation
+     • cancelAll(): abort all tracked animations
+     • animate(animationFn, token): run cancellable RAF-based animation, resolve promise on complete/cancel
+   - Export singleton `animationController`
+   - animateWithCancellation(animationFunction): helper to use `animationController.animate`
+   - animatediceRoll(options): specialized dice-roll animation with frame callback and final result
+   - cleanupAnimations(): cancel all active animations
+
+6. Event Manager
+   - managedListener(element, event, handler, options): attach or replace a listener, store in `eventRegistry`
+   - removeAllListeners(element): remove all listeners for a specific element from registry
+   - cleanupAllListeners(): remove every managed listener and clear registry
+
+## animations.js Responsibilities (Chronological Game Flow)
+1. Module Load & Constants
+   - PATH_COLORS: mapping of special-event and end-of-turn deck types to CSS colors for highlights
+   - TIMING: durations for CPU/Human card display, deck flashes, token pauses/enlarge
+   - ANIMATION_TIMINGS: duration constants for dice roll, card reveal, token move, deck flash, turn transition, effect pause
+   - activeAnimations (Set): tracks and cancels ongoing animations
+   - On `DOMContentLoaded`: automatically call `animateStartScreen()`, set `start-game-button` click to `animateScreenTransition()`, and add `pulseAnimation()` on `.player-count-button` hovers
+
+2. Initial UI Intro & Screen Transitions
+   - animateStartScreen(): fade-in and slide-up of start-screen title and button
+   - animateScreenTransition(fromScreenId, toScreenId): hide all `.screen` elements, show target with `display:flex` and `active` class
+
+3. Generic Tweens & Timing Helpers
+   - animateValue(start, end, duration, callback): ease-in-out cubic interpolation for numeric values
+   - animatePosition(element, start, end, duration): Promise-based element movement using RAF
+   - wait(duration): Promise-based timeout helper
+
+4. Pulse & Hover Effects
+   - pulseAnimation(element): apply and remove CSS `pulse` class on animation end to highlight UI controls
+
+5. dice Roll Animations
+   - animatediceRoll(diceElement, finalValue, duration) / animatediceRoll(value, onComplete): sprite-based or numeric dice animations with optional element-based cycling and onComplete callbacks
+   - hidediceAnimation(): hide dice-animation-area and dice-roll display elements
+
+6. Token Movement
+   - animateTokenToPosition(player, newPosition, isCPU): use `animatePosition()`, pause with scale transform, resolves Promise
+   - animateTokenMovement(token, fromCoords, toCoords, steps): step-by-step token translation over fixed intervals
+
+7. Path Highlighting
+   - highlightValidMovePaths(currentPosition, stepsRemaining): find moves via `getValidMoves()` and set background-color+opacity on path elements
+   - clearHighlights(): remove `.move-highlight` elements with fade-out
+   - getValidMoves(position, steps): internal placeholder to return possible path moves
+
+8. Card Animations
+   - animateDeckFlash(deckElement, isCPU): opacity flashing loop, resolves after CPU count or indefinite until stop
+   - animateCardDraw(cardElement, start, end, isCPU): fade, translate, and hide of card element
+   - animateCardDrawFromDeck(deckType, sourcePos, targetPos, onComplete): create temporary card, transition it, flip via `animateCardFlip()`, then remove
+   - animateCardPlay(cardElement, targetPos, onComplete): clone card, move and scale, then fade out
+   - animateCardFlip(cardElement, onRevealed, onComplete): CSS 3D rotateY flip with content swap at midpoint
+   - animateCardDiscard(cardElement, onComplete): translate+rotate+fade-out removal
+   - animateCardReveal(cardElement, onComplete): add/remove `flipping` class with sound, resolves after `ANIMATION_TIMINGS.CARD_REVEAL`
+   - showCard(card, player, onClose): DOM popup creation with `card-popup` class, animate in via `visible` class and attach close handler
+   - getDeckColor(deckType): internal helper mapping deckType strings to hex color codes
+
+9. Resource & Effect Animations
+   - animateResourceChange(element, start, end, duration): text interpolation via `animateValue()`, highlight class toggle
+   - animateEffect(effectElement, effectType): add/remove `effect-{type}` class, resolves after `ANIMATION_TIMINGS.EFFECT_PAUSE`
+
+10. Turn & Victory Animations
+   - showTurnTransition(fromPlayer, toPlayer, duration): DOM overlay with player names and arrow, fade/translate in/out
+   - animateTurnTransition(fromPlayer, toPlayer): toggle `active-player` class on token elements, resolves after `ANIMATION_TIMINGS.TURN_TRANSITION`
+   - showVictoryCelebration(winnerId, duration): DOM overlay with confetti, scale/opacity animations, resolves on removal
+
+11. Animation Lifecycle Management
+   - registerAnimation(animation): add animation to `activeAnimations`, returns deregister function
+   - cancelAllAnimations(): cancel and clear all entries in `activeAnimations`
+
+## board-data.js Responsibilities (Chronological Game Flow)
+1. Module Load & Data Definitions
+   - ORIGINAL_WIDTH, ORIGINAL_HEIGHT: define original board image dimensions
+   - PATH_COLORS: map path color keys (purple, blue, cyan, pink) to CSS hex values
+   - SPACE_TYPE: enumeration of space categories ('Regular', 'Draw', 'Choicepoint', 'Start', 'Finish')
+   - START_SPACE: starting space coordinates, type, and nextCoordOptions keyed by path color
+   - FINISH_SPACE: finish space coordinates and type
+
+2. Path Arrays Loading
+   - purplePath, bluePath, cyanPath, pinkPath: ordered arrays of space objects ({pathColor, coordinates, next, type}) for each path
+
+3. Board Module Consumption
+   - board.js imports these constants and arrays to initialize `boardState.spaces`, perform drawing, hit-detection, movement sequencing, and draw-space logic
+
+## main.js Responsibilities (Chronological Game Flow)
+1. Global Error Handler & Init Flag
+   - define `window.handleInitializationError(error)` to catch and display critical failures
+   - initialize `window.gameInitSystem.initialized` before bootstrap
+
+2. Retry & Fallback Configuration
+   - set `INIT_CONFIG` constants:
+     • `maxCanvasRetries` (10)
+     • `canvasRetryDelayMs` (100ms)
+     • `maxContainerRetries` (10)
+     • `containerRetryDelayMs` (100ms)
+     • `fallbackDelayMs` (300ms)
+
+3. Async Bootstrap Flow (`asyncMainInit`)
+   3.1. Await `DOMContentLoaded` before touching DOM
+   3.2. Dynamic import of UI, animations, and utilities:
+        • `import('./ui.js')`, `initializeUI()`, `initializediceAnimationArea()`
+        • `import('./animations.js')`, `import('./utils.js')`
+   3.3. Poll for `#board-canvas` & `#board-container` up to `maxCanvasRetries`, `canvasRetryDelayMs`
+   3.4. Dynamic import and init board modules:
+        • `import('./board-data.js')`
+        • `import('./board.js')`, `waitForCanvas()`, `safeResizeCanvas()`, `setupBoard()`
+   3.5. Poll again for `#board-container` up to `maxContainerRetries`, `containerRetryDelayMs` and register:
+        • `boardMod.setupBoardSpaceSelectListener(gameMod.resolveBoardClick)`
+   3.6. Dynamic import of `store.js` and instantiate:
+        • `new Store()`, dispatch `{ type: SET_GAME_STARTED }`
+   3.7. Display start screen:
+        • `uiMod.showScreen('start-screen')`
+   3.8. Bind `#player-count-confirm` click to:
+        • parse `total-player-count` & `human-player-count`
+        • `uiMod.setupPlayerCountUI()`
+        • `uiMod.setupRoleSelectionUI(total, human)`
+        • `uiMod.showScreen('role-selection-screen')`
+
+4. Invocation & Automatic Fallback
+   - immediately call `asyncMainInit()`
+   - on `DOMContentLoaded`, after `fallbackDelayMs`, if not `gameInitSystem.initialized`, re-run `asyncMainInit()`
+
+## logging.js Responsibilities (Chronological Game Flow)
+1. Module Load & State Initialization
+   - `gameLog`: array storing sequential game and event entries
+   - `resourceLog`: object mapping player IDs to resource history and current values
+   - `eventLog`: array storing raw event data
+
+2. Logging System Initialization (Game Start)
+   - `initLogging(players)`: reset logs, initialize resourceLog for each player, log `GAME_START` event with metadata
+
+3. In-Turn & Flow Event Logging (During Gameplay)
+   - `logTurnStart(playerId, turnNumber)`: record `TURN_START` event
+   - `logPlayerMovement(playerId, fromCoords, toCoords, spaces)`: record ACTION `MOVEMENT`
+   - `logCardDraw(playerId, card, deckType)`: record ACTION `CARD_DRAW`
+   - `logResourceChange(playerId, changes, source, metadata)`: update resourceLog, record `RESOURCE_CHANGE` event
+   - `logPlayerAction(playerId, actionType, data)`: record generic ACTION events
+   - `logGameEvent(eventType, data)`: record generic game-level events (e.g. choicepoints, alliances)
+   - `logTurnEnd(playerId, turnNumber)`: record `TURN_END` event
+
+4. Log Retrieval & Formatting
+   - `getPlayerResourceHistory(playerId, turnLimit)`: return resource history entries, optionally filtered by recent turns
+   - `getPlayerCurrentResources(playerId)`: return the latest resource snapshot for a player
+   - `getFilteredGameLog(filters)`: return `gameLog` entries filtered by playerId, event/action type, or turn range
+   - `getFormattedGameLog(limit, playerFilter, typeFilter)`: return formatted string summary of recent log entries
+
+5. Log Management & Persistence
+   - `clearLogs()`: clear `gameLog`, `resourceLog`, and `eventLog`
+   - `exportLogs()`: return JSON-serializable object of all logs plus export timestamp
+   - `importLogs(logData)`: clear existing logs and load provided `gameLog`, `resourceLog`, and `eventLog`
+
+6. Helpers & Placeholders
+   - `getCurrentTurn()`: placeholder implementation to fetch `window.gameState.currentTurn`
+   - `formatResourceChanges(changes)`: helper to format resource delta object into readable string
+
+## game.js Responsibilities (Chronological Game Flow)
+1. Module Load & Exports
+   - Import dependencies: `players.js`, `board.js`, `cards.js`, `board-data.js`, `ui.js`, `logging.js`
+   - Export `gameHandlers`: object with `{ handleEndOfTurnCardDraw, handlepathcardDraw }` for board callbacks
+   - Export `gameState`: global shared object (`window.gameState`) with fields: `started`, `ended`, `currentPhase`, `players`, `turnOrder`, `currentPlayerIndex`, `pendingActionData`, `alliances`, `hasDrawnEndOfTurnCard`, `turnNumber`, etc.
+   - Export `getGameState()`, `getCurrentPlayer()`, and alias `initializeGame` as `initGame`
+
+2. Pre-Game Setup & Role Selection
+   - `setupRoleSelectionPhase(totalPlayers = 6, humanPlayers = 1)`: clear players, assign temporary roles, update UI
+   - `handleRoleConfirmation()`: finalize human/AI players, call `resetPlayers()` and `createPlayer()`, log, transition to turn order
+
+3. Turn Order Determination (Pre-Game)
+   - `determineTurnOrder()`: roll for each player, call `rollForTurnOrder()`, sort results, call `findTiedPlayers()` if ties, set `gameState.turnOrder`, change phase to PLAYING
+   - `rollForTurnOrder(playerId)`: generate UI dice roll for turn order
+   - `findTiedPlayers(rollResults)`: identify tied roll outcomes
+   - `updateTurnOrderDisplay(rollResults, isFinal)`: delegate UI display updates
+
+4. Game Initialization (Start of Gameplay)
+   - `initializeGame(turnOrder)`: reset `gameState`, call `setupBoard()`, `drawBoard()`, `setupDecks()`, `resetPlayers()`, `createPlayer()`, set counts, show UI screens, draw tokens
+
+5. Turn Preparation & AI Helpers
+   - `prepareTurnForPlayer(player)`: set state/UI for next turn, auto-handle CPU actions
+   - `simulateCpuDeckClick(pathColor)`: auto-draw path card for AI
+   - `simulateCpuChoicepoint(player)`: auto-select junction path for AI
+
+6. Action Dispatch & Input Handlers
+   - `handlePlayerAction(playerId, actionType, actionParams = {}, diceRoll)`: central dispatcher:
+       • `'ROLL_DICE'` → `handlediceRoll(playerId)`
+       • `'DRAW_CARD'` → `handlepathcardDraw(player, pathColor)`
+       • `'DRAW_EOT_CARD'` → `handleEndOfTurnCardDraw(boxNumber)`
+       • `'END_TURN'` → `advanceToNextPlayer()`
+       • `'USE_ABILITY'` → `usePlayerAbility(playerId)`
+   - `handlediceRoll(playerId)`: animate dice, set `gameState.diceResult`, log, call `startMoveAnimation()`
+   - `handleMoveClick(coords)`, `handleDeckClick(deckName)`, `handleChoicePoint(playerId, options)`: UI event forwards
+
+7. Movement & Choice Flow
+   - `resolveBoardClick(coords)`: validate via board.js, dispatch to `resolvePlayerChoice()` or fallback
+   - `resolvePlayerChoice(playerId, choice)`: update path and current coords, call `processChoice()`
+   - `processChoice(player, choice)`: internal helper to continue or finalize movement
+   - `executeMoveSequence(player, stepsRemaining, onSequenceComplete)`: recursive movement, detects `Choicepoint`, `Draw`, `Finish`
+
+8. Movement Completion & Effects
+   - `handleEndOfMove({ reason, player, spaceDetails })`: finalize position, switch on `spaceDetails.type`:
+       • Finish → `markPlayerFinished()`, `triggerGameOver()` or `advanceToNextPlayer()`
+       • Draw → `handlepathcardDraw(player, pathColor)`
+       • Default → await EOT draw phase
+
+9. Card Draw & Effect Application
+   - `handlepathcardDraw(player, pathColor)`: standardize color, `drawCard()`, UI display, transition to EOT
+   - `handleEndOfTurnCardDraw(boxNumber)`: `drawCard('end_of_turn')`, UI display, apply effects, mark draw
+   - `handleCardDisplay(card, deckType, player)`: delegate to UI, call `applyCardEffects()`
+   - `applyCardEffects(card, player)`, `applyEndOfTurnCardEffects(card, player)`: orchestrate synchronous/asynchronous effect steps
+   - `applyEffect(effect, player)`: low-level handling
+
+
+10. Abilities & Modifiers
+   - `usePlayerAbility(player)`: wrapper to `useSpecialAbility()`
+   - `drawEndOfTurnCard(player)`: legacy helper (deprecated)
+
+11. Turn Advancement & Cleanup
+   - `advanceToNextPlayer()`: ensure EOT draw, log turn end, reset flags, increment index, call `prepareTurnForPlayer()`
+   - `allPlayersFinished()`: check for game over
+
+12. Game Over
+   - `triggerGameOver()`: finalize game conclusion, log final rankings, call `showEndGameScreen()`
+
+13. Internal Utilities
+   - `delay(ms)`, `showMessage()`, `stopDeckHighlight()`, `getStandardizedPathColor(pathColor)`
+
+## store.js Responsibilities (Chronological Game Flow)
+1. Module Setup & Constants
+   - GamePhases, ScreenTypes, DeckTypes, TurnStates constant definitions
+2. Initial State Definition
+   - initialState object with nested gameState, players, board, ui sub-states
+3. Action Types
+   - actions constant mapping various action type strings
+4. Validation Utilities
+   - validators object with functions like isValidGamePhase, isValidScreen, isValidDeckType, etc.
+5. Reducers
+   - reducers.gameState handling updates based on action types
+6. Store Class
+   - Store class implementation: constructor, getState, subscribe, dispatch, addMiddleware, addErrorHandler, validateState, handleError, saveStateToHistory, undo, notifyListeners

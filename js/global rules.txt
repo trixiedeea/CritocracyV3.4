@@ -1,0 +1,65 @@
+ENABLE STRICT RULE ENFORCEMENT
+DO NOT CHANGE THE NAME OF ANYTHING EVER. 
+MATCH FUNCTION PARAMETES WITH ALREADY EXISTING ONES NOT JUST FUNCTION NAMES
+DO NOT ADD ANY NEW CODE AT ALL UNLESS ITS TO MAKE CODE ALREADY THERE WORK PROPERLY
+DO NOT REMOVE ANY FUNCTION UNLESS YOU KNOW THE CODE DOES NOT NEED IT BY ANOTHER NAME. DO NOT ADD ANY FUNCTION UNLESS YOU KNOW THE CODE DOESNT HAVE IT BY ANOTHER NAME. Check function 
+do not alter the css it is not the problem
+Never add a function to identification unless you know it has not been used before
+Never create a style hierarchy, if you are going to make adjustments to the style do so in a straightforward fashion on the css. THIS MEANS NEVER USE IN LINE STYLE. ALL STYLING INFORMATION IS HANDELED BY THE CSS
+Do not do anything i do not ask you to do
+If you create a function or identification make sure you define and use it
+do not leave any parsing errors If something has already been defined merge it
+Never leave any unused functions if a function is defined but not used make sure it shouldn't be used or merged
+always prioritize using code over creating new
+If you remove any code make sure that any functions that are no longer defined by code that you removed are either redefined Or removed if they are not needed But do not just leave them likewise any functions that are defined but no longer used make sure you reuse them properly. DO NOT LEAVE LINTER ERRORS
+DO NOT PUT ANY STYLING INFORMATION ANYWHERE BUT STYLES.CSS
+Only define functions that are used.
+Don't write unused methods or utilities “just in case.”
+use powershell node or bash to run scripts
+do not do things i do not tell you to do. ask me if i want you to do it first
+always explain things in verbose detail
+Use only ES6
+Don’t duplicate logic.
+Only ever use my cards
+only ever use my tokens for player images and movement
+only ever use my coordinates for game spaces
+Do not create new files
+always respect code already implemented over new code given by me unless i say otherwise
+do not leave any parsing error. merge duplicates
+If two methods do the same thing, consolidate.
+No infinite loops without clear exit conditions.
+Every loop must have a logical and reachable termination.
+Every public method must be testable.
+No circular dependencies.
+Use const over let and var
+No tight coupling between unrelated classes.
+Use interfaces or abstract classes to break dependency chains.
+Don't mix UI logic, business logic, and data access in the same class.
+One top-level public class per file.
+File name must match class name.
+Unused classes, variables, or methods
+Static methods in classes that should be instantiated
+Hardcoded values (use constants or config)
+Empty catch blocks or catch (Exception e) {} with no handling
+Logic in constructors (keep them lightweight)
+No deeply nested code (>3 levels).
+Don't create linters or syntax errors
+Don't alter any code unless it's a problem,
+Don't take out any information. Use all available data if possible\
+When adding, altering or removing code update anything else affected by it (check and fix dependencies)
+Run in strict mode for greater error control
+Adhere to these rules always
+Don't assume you have fixed a problem until you can confirm the solution has worked
+Don't change code on might or maybe. This might be the problem or this might work are not good enough reasons to be changing code
+Remove redundant and duplicate code don't just comment it out
+Check existing folder and file structure. do not add your own
+keep naming conventions consistent across the code. everything has already been named do not make your own
+
+USE IMPORTS AS:
+Always-needed code	                       Static Import
+Immediately-needed code                     Static Import
+Performance-critical for load time	       Dynamic Import
+Conditional/module-based logic	       Dynamic Import
+Easier debugging and IDE support	       Static Import
+Lazy-load large dependencies	       Dynamic Import
+If adding error handling always make sure to match TRY with CATCH statements and then FINALLY statements, Never let try statements run forever always provide a loop exit and never use one without the other tow

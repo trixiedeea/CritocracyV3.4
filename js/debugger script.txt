@@ -1,0 +1,17 @@
+Change all references to paths to their age of names so purple path should be age of expansion blue path should be age of reckoning cyan path should be age of resistance and pink path should be age of legacy now make sure the colors stay as part of the paths but in the only in the back end in the front end everything out facing to the players should have those names age of instead of colors
+
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8081",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
