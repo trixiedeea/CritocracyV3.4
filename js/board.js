@@ -1,5 +1,5 @@
 // Board Module for Critocracy - Coordinate-Based System
-// Handles drawing, animation, and coordinate lookups.
+
 
 // ===== Imports =====
 import { getPlayers } from './players.js'; 
