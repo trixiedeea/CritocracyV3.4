@@ -1,9 +1,6 @@
 // Board Module for Critocracy - Coordinate-Based System
 
 
-// Board Module for Critocracy - Coordinate-Based System
-
-
 // ===== Imports =====
 import { getPlayers } from './players.js'; 
 // Removed getCurrentPlayer import as game logic will handle turns
@@ -168,7 +165,7 @@ function isPointInPolygon(point, polygon) {
  * Determines the next coordinate options based on the current coordinates.
  */
 export function getNextStepOptions(currentCoords) {
-    console.log(======getnextstepoptions start============)
+    console.log(//======getnextstepoptions start============//)
     console.log(`PATH DEBUG: Finding next step from (${currentCoords.x.toFixed(1)}, ${currentCoords.y.toFixed(1)})`);
     
     // Find current space details
@@ -316,7 +313,7 @@ function findAlternativePathFrom(currentCoords) {
  * Loads player token images.
  */
 async function loadTokenImages() {
-    console.log(============loadtokenimages start=========)
+    console.log(//============loadtokenimages start=========//)
     // ... (Keep existing implementation) ...
     const roles = ['H', 'E', 'A', 'P', 'R', 'C']; // Example roles
     const promises = roles.map(role => new Promise((resolve, reject) => {
@@ -420,7 +417,7 @@ export function drawBoard() {
  * Draws connections between spaces defined in the path arrays.
  */
 function drawPathConnections() {
-    console.log(============drawpathconnections start============)
+    console.log(//============drawpathconnections start============//)
     if (!boardState.ctx) return;
     const ctx = boardState.ctx;
     ctx.strokeStyle = 'rgba(0, 0, 0, 0.0)'; // Faint black lines
@@ -454,7 +451,7 @@ function drawPathConnections() {
  * Draws spaces defined in the path arrays.
  */
 function drawPathSpaces() {
-    console.log(=========drawpathspaces start============)
+    console.log(//=========drawpathspaces start============//)
     if (!boardState.ctx) return;
     const ctx = boardState.ctx;
     const allPaths = [purplePath, bluePath, cyanPath, pinkPath];
@@ -560,7 +557,7 @@ function drawPathSpaces() {
  * Draw all player tokens based on their currentCoords.
  */
 function drawPlayerTokens() {
-    console.log(============drawplayertokens start=========)
+    console.log(//============drawplayertokens start=========//)
     if (!boardState.ctx) return;
     const ctx = boardState.ctx;
     const players = getPlayers(); // From players.js
@@ -600,7 +597,7 @@ function drawPlayerTokens() {
  * @param {function} onComplete - Callback function to run when animation completes
  */
 export function animateTokenToPosition(player, newPosition, duration = 500, onComplete = null) {
-    console.log(=========animatetokentoposition start=========)
+    console.log(//=========animatetokentoposition start=========//)
     console.log(`TOKEN DEBUG: Animating player ${player.name || player.id} movement from (${player.currentCoords?.x?.toFixed(1) || "unknown"}, ${player.currentCoords?.y?.toFixed(1) || "unknown"}) to (${newPosition?.x?.toFixed(1) || "unknown"}, ${newPosition?.y?.toFixed(1) || "unknown"})`);
     
     if (!player || !newPosition) {
@@ -643,7 +640,7 @@ export function animateTokenToPosition(player, newPosition, duration = 500, onCo
     }
     
     continueWithAnimation(gamePlayer);
-    console.log (======continuewithanimation start=========)
+    console.log (//======continuewithanimation start=========//)
     
     function continueWithAnimation(playerObj) {
         const startX = playerObj.currentCoords.x;
@@ -680,12 +677,12 @@ export function animateTokenToPosition(player, newPosition, duration = 500, onCo
             playerObj.visualCoords = { x: currentX, y: currentY };
             
             // Redraw the board with the updated positions
-            console.log(======redraw board======)
+            console.log(//======redraw board======)
             drawBoard();
             
             if (progress < 1) {
                 requestAnimationFrame(animate);
-                console.log(=========requestAnimationFrame start ============)
+                console.log(//=========requestAnimationFrame start ============)
             } else {
                 // Animation complete
                 console.log(`TOKEN DEBUG: Animation complete for player ${playerObj.name || playerObj.id}`);
@@ -717,7 +714,7 @@ export function animateTokenToPosition(player, newPosition, duration = 500, onCo
  * Stops on interrupting spaces or when steps run out.
  */
 export function startMoveAnimation(player, steps, onComplete) {
-    console.log(==================startmoveanimation start=====================)
+    console.log(//=================startmoveanimation start=====================//)
     let currentStep = 0;
     let currentCoords = { ...player.currentCoords }; 
     const INTERRUPTING_TYPES = ['draw', 'choicepoint', 'junction', 'finish', 'special_event']; 
@@ -733,7 +730,7 @@ export function startMoveAnimation(player, steps, onComplete) {
     }
 
     console.log(`ANIMATE: Starting move sequence for ${player.name} from (${currentCoords.x},${currentCoords.y}) for ${steps} steps.`);
-    console.log(==================move animatiion starting============)
+    console.log(//==================move animatiion starting============//)
     
     // ADDED: Validate starting position before attempting to move
     if (!isValidPlayerPosition(currentCoords)) {
@@ -751,24 +748,24 @@ export function startMoveAnimation(player, steps, onComplete) {
     }
     
     function completeAnimation(reason) {
-        console.log(============completeanimation start============)
+        console.log(//============completeanimation start============)
         console.log(`ANIMATE: Completing at (${currentCoords.x},${currentCoords.y}). Reason: ${reason}, Steps Taken: ${currentStep}/${totalStepsRequested}`);
         player.currentCoords = { ...currentCoords }; // Update player state *before* callback
         if (onComplete) {
             onComplete({ reason: reason, stepsTaken: currentStep });
-            console.log(===============oncomplete animation start============)
+            console.log(//===============oncomplete animation start============)
         }
     }
     
     function moveNextStep() {
-        console.log(=========movenextstep start============)
+        console.log(//=========movenextstep start============)
         if (currentStep >= totalStepsRequested) {
             completeAnimation('steps_complete');
             return;
         }
         
         const nextOptions = getNextStepOptions(currentCoords);
-        console.log(==================getnextstepoptions start ===========================)
+        console.log(//==================getnextstepoptions start ===========================)
         console.log(`ANIMATE DEBUG: Step ${currentStep+1}, nextOptions:`, nextOptions);
 
         if (!nextOptions || nextOptions.type === 'Error' || nextOptions.type === 'End') {
@@ -833,7 +830,7 @@ export function startMoveAnimation(player, steps, onComplete) {
         console.log(`ANIMATE: Step ${currentStep+1}/${totalStepsRequested}: (${currentCoords.x},${currentCoords.y}) -> (${targetPos.x},${targetPos.y}) (Target Type: ${targetTypeLower}, Interrupt: ${shouldInterrupt})`);
         
         animateTokenToPosition(player, targetPos, animationState.durationPerStep, () => {
-            console.log(=========animatetokentoposition start===============)
+            console.log(//=========animatetokentoposition start===============)
             // Update currentCoords for the next step calculation
             // FIX: Use targetPos directly to avoid potential issues with player.x/y
             currentCoords = { ...targetPos };
