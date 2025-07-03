@@ -851,7 +851,7 @@ export function startMoveAnimation(player, steps, onComplete) {
             }
         });
     }
-    console.log(------------movenextstep called start------------------)    
+    
     moveNextStep(); 
 }
 
