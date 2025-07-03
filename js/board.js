@@ -714,7 +714,7 @@ export function animateTokenToPosition(player, newPosition, duration = 500, onCo
  * Stops on interrupting spaces or when steps run out.
  */
 export function startMoveAnimation(player, steps, onComplete) {
-    console.log(--------startmoveanimation start------------)
+    console.log(--------------startmoveanimation start-------------------)
     let currentStep = 0;
     let currentCoords = { ...player.currentCoords }; 
     const INTERRUPTING_TYPES = ['draw', 'choicepoint', 'junction', 'finish', 'special_event']; 
@@ -730,6 +730,7 @@ export function startMoveAnimation(player, steps, onComplete) {
     }
 
     console.log(`ANIMATE: Starting move sequence for ${player.name} from (${currentCoords.x},${currentCoords.y}) for ${steps} steps.`);
+    console.log(----------------move animatiion starting------------)
     
     // ADDED: Validate starting position before attempting to move
     if (!isValidPlayerPosition(currentCoords)) {
@@ -747,10 +748,12 @@ export function startMoveAnimation(player, steps, onComplete) {
     }
     
     function completeAnimation(reason) {
+        console.log(------------completeanimation start------------)
         console.log(`ANIMATE: Completing at (${currentCoords.x},${currentCoords.y}). Reason: ${reason}, Steps Taken: ${currentStep}/${totalStepsRequested}`);
         player.currentCoords = { ...currentCoords }; // Update player state *before* callback
         if (onComplete) {
             onComplete({ reason: reason, stepsTaken: currentStep });
+            console.log(-------------oncomplete animation start----------)
         }
     }
     
@@ -762,6 +765,7 @@ export function startMoveAnimation(player, steps, onComplete) {
         }
         
         const nextOptions = getNextStepOptions(currentCoords);
+        console.log(------------------getnextstepoptions start -------------------------)
         console.log(`ANIMATE DEBUG: Step ${currentStep+1}, nextOptions:`, nextOptions);
 
         if (!nextOptions || nextOptions.type === 'Error' || nextOptions.type === 'End') {
@@ -847,7 +851,7 @@ export function startMoveAnimation(player, steps, onComplete) {
             }
         });
     }
-    
+    console.log(------------movenextstep called start------------------)    
     moveNextStep(); 
 }
 
