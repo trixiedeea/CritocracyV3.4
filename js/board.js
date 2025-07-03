@@ -63,7 +63,7 @@ let animationState = {
  * @param {number} [tolerance=5] - Pixel tolerance for matching regular space coordinates.
  * @returns {object|null} - The matching space object { pathColor, coordinates, Next, Type, ... } or null.
  */
-export function findSpaceDetailsByCoords(targetCoords, tolerance = 5) 
+export function findSpaceDetailsByCoords(targetCoords, tolerance = 5) {
     if (!targetCoords) return null;
 
     const allPaths = [purplePath, bluePath, cyanPath, pinkPath];
@@ -139,6 +139,7 @@ export function findSpaceDetailsByCoords(targetCoords, tolerance = 5)
     // console.warn(`findSpaceDetailsByCoords: No space found near (${targetCoords.x}, ${targetCoords.y})`);
     return null; // Not found
 }
+
 
 /**
  * Helper function: Ray-casting algorithm to check if a point is inside a polygon.
