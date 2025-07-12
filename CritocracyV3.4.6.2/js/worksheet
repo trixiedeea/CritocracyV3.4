@@ -1,0 +1,249 @@
+                          /*
+                          CRITOCRACY ACTUAL FUNCTION FLOW
+                          ===============================
+
+                          START
+                            |
+                            v
+                          advanceToNextPlayer()
+                            |
+                            v
+                          updateGameState({ currentPhase: 'ROLLING' })
+                            |
+                            v
+                          updateGameControls()
+                            |
+                            v
+                          updatePlayerInfo(newCurrentPlayer.id)
+                            |
+                            v
+                          [Is newCurrentPlayer.isHuman?] -----> YES -----> [Wait for dice click]
+                            |                                              |
+                            NO                                             |
+                            v                                              |
+                          setTimeout(2000ms)                               |
+                            |                                              |
+                            v                                              |
+                          handleAITurn(aiPlayer)                           |
+                            |                                              |
+                            v                                              |
+                          setTimeout(500ms)                                |
+                            |                                              |
+                            v                                              |
+                          updateGameState({ rollResult: aiRoll })          |
+                            |                                              |
+                            v                                              |
+                          animateDiceRoll() <------------------------------+
+                            |
+                            v
+                          handlePlayerAction()
+                            |
+                            v
+                          [Is player.skipTurns > 0?]
+                            |                                              
+                            NO                                             
+                            |                                        
+                            v                                              
+                          updateGameControls()                             
+                            |                                        
+                            v                                              
+                          [Get rollResult from state]                      
+                            |                                              
+                            v                                              
+                          [Is player at START_SPACE?] -----> YES -----> updateGameState({ currentPhase: 'AWAITING_PATH_CHOICE' })
+                            |                                              |
+                            NO                                             v
+                            |                                        promptForPathChoice() (Human)
+                            v                                              |
+                          animateTokenToPosition() <----------------------+ simulateCpuChoicepoint() (AI)
+                            |                                              |
+                            v                                              |
+                          [Calculate movement path]                        |
+                            |                                              |
+                            v                                              |
+                          [Animate token movement]                         |
+                            |                                              |
+                            v                                              |
+                          isPointInRectangle() <---------------------------+
+                            |
+                            v
+                          [Is choicepoint?] -----> YES -----> promptForChoicepoint() (Human)
+                            |                                    |
+                            NO                                   v
+                            |                              simulateCpuChoicepoint() (AI)
+                            v                                    |
+                          handleEndOfMove()                      v
+                            |                              handlePathChoice()
+                            v                                    |
+                          findSpaceDetailsByCoords()             |
+                            |                                    |
+                            v                                    |
+                          getSpaceDetailsByCoords()              |
+                            |                                    |
+                            v                                    |
+                          [Determine space type and path]        |
+                            |                                    |
+                            v                                    |
+                          handleSpaceAction()                    |
+                            |                                    |
+                            v                                    |
+                          [Is SPACE_TYPE === 'Draw'?] -----> YES -----> highlightDeckRegions(age deck)
+                            |                                              |
+                            NO                                             v
+                            |                                        [Is player.isHuman?] -----> YES -----> updateGameState({ currentPhase: 'AWAITING_CARD_CLICK' })
+                            v                                              |                                    |
+                          highlightDeckRegions(end-of-turn)                |                                    |
+                            |                                              |                                    |
+                            v                                              |                                    |
+                          handleEndTurn()                                  |                                    |
+                            |                                              |                                    |
+                            v                                              |                                    |
+                          highlightDeckRegions(end-of-turn)                |                                    |
+                            |                                              |                                    |
+                            v                                              |                                    |
+                          updateGameState({ currentPhase: 'AWAITING_CARD_CLICK' }) |                                    |
+                            |                                              |                                    |
+                            v                                              |                                    |
+                          [Wait for human to click deck]                   |                                    |
+                            |                                              |                                    |
+                            v                                              |                                    |
+                          handleCanvasCardClick()                          |                                    |
+                            |                                              |                                    |
+                            v                                              |                                    |
+                          [Check which deck region clicked]                |                                    |
+                            |                                              |                                    |
+                            v                                              |                                    |
+                          clearHighlights()                                |                                    |
+                            |                                              |                                    |
+                            v                                              |                                    |
+                          drawCard() <-------------------------------------+ simulateCpuDeckClick() (AI)
+                            |                                              |
+                            v                                              |
+                          [Get card from deck]                             |
+                            |                                              |
+                            v                                              |
+                          showCard()                                       |
+                            |                                              |
+                            v                                              |
+                          [Create dialog with card info]                   |
+                            |                                              |
+                            v                                              |
+                          [Is isEndOfTurnCard?] -----> YES -----> [Show closeCardButton]
+                            |                                              |
+                            NO                                             v
+                            |                                        closeCardButton calls applyCardEffect()
+                            v                                              |
+                          [Show closeAgeCardButton]                        |
+                            |                                              |
+                            v                                              |
+                          closeAgeCardButton calls applyAgeCardEffect()    |
+                            |                                              |
+                            v                                              |
+                          [Is player.isAI?] -----> YES -----> setTimeout(9000ms)
+                            |                                              |
+                            NO                                             v
+                            |                                        dialog.close()
+                            v                                              |
+                          [Wait for human to close dialog]                 |
+                            |                                              |
+                            v                                              |
+                          applyCardEffect() <------------------------------+
+                            |
+                            v
+                          [Process role-based effects]
+                            |
+                            v
+                          processEffect() for each effect
+                            |
+                            v
+                          hasImmunity() check
+                            |
+                            v
+                          applyResourceChange() / applyMovement() / applySteal() / etc.
+                            |
+                            v
+                          updatePlayerInfo()
+                            |
+                            v
+                          processEndPlayerTurn()
+                            |
+                            v
+                          [Is player.isHuman?] -----> YES -----> updateUIState({ showEndTurnButton: true })
+                            |                                              |
+                            NO                                             v
+                            |                                        [Enable End Turn button with shake animation]
+                            v                                              |
+                          setTimeout(3000ms)                               |
+                            |                                              |
+                            v                                              |
+                          advanceToNextPlayer() <--------------------------+
+                            |
+                            v
+                          [Is game over?] -----> YES -----> triggerGameOver()
+                            |                                    |
+                            NO                                   v
+                            |                              showEndGameScreen()
+                            v                                    |
+                          updateGameState({ currentPlayerIndex: nextPlayerIndex }) |
+                            |                                    |
+                            v                                    |
+                          updateGameState({ currentPhase: 'ROLLING' }) |
+                            |                                    |
+                            v                                    |
+                          updateGameState({ pendingActionData: null }) |
+                            |                                    |
+                            v                                    |
+                          updateGameState({ rollResult: 0 })     |
+                            |                                    |
+                            v                                    |
+                          getCurrentPlayer()                     |
+                            |                                    |
+                            v                                    |
+                          updateGameControls()                   |
+                            |                                    |
+                            v                                    |
+                          [Is newCurrentPlayer.isHuman?] -----> YES -----> updatePlayerInfo()
+                            |                                              |
+                            NO                                             v
+                            |                                        updateGameControls()
+                            v                                              |
+                          setTimeout(2000ms)                               |
+                            |                                              |
+                            v                                              |
+                          handleAITurn() <---------------------------------+
+                            |
+                            v
+                  [LOOP BACK TO START]
+
+WHERE FLOW STOPS (WAITING FOR USER/AI):
+========================================
+1. Human dice click: advanceToNextPlayer() → [WAIT] → dice.addEventListener()
+2. Human path choice: promptForPathChoice() → [WAIT] → handlePathChoice()
+3. Human choicepoint: promptForChoicepoint() → [WAIT] → handlePathChoice()
+4. Human card click: updateGameState('AWAITING_CARD_CLICK') → [WAIT] → handleCanvasCardClick()
+5. Human card close: showCard() → [WAIT] → applyCardEffect()/applyAgeCardEffect()
+6. Human end turn: processEndPlayerTurn() → [WAIT] → endTurnButton.addEventListener()
+
+AI AUTOMATION POINTS:
+====================
+1. AI dice roll: handleAITurn() → setTimeout(2000ms) → animateDiceRoll()
+2. AI path choice: simulateCpuChoicepoint() → setTimeout(2000ms) → handlePathChoice()
+3. AI choicepoint: simulateCpuChoicepoint() → setTimeout(2000ms) → handlePathChoice()
+4. AI card draw: simulateCpuDeckClick() → setTimeout(2000ms) → drawCard()
+5. AI card close: showCard() → setTimeout(9000ms) → applyCardEffect()/applyAgeCardEffect()
+6. AI turn end: processEndPlayerTurn() → setTimeout(3000ms) → advanceToNextPlayer()
+
+RECURSIVE CHOICEPOINT LOOP:
+==========================
+animateTokenToPosition() → isPointInRectangle() → [Is choicepoint?] → 
+├── YES: promptForChoicepoint()/simulateCpuChoicepoint() → handlePathChoice() → animateTokenToPosition() (RECURSIVE)
+└── NO: handleEndOfMove()
+
+SPACE TYPE BRANCHING:
+====================
+handleEndOfMove() → handleSpaceAction() →
+├── Regular Space: highlightDeckRegions(end-of-turn) → handleEndTurn() → drawCard(end-of-turn) → applyCardEffect() → processEndPlayerTurn()
+└── Draw Space: highlightDeckRegions(age-deck) → drawCard(age) → applyAgeCardEffect() → handleEndTurn() → drawCard(end-of-turn) → applyCardEffect() → processEndPlayerTurn()
+*/
+
+
