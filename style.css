@@ -14,7 +14,7 @@ p.eat-drink, p.visit {
 
 /*changes text color of any visit element*/
 .visit {
-  color: #71368a
+  color: #71368a;
 }
 
 /*in restaurant list transorms only third item to uppercase and text to blue*/
