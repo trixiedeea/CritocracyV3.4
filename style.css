@@ -33,8 +33,10 @@ p.eat-drink, p.visit {
     }
     &:hover {
       background-color: #000000;
+      transform: scale(1.25);
     }
     &:active {
       color: #fa0202;
+      transform: scale(1.15);
     }
 }
