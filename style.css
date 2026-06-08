@@ -18,7 +18,7 @@ p.eat-drink, p.visit {
 }
 
 /*in restaurant list transorms only third item to uppercase and text to blue*/
-#restaurants li:nth-child(3) {
+.restaurants li:nth-child(3) {
     text-transform: uppercase;
     color: blue;
 }
