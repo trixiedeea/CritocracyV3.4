@@ -24,17 +24,16 @@ p.eat-drink, p.visit {
 }
 
 /*makes link text color green, after link is clicked makes link text color blue, when mouse hovers over link background color changes to black, when user is in action of clicking on link, link text changes from green to red until click is released*/
-.restaurant-link {
-    &:link {
-      color: #269e34;
-    }
-    &:visited {
-      color: #3f59bf;
-    }
-    &:hover {
-      background-color: #000000;
-    }
-    &:active {
-      color: #fa0202;
-    }
+a:link {
+    color: #269e34;
 }
+a:visited {
+    color: #3f59bf;
+}
+a:hover {
+    background-color: #000000;
+}
+a:active {
+    color: #fa0202;
+}
+
