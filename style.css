@@ -1,3 +1,4 @@
+/*centers all h1 headers both in the page and in the element and adds a border*/
 h1 {
   width: 50%;
   margin: 0 auto;
@@ -6,6 +7,18 @@ h1 {
   text-align: center;
 }
 
-.eat-drink, .visit {
+/*indents only paragraphs classed eat-drink and visit*/
+p.eat-drink, p.visit {
     text-indent: 10%;
+}
+
+/*changes text color of any visit element*/
+.visit {
+  color: #71368a
+}
+
+/*in restaurant list transorms only third item to uppercase and text to blue*/
+#restaurants li:nth-child(3) {
+    text-transform: uppercase;
+    color: blue;
 }
