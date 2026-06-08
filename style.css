@@ -22,3 +22,23 @@ p.eat-drink, p.visit {
     text-transform: uppercase;
     color: blue;
 }
+
+/*makes link text color green*/
+a:link {
+    color: green;
+}
+
+/*after link is clicked makes link text color blue*/
+a:visited {
+    color: blue;
+}
+
+/*when mouse hovers over link text changes link text from green to black*/
+a:hover {
+    background-color: black;
+}
+
+/*when user is in action of clicking on link, link text changes from green to red until click is released*/
+a:active {
+    color: red;
+}
