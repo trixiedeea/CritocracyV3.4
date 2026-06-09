@@ -1,20 +1,27 @@
-/* Contains style rules for Critocracy */
-
 h1 {
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
     font-family: Papyrus, "Brush Script MT", Monaco;
+    border: 10px, #ffffff;
+     width: 50%;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 h2 {
-    background-color: #643085;
+    background-color: #1692a2;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid white;
+    text-align: center;
     font-family: Papyrus, "Brush Script MT", Monaco;
     color: #ffffff;
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
     color: #ffffff;
     font-family: Papyrus, "Brush Script MT", Monaco;
@@ -25,4 +32,9 @@ li {
     font-family: Papyrus, "Brush Script MT", Monaco;
     color: #ffffff;
 }
-
+a {
+    color: #ffffff;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
