@@ -1,39 +1,28 @@
-/*centers all h1 headers both in the page and in the element and adds a border*/
+/* Contains style rules for Critocracy */
+
 h1 {
-  width: 50%;
-  margin: 0 auto;
-  padding: 10px;
-  border: 2px solid black;
-  text-align: center;
-}
-
-/*indents only paragraphs classed eat-drink and visit*/
-p.eat-drink, p.visit {
-    text-indent: 10%;
-}
-
-/*changes text color of any visit element*/
-.visit {
-  color: #71368a;
-}
-
-/*in restaurant list transorms only third item to uppercase and text to blue*/
-.restaurants li:nth-child(3) {
+    text-align: center;
+    color: #ffffff;
     text-transform: uppercase;
-    color: blue;
+    font-family: Papyrus, "Brush Script MT", Monaco;
 }
 
-/*makes link text color green, after link is clicked makes link text color blue, when mouse hovers over link background color changes to black, when user is in action of clicking on link, link text changes from green to red until click is released*/
-a:link {
-    color: #269e34;
+h2 {
+    background-color: #643085;
+    font-family: Papyrus, "Brush Script MT", Monaco;
+    color: #ffffff;
 }
-a:visited {
-    color: #3f59bf;
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    font-family: Papyrus, "Brush Script MT", Monaco;
+    text-align: justify;
 }
-a:hover {
-    background-color: #000000;
-}
-a:active {
-    color: #fa0202;
+
+li {
+    font-family: Papyrus, "Brush Script MT", Monaco;
+    color: #ffffff;
 }
 
