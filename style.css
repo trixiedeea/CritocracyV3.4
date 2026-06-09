@@ -26,6 +26,8 @@ p {
     color: #ffffff;
     font-family: Papyrus, "Brush Script MT", Monaco;
     text-align: justify;
+    margin: 5%;
+    padding: 2%;
 }
 
 li {
