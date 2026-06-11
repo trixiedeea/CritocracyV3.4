@@ -1,18 +1,18 @@
-#originalBoard {
+.image-small {
     float: right;
     margin-left: 1%;
     border: 5px double white;
     border-radius: 10%;
 }
 
-#filterBoard {
+.image-filtered {
     float: left; 
     margin-right: 1%;
     border: 5px solid white;
     border-radius: 20% 30%;
 }
 
-#blackWhiteBoard {
+.image-blackAndWhite {
     float: right;
     margin-left: 1%;
     border: 5px dashed white;
