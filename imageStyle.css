@@ -30,7 +30,11 @@
 }
 
 footer {
-    background-image: url('./images/Critocracy.jpg');
+    background-image: url(./images/Critocracy.jpg);
     background-position: center;
+    background-repeat: no-repeat;
+    ackground-size: cover;
+    background-height: auto;
+    background-width: auto;
     color: #ffffff;
 }
