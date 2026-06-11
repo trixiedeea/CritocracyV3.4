@@ -1,0 +1,11 @@
+#originalBoard {
+    float: right;
+}
+
+#filterBoard {
+    float: left;
+}
+
+#blackWhiteBoard {
+    float: right;
+}
