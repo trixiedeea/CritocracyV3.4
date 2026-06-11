@@ -18,3 +18,9 @@
     border: 5px dashed white;
     border-radius: 30% 20% 20% 30%;
 }
+
+.image-large {
+    width: 100%;      /* Responsive */
+    max-width: 800px;
+    height: auto;
+}
