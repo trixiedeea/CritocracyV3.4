@@ -267,19 +267,61 @@ li {
     font-family: Papyrus, "Brush Script MT", Monaco;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    color: #000000;
-    background-color: #ffffff;
-}
-
 .navbar a {
     display: block;
     padding: 15px 20px;
     color: white;
     text-decoration: none;
+}
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #080a54;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.navbar > li {
+    position: relative;
+}
+
+.navbar > li > a {
+    display: block;
+    padding: 18px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.paths {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #080a54;
+    min-width: 220px;
+}
+
+.navbar > li:hover > .paths {
+    display: block;
+}
+
+.paths a {
+    display: block;
+    padding: 12px 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.paths a:hover {
+    color: #4c50d9;
+    background-color: rgba(2, 4, 89, 0.5);
+}
