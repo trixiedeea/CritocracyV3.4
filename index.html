@@ -8,7 +8,6 @@
 </head>
 
 <!--change background color back to #1D5CAA -->
-<body style="background-color: #15427A;">
     
 <!-- Critocracy game rules page -->
 
@@ -88,6 +87,7 @@
 <h2>Player Roles</h2>
     <p>
     Players can choose from six roles that shape how they interact with the game systems. Each role has different starting resources and abilities. These differences ensure that players experience the same events in different ways. Roles also interact differently with resource gains and losses. Some roles are better at accumulating Money while others focus on Knowledge or Influence. Each role has a direct opposition that affects certain interactions. These oppositions prevent simple dominance strategies. Role selection is an important part of early game strategy.
+    </p>
         <ul id="shape">
             <li>Revolutionary</li>
             <li>Historian</li>
@@ -96,7 +96,6 @@
             <li>Politician</li>
             <li>Artist</li>
         </ul>
-    </p>
    <div id="role-Selection-Container" class="grid-Container">
             <!-- Artist Card -->
         <div class="role-Card grid-Item artist">
@@ -284,8 +283,8 @@
 
 <section id="cardActions">
 <h2>Card Actions</h2>
-    <p> 
-    Card actions are how players can earn resources or steal them from other players. Not all actions are on each card. End of turn cards affect     each role differently whereas special event cards' actions are hidden until after the player makes their choice of action. The card actions are:
+    <p>Card actions are how players can earn resources or steal them from other players. Not all actions are on each card. End of turn cards affect each role differently whereas special event cards' actions are hidden until after the player makes their choice of action. The card actions are:
+    </p>
         <ol>
             <li>Skip Next Turn</li>
             <li>Move Extra Spaces</li>
@@ -301,7 +300,6 @@
             <li>Form Alliance</li>
             <li>Switch Places</li>
         </ol>
-    </p>
 </section>
 
 <section id="strategicMechanics">
@@ -342,15 +340,16 @@
             </fieldset>
             <fieldset>
                     <legend>Favorite Path</legend>
-                    <label for="favoritePath" class="small-text">Please Choose Only One:</label></br>
-                        <input type="checkbox" id="expansion" name="path" value="expansion">
-                        <label for="expansion">Age Of Expansion</label></br>
-                        <input type="checkbox" id="resistance" name="path" value="resistance">
-                        <label for="resistance">Age Of Resistance</label></br>
-                        <input type="checkbox" id="legacy" name="path" value="legacy">
-                        <label for="legacy">Age Of Legacy</label></br>
-                        <input type="checkbox" id="reckoning" name="path" value="reckoning">
-                        <label for="reckoning">Age Of Reckoning</label>
+                    <input type="text" id="favoritePath" name="favoritePath">br>
+                        <span class="small-text">Please Choose Only One:</span><br>
+                        <input type="checkbox" id="favorite-expansion" name="path" value="expansion">
+                        <label for="favorite-expansion">Age Of Expansion</label><br>
+                        <input type="checkbox" id="favorite-resistance" name="path" value="resistance">
+                        <label for="favorite-resistance">Age Of Resistance</label><br>
+                        <input type="checkbox" id="favorite-legacy" name="path" value="legacy">
+                        <label for="favorite-legacy">Age Of Legacy</label><br>
+                        <input type="checkbox" id="favorite-reckoning" name="path" value="reckoning">
+                        <label for="favorite-reckoning">Age Of Reckoning</label>
             </fieldset>
             <fieldset>
                     <legend>Number Of Times Played</legend>
@@ -365,15 +364,16 @@
                         oninput="scoreOutput.value = this.value">
                     <output id="scoreOutput">25</output>
             </fieldset>
-            <fieldset>
-                    <legend>Opponent Type</legend>
-                    <label for="opponentType">Do You Play With Humans, AI or both?:</label><br>
-                          <input type="radio" id="humans" name="opponantType" value="humans">
-                          <label for="humans"> Humans</label><br>
-                          <input type="radio" id="AI" name="opponentType" value="AI">
-                          <label for="AI">AI</label><br>
-                          <input type="radio" id="both" name="opponentType" value="both">
-                          <label for="both">Both</label>
+           <fieldset>
+                <legend>Opponent Type</legend>
+                <!-- Changed from label to a styling span or paragraph -->
+                <span class="small-text">Do You Play With Humans, AI or both?:</span><br>
+                <input type="radio" id="humans" name="opponentType" value="humans">
+                <label for="humans"> Humans</label><br>
+                <input type="radio" id="AI" name="opponentType" value="AI">
+                <label for="AI">AI</label><br>
+                <input type="radio" id="both" name="opponentType" value="both">
+                <label for="both">Both</label>
             </fieldset>
          <br>
          <button type="submit">Submit</button>
@@ -389,7 +389,7 @@ Play Critocracy Online
 
 <img src="./Images/originalBoard.png" class="image-large" alt="Original Board">
 
-<footer style="text-align:center;">
+<footer>
 <p style="text-align:center;"><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Services</a> | <a href="#">News</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
 <br><br><br>
 <p style="text-align:center;">Copyright &copy; - All rights reserved</p>
