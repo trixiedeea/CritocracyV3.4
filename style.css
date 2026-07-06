@@ -325,3 +325,50 @@ li {
     color: #4c50d9;
     background-color: rgba(2, 4, 89, 0.5);
 }
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+form {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+form fieldset {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    margin: 15px 0;
+    padding: 15px;
+}
+
+form legend {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-description {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+form label,
+form input,
+form output {
+    text-align: left;
+    color: #ffffff;
+}
+
+.small-text {
+    font-size: 11px;
+    font-weight: normal;
+}
