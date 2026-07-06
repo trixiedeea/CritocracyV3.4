@@ -324,13 +324,13 @@ li {
 .navbar a:hover {
     color: #4c50d9;
     background-color: #b8c8e3;
-    transform: scale 125%;
+    transform: scale(1.25);
 }
 
 .paths a:hover {
     color: #4c50d9;
     background-color: #b8c8e3;
-     transform: scale 125%;
+     transform: scale(1.25);
 }
 
 fieldset {
