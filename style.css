@@ -1,5 +1,13 @@
 /* Contains style rules for Critocracy */
 
+body {
+    background-color: #15427A;
+}
+
+footer {
+    text-align: center;
+}
+
 h1 {
     text-align: center;
     color: #ffffff;
