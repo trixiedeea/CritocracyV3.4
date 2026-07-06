@@ -321,18 +321,25 @@ li {
     text-decoration: none;
 }
 
+.navbar a:hover {
+    color: #4c50d9;
+    background-color: #b8c8e3;
+}
+
 .paths a:hover {
     color: #4c50d9;
-    background-color: rgba(2, 4, 89, 0.5);
+    background-color: #b8c8e3;
 }
 
 fieldset {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 form {
     color: #ffffff;
     font-size: 14px;
+    margin-left: 45px;
+    margin-right: 45px;
 }
 
 form fieldset {
