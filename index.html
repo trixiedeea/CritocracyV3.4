@@ -12,18 +12,19 @@
 <nav>
     <ul class="navbar">
         <li><a href="#gameOverview">Game Overview</a></li>
-        <li><a href="#boardDesign">Game Board Design</a></li>
+        <li><a href="#boardDesign">Game Board Design</a>
             <ul class="paths">
                 <li><a href="#expansion">Age Of Expansion</a></li>
                 <li><a href="#resistance">Age Of Resistance</a></li>
                 <li><a href="#reckoning">Age Of Reckoning</a></li>
                 <li><a href="#legacy">Age Of Legacy</a></li>
             </ul>
+        </li>
         <li><a href="#gameComponents">Game Components</a></li>
         <li><a href="#playerRoles">Player Roles</a></li>
         <li><a href="#setup">Setup</a></li>
         <li><a href="#gameplay">Gameplay</a></li>
-        <li><a href="#gameMechanics">Game Mechanics</a></li
+        <li><a href="#gameMechanics">Game Mechanics</a></li>
         <li><a href="#cardActions">Card Actions</a></li>
         <li><a href="#strategicMechanics">Strategic Mechanics</a></li>
         <li><a href="#victoryConditions">Victory Conditions</a></li>
@@ -302,57 +303,64 @@ The game ends when all players reach the final space on their chosen path. Playe
 </p>
 
 <form action="#" method="post">
-
-    <label for="Name">Name:</label>
-    <input type="text" id="name" name="name">
-
-    <fieldset>
-        <legend>Favorite Game Role</legend>
-        <label for="gameRole">Choose a Game Role:</label>
-        <input list="gameRoles" id="gameRole" name="gameRoles">
-            <datalist id="gameRoles">
-                <option value="Politician">
-                <option value="Entrepreneur">
-                <option value="Artist">
-                <option value="Colonialist">
-                <option value="Historian">
-                <option value="Revolutionary">
-            </datalist>
-    </fieldset>
-
-    <fieldset>
-        <legend>Favorite Path</legend>
-        <label for="favoritePath">Please Choose Only One:</label>
-            <input type="checkbox" id="expansion" name="path" value="expansion">
-            <label for="expansion">Age Of Expansion</label>
-            <input type="checkbox" id="resistance" name="path" value="resistance">
-            <label for="resistance">Age Of Resistance</label>
-            <input type="checkbox" id="legacy" name="path" value="legacy">
-            <label for="legacy">Age Of Legacy</label>
-            <input type="checkbox" id="reckoning" name="path" value="reckoning">
-            <label for="reckoning">Age Of Reckoning</label>
-    </fieldset>
-
-    <fieldset>
-        <legend>Playtime Per Week</legend>
-        <label for="gameTime">Estimate 0 To 50 Hours Per Week:</label>
-        <input type="range" id="averageGameTime" name="gameTime" min="0" max="50" value="25">
-            oninput="scoreOutput.value = this.value">
-        <output id="scoreOutput">25</output>
-    </fieldset>
-    <fieldset>
-        <legend>Opponant Type</legend>
-        <label for="opponantType">Did You Play With Human, AI or both?:</label><br>
-              <input type="radio" id="human" name="opponantType" value="human">
-              <label for="human"> Human</label><br>
-              <input type="radio" id="AI" name="opponantType" value="AI">
-              <label for="AI">AI</label><br>
-              <input type="radio" id="both" name="opponantType" value="both">
-              <label for="both">Both</label>
-    </fieldset>
- <br>
- <button type="submit">Submit</button>
- <button type="reset">Reset</button>
+    <fieldset> 
+        <legend>Help Us Grow Our Game</legend>
+        <p>Input your user name and playing statistics to help guide and advise our devs</p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+            <fieldset>
+                <legend>Favorite Game Role</legend>
+                <label for="gameRole">Choose a Game Role:</label>
+                <input list="gameRoles" id="gameRole" name="gameRoles">
+                    <datalist id="gameRoles">
+                        <option value="Politician">
+                        <option value="Entrepreneur">
+                        <option value="Artist">
+                        <option value="Colonialist">
+                        <option value="Historian">
+                        <option value="Revolutionary">
+                    </datalist>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Favorite Path</legend>
+                <label for="favoritePath">Please Choose Only One:</label></br>
+                    <input type="checkbox" id="expansion" name="path" value="expansion">
+                    <label for="expansion">Age Of Expansion</label></br>
+                    <input type="checkbox" id="resistance" name="path" value="resistance">
+                    <label for="resistance">Age Of Resistance</label></br>
+                    <input type="checkbox" id="legacy" name="path" value="legacy">
+                    <label for="legacy">Age Of Legacy</label></br>
+                    <input type="checkbox" id="reckoning" name="path" value="reckoning">
+                    <label for="reckoning">Age Of Reckoning</label>
+            </fieldset>
+            <fieldset>
+                <legend>Number Of Times Played</legend>
+                <label for="timesPlayed">How Many Times Have You Played The Game:</label>
+                <input 
+                    type="range" 
+                    id="timesPlayed" 
+                    name="timesPlayed" 
+                    min="0" 
+                    max="50" 
+                    value="25"
+                    oninput="scoreOutput.value = this.value">
+                <output id="scoreOutput">25</output>
+            </fieldset>
+            <fieldset>
+                <legend>Opponent Type</legend>
+                <label for="opponentType">Do You Play With Humans, AI or both?:</label><br>
+                      <input type="radio" id="humans" name="opponantType" value="humans">
+                      <label for="humans"> Humans</label><br>
+                      <input type="radio" id="AI" name="opponentType" value="AI">
+                      <label for="AI">AI</label><br>
+                      <input type="radio" id="both" name="opponentType" value="both">
+                      <label for="both">Both</label>
+            </fieldset>
+         <br>
+         <button type="submit">Submit</button>
+         <button type="reset">Reset</button>
+    </fieldset> 
 </form>
     
 <p>
