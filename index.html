@@ -5,7 +5,6 @@
     <title>Critocracy</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="imageStyle.css">
 </head>
 
 <body style="background-color: #1c6fa6;">
@@ -13,9 +12,8 @@
 <!-- Critocracy game rules page -->
 
 <h1>Critocracy: A Critical Strategy Board Game</h1>
-    
-<img id="originalBoard" src="./Images/originalBoard.png" class="image-small" alt="Original Board" style="width: 200px;">
-<h2 class="highlight">Game Overview</h2>
+
+<h2>Game Overview</h2>
 <p>
 Critocracy is a strategy board game focused on critical thinking, consequences, and decision-making under changing conditions. Players take on different ideological and historical roles that shape how they interact with the game. The goal is to collect and maintain Money, Knowledge, and Influence throughout the game. However, success is not just about accumulation but also about survival. If a player reaches zero in any resource, they are eliminated. The game is built around the idea that the same situation can affect different players in very different ways. Each role interacts with systems differently based on strengths and weaknesses. The winner is the player with the highest combined resources at the end.
 </p>
@@ -25,21 +23,19 @@ Critocracy is a strategy board game focused on critical thinking, consequences, 
 The game board is made up of four separate linear paths that players choose from rather than progress through sequentially. Each path represents a different way of interacting with systems, consequences, and decision-making. Players do not move through Ages in order but instead commit to a direction of play. Each path contains event spaces that shape outcomes differently depending on role. The structure emphasizes that choices matter and lead to different experiences. Some paths reward risk while others reward stability or adaptability. The board is designed to create unequal outcomes based on perspective. This ensures that no single strategy guarantees success.
 </p>
 
-<img id="filterBoard" src="./Images/filterBoard.png" class="image-filtered" alt="Filtered Board" style="width: 250px;">
 <h2>The Age of Expansion</h2>
 <p>
-The Age of Expansion is one of the four possible player paths. It focuses on growth, resource accumulation, and system expansion. Players who choose this path often gain Money more easily than other resources. However, expansion also introduces instability and resistance from other systems. Events on this path may reward aggressive decision-making. At the same time, those decisions can create long-term consequences. Different roles experience Expansion differently depending on their strengths. This path emphasizes the trade-off between power and risk. I need to add some words here so Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nibh massa, cursus in commodo et, interdum dictum elit. Aenean vel ante eu odio faucibus faucibus. In vitae sapien sit amet arcu egestas dignissim et nec leo. Cras fermentum commodo gravida. Proin consectetur dapibus justo eget gravida. Donec porta massa sit amet augue lobortis ut gravida elit euismod.
+The Age of Expansion is one of the four possible player paths. It focuses on growth, resource accumulation, and system expansion. Players who choose this path often gain Money more easily than other resources. However, expansion also introduces instability and resistance from other systems. Events on this path may reward aggressive decision-making. At the same time, those decisions can create long-term consequences. Different roles experience Expansion differently depending on their strengths. This path emphasizes the trade-off between power and risk.
 </p>
 
 <h2>The Age of Resistance</h2>
 <p>
 The Age of Resistance is a path focused on opposition, disruption, and challenge to established systems. Players on this path often interact with events involving conflict and structural pushback. Knowledge and Influence become especially important in this path. Some players may gain advantages through strategic resistance, while others struggle with instability. The same events can produce different outcomes depending on role abilities. This path highlights how resistance can both empower and limit players. It forces players to adapt constantly to changing conditions. Success depends on flexibility and awareness of consequences.
 </p>
-    
-<img id="blackWhiteBoard" src="./Images/blackWhiteBoard.png" class="image-blackAndWhite" alt="Black and White Board" style="width: 300px;">
+
 <h2>The Age of Reckoning</h2>
 <p>
-The Age of Reckoning is a path focused on consequences, reflection, and accountability. Players encounter situations where earlier decisions affect current outcomes. This path often challenges players to manage all three resources carefully. Mistakes made earlier in the game can become more significant here. However, careful planning can also create opportunities for recovery. Different roles may interpret the same event in different ways. This creates unequal consequences for identical situations. The path emphasizes that actions always have long-term effects. I also need to add some words here so again Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nibh massa, cursus in commodo et, interdum dictum elit. Aenean vel ante eu odio faucibus faucibus. In vitae sapien sit amet arcu egestas dignissim et nec leo. Cras fermentum commodo gravida. Proin consectetur dapibus justo eget gravida. Donec porta massa sit amet augue lobortis ut gravida elit euismod.
+The Age of Reckoning is a path focused on consequences, reflection, and accountability. Players encounter situations where earlier decisions affect current outcomes. This path often challenges players to manage all three resources carefully. Mistakes made earlier in the game can become more significant here. However, careful planning can also create opportunities for recovery. Different roles may interpret the same event in different ways. This creates unequal consequences for identical situations. The path emphasizes that actions always have long-term effects.
 </p>
 
 <h2>The Age of Legacy</h2>
@@ -57,14 +53,114 @@ The game includes a board made up of four selectable paths. Players use role car
 Players can choose from six roles that shape how they interact with the game systems. Each role has different starting resources and abilities. These differences ensure that players experience the same events in different ways. Roles also interact differently with resource gains and losses. Some roles are better at accumulating Money while others focus on Knowledge or Influence. Each role has a direct opposition that affects certain interactions. These oppositions prevent simple dominance strategies. Role selection is an important part of early game strategy.
 </p>
 
-<ul id="shape">
-    <li>Revolutionary</li>
-    <li>Historian</li>
-    <li>Colonialist</li>
-    <li>Entrepreneur</li>
-    <li>Politician</li>
-    <li>Artist</li>
-</ul>
+    <ul id="shape">
+        <li>Revolutionary</li>
+        <li>Historian</li>
+        <li>Colonialist</li>
+        <li>Entrepreneur</li>
+        <li>Politician</li>
+        <li>Artist</li>
+    </ul>
+   <div id="role-Selection-Container" class="grid-Container">
+            <!-- Artist Card -->
+        <div class="role-Card grid-Item artist">
+            <h3>Salvidor Dali The Artist</h3>
+            <h4>A Brilliant Nutjob And Entertaining Loose Cannon</h4>
+            <div class="role-Card-Body">
+                <div class="role-Card-Text">
+                    <p><strong>Starting Resources:</strong> 14 Influence, 8 Knowledge, 0 Money</p>
+                    <p><strong>Special Ability:</strong> Gains Knowledge Faster</p>
+                    <p><strong>Opposition:</strong> Entrepreneur</p>
+                </div>
+                <div class="role-Card-Image token-image">
+                    <img src="./Images/A.png" alt="Artist">
+                </div>
+            </div>
+        </div>
+
+        <!-- Historian Card -->
+        <div class="role-Card grid-Item historian">
+            <h3>Suetonius The Ancient Historian</h3>
+            <h4>Rome's Greatest Gossip....err Historian</h4>
+            <div class="role-Card-Body">
+                <div class="role-Card-Text">
+                    <p><strong>Starting Resources:</strong> 14 Knowledge, 8 Money, 0 Influence</p>
+                    <p><strong>Special Ability:</strong> Immune to knowledge theft</p>
+                    <p><strong>Opposition:</strong> Politician</p>
+                </div>
+                <div class="role-Card-Image token-image">
+                    <img src="./Images/H.png" alt="Historian">
+                 </div>
+            </div>
+        </div>
+
+            <!-- Colonialist Card -->
+        <div class="role-Card grid-Item colonialist">
+            <h3>Jacques Cartier The Colonialist</h3>
+            <h4>For The Glory Of The Empire!<sub>...but to the detriment of everyone else</sub></h4>
+            <div class="role-Card-Body">
+                <div class="role-Card-Text">
+                    <p><strong>Starting Resources:</strong> 14 Money, 8 Influence, 0 Knowledge</p>
+                    <p><strong>Special Ability:</strong> Immune to influence theft</p>
+                    <p><strong>Opposition:</strong> Revolutionary</p>
+                </div>
+                <div class="role-Card-Image token-image">
+                    <img src="./Images/C.png" alt="Colonialist">
+                </div>
+            </div>
+        </div>
+        <div class="opposes-Banner">
+            <h2>OPPOSES</h2>
+        </div>
+
+            <!-- Entrepreneur Card -->
+        <div class="role-Card grid-Item entrepreneur">
+            <h3>Regina Basilier The Entrepreneur</h3>
+            <h4>Making Bank Before It Was Even Legal, Legit</h4>
+            <div class="role-Card-Body">
+                <div class="role-Card-Text">
+                    <p><strong>Starting Resources:</strong> 14 Money, 8 Knowledge, 0 Influence</p>
+                    <p><strong>Special Ability:</strong> Gains Money Faster</p>
+                    <p><strong>Opposition:</strong> Artist</p>
+                </div>
+                <div class="role-Card-Image token-image">
+                    <img src="./Images/E.png" alt="Entrepreneur">
+                </div>
+            </div>
+        </div>
+
+            <!-- Politician Card -->
+        <div class="role-Card grid-Item politician">
+            <h3>Winston Churchill The Politician</h3>
+            <h4>The Politician With A Plan...Unless You Are Irish</h4>
+            <div class="role-Card-Body">
+                <div class="role-Card-Text">
+                    <p><strong>Starting Resources:</strong> 14 Influence, 8 Money, 0 Knowledge</p>
+                    <p><strong>Special Ability:</strong> Immune to money theft</p>
+                    <p><strong>Opposition:</strong> Historian</p>
+                </div>
+                <div class="role-Card-Image token-image">
+                    <img src="./Images/P.png" alt="Politician">
+                </div>
+            </div>
+        </div>
+
+            <!-- Revolutionary Card -->
+        <div class="role-Card grid-Item revolutionary">
+            <h3>Audre Lorde The Revolutionary</h3>
+            <h4>The Quietest Revolutionary That Ever There Was</h4>
+            <div class="role-Card-Body">
+                <div class="role-Card-Text">
+                    <p><strong>Starting Resources:</strong> 14 Knowledge, 8 Influence, 0 Money</p>
+                    <p><strong>Special Ability:</strong> Gains Influence Faster</p>
+                    <p><strong>Opposition:</strong> Colonialist</p>
+                </div>
+                <div class="role-Card-Image token-image">
+                    <img src="./Images/R.png" alt="Revolutionary">
+                </div>
+            </div>
+        </div>
+    </div>
 
 <h2>Setup</h2>
 <p>
@@ -75,6 +171,90 @@ At the start of the game, each player selects one of the available roles. Player
 <p>
 Each turn begins with a player rolling a six-sided die. The player moves along their chosen path based on the roll. Landing on a regular space produces no effect. Landing on an event space triggers a card draw. Players must resolve all effects immediately after drawing cards. Some effects influence resources directly. Other effects change future decisions or interactions. The game continues until all players reach the end space.
 </p>
+
+<h2>Game Mechanics</h2>
+    <table>
+
+    <!-- ROW 1 -->
+        <thead>
+            <tr class="header1">
+                <th>Mechanic   </th>
+                <th>Type      </th>
+                <th>Description</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        <!-- ROW 2-->
+            <tr class="header2">
+                <th colspan="4" >Board</th>
+            </tr>
+
+        <!-- ROW 3-->
+            <tr class="row 3">
+                <th rowspan="2" class="header3">Spaces</th>
+                <th class="header4">Choice Event</th>
+                <td class="text">These spaces are not marked in any special way on the board so landing on them is a surprise.</td>
+                <td class="text">If a player lands on a Choice Event space you draw a card from the deck that corresponds to the path you are on.</td>
+            </tr>
+
+        <!-- ROW 4-->
+            <tr class="row 4">
+                <th class="header4">Regular</th>
+                <td class="text">These are all the spaces that are not Choice Event Spaces</td>
+                <td class="text">When a player lands on a regular space player only draws a card from either of the End Of Turn (yellow) decks</td>
+            </tr>
+
+        <!-- ROW 5-->
+            <tr class="header2">
+                <th colspan="4">Points</th>
+            </tr>
+
+        <!-- ROW 6-->
+            <tr class="row 6">
+                <th rowspan="2" class="header3">Cards</th>
+                <th class="header4">Choice Event</th>
+                <td class="text"> These cards gives the player a choice of 2 options but doesn't tell you the results of the choice until after the player has made it</td>
+                <td class="text">After drawing this card players must still draw an End Of Turn card</td>
+            </tr>
+
+        <!-- ROW 7-->
+            <tr class="row 7">
+                <th class="header4">End Of Turn</th>
+                <td class="text">These cards have 6 different possible outcomes depending on the role of the player drawing as the cards award or penelize each player role differently. </td>
+                <td class="text">After drawing this card the player's turn is over and the next player may roll the dice.</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">
+                    Source:
+                    <a href="https://trixiedeea.github.io/critocracyv3.5/">
+                        Critocracy Online Board Game
+                    </a>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+<h2>Card Actions</h2>
+    <ol>
+        <li>Skip Next Turn</li>
+        <li>Move Extra Spaces</li>
+        <li>Resource Change
+            <ul>
+                <li>Increase 1 or more Resources</li>
+                <li>Decrease 1 or more Resources</li>
+                <li>Steal 1 or more resources from one other player</li>
+                <li>Steal 1 or more resources from every other player</li>
+            </ul>
+        </li>
+        <li>Sabotage</li>
+        <li>Form Alliance</li>
+        <li>Switch Places</li>
+    </ol>
 
 <h2>Strategic Mechanics</h2>
 <p>
@@ -91,14 +271,14 @@ The game ends when all players reach the final space on their chosen path. Playe
 Play Critocracy Online
 </a>
 </p>
-    
-<img src="./Images/originalBoard.png" class="image-large" alt="Original Board" style="width: 800px;">
+
+<img src="./Images/originalBoard.png" class="image-large" alt="Original Board">
 
 <footer style="text-align:center;">
 <p style="text-align:center;"><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Services</a> | <a href="#">News</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
 <br><br><br>
 <p style="text-align:center;">Copyright &copy; - All rights reserved</p>
 </footer>
-    
+
 </body>
 </html>
