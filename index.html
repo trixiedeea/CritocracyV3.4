@@ -303,17 +303,13 @@ The game ends when all players reach the final space on their chosen path. Playe
 
 <form action="#" method="post">
     <fieldset> 
-        <legend>Help Us Grow Our Game</legend>
-        <p>Input your user name and playing statistics to help guide and advise our devs</p>
-      
-            <p>
+        <legend class="form-title">Help Us Grow Our Game</legend>
+        <p class="form-description">Input your user name and playing statistics and help our devs!</p>
             <fieldset>
                   <legend>User Name (optional)</legend>
                   <label for="name">Name:</label>
                   <input type="text" id="name" name="name">
             </fieldset>
-            </p>
-            <p>
             <fieldset>
                     <legend>Favorite Game Role</legend>
                     <label for="gameRole">Choose a Game Role:</label>
@@ -327,11 +323,9 @@ The game ends when all players reach the final space on their chosen path. Playe
                             <option value="Revolutionary">
                         </datalist>
             </fieldset>
-            </p>
-            <p>
             <fieldset>
                     <legend>Favorite Path</legend>
-                    <label for="favoritePath">Please Choose Only One:</label></br>
+                    <label for="favoritePath" class="small-text">Please Choose Only One:</label></br>
                         <input type="checkbox" id="expansion" name="path" value="expansion">
                         <label for="expansion">Age Of Expansion</label></br>
                         <input type="checkbox" id="resistance" name="path" value="resistance">
@@ -341,8 +335,6 @@ The game ends when all players reach the final space on their chosen path. Playe
                         <input type="checkbox" id="reckoning" name="path" value="reckoning">
                         <label for="reckoning">Age Of Reckoning</label>
             </fieldset>
-            </p>
-            <p>
             <fieldset>
                     <legend>Number Of Times Played</legend>
                     <label for="timesPlayed">How Many Times Have You Played The Game:</label>
@@ -356,8 +348,6 @@ The game ends when all players reach the final space on their chosen path. Playe
                         oninput="scoreOutput.value = this.value">
                     <output id="scoreOutput">25</output>
             </fieldset>
-            </p>
-            <p>
             <fieldset>
                     <legend>Opponent Type</legend>
                     <label for="opponentType">Do You Play With Humans, AI or both?:</label><br>
@@ -368,7 +358,6 @@ The game ends when all players reach the final space on their chosen path. Playe
                           <input type="radio" id="both" name="opponentType" value="both">
                           <label for="both">Both</label>
             </fieldset>
-            </p>
          <br>
          <button type="submit">Submit</button>
          <button type="reset">Reset</button>
