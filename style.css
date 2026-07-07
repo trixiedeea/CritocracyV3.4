@@ -346,11 +346,16 @@ fieldset {
     background-color: #1692a2;
 }
 
+.innerField {
+    background-color: #04265ce8;
+}
+
 form {
     color: #ffffff;
     font-size: 14px;
     margin-left: 10%;
     margin-right: 10%;
+    border-radius: 10px;
 }
 
 form fieldset {
