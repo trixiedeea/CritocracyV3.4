@@ -334,15 +334,17 @@ li {
 }
 
 .navbar a:hover {
-    color: #98caf0;
-    background-color: #c0abe6;
+    color: #0e5e6d;
+    background-color: #7da0d9;
     transform: scale(1.25);
+    font-weight: bold;
 }
 
 .paths a:hover {
     color: #ffffff;
     background-color: #15427A;
     transform: scale(1.25);
+    font-weight: bold;
 }
 
 fieldset {
@@ -385,13 +387,20 @@ form legend {
     text-align: center;
     font-size: 14px;
     font-weight: bold;
+    color: #e4e2e2;
+}
+
+form label {
+    text-align: left;
     color: #ffffff;
 }
 
-form label,
-form input,
-form output {
+form input {
     text-align: left;
+    color: #434343;
+}
+
+form output {
     color: #ffffff;
 }
 
