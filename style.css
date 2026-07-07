@@ -289,7 +289,6 @@ li {
     margin-bottom: 10px;
     padding: 0;
     background-color: #C7DBF0;
-    color: #132838;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -303,7 +302,7 @@ li {
 .navbar > li > a {
     display: block;
     padding: 18px 20px;
-    color: #ffffff;
+    color: #132838;
     text-decoration: none;
     text-align: center;
 }
@@ -332,7 +331,7 @@ li {
 }
 
 .navbar a:hover {
-    color: #4c50d9;
+    color: #6165eb;
     background-color: #b8c8e3;
     transform: scale(1.25);
 }
@@ -340,7 +339,7 @@ li {
 .paths a:hover {
     color: #4c50d9;
     background-color: #b8c8e3;
-     transform: scale(1.25);
+    transform: scale(1.25);
 }
 
 fieldset {
