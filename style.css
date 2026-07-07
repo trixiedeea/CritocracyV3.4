@@ -329,13 +329,13 @@ li {
 .paths a {
     display: block;
     padding: 12px 18px;
-    color: #ffffff;
+    color: #8956e7;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    color: #f1f6fa;
-    background-color: #15427A;
+    color: #132838;
+    background-color: #c0abe6;
     transform: scale(1.25);
 }
 
