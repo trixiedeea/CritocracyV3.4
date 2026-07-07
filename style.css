@@ -211,54 +211,54 @@ table {
     color: #ffffff;
     margin: 3% auto;
     background: #1c6fa6;
-    th {
-        border: 2px solid #ffffff;
-        text-align: center;
-        vertical-align: middle;
-        padding: 10px;
-    }
-    td {
-        border: 2px solid #ffffff;
-        text-align: left;
-        vertical-align: middle;
-        padding: 10px;
-    }
+}
+    
+table a {
+    color: #ffffff;
+}
+th {
+    border: 2px solid #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+td {
+    border: 2px solid #ffffff;
+    text-align: left;
+    vertical-align: middle;
+    padding: 10px;
+}
 
-    .header1 {
-        font-size: 31px;
-        font-weight: bold;
-        background-color: #1692a2;
-    }
+.header1 {
+    font-size: 31px;
+    font-weight: bold;
+    background-color: #1692a2;
+}
 
-    .header2 {
-        font-size: 36px;
-        font-weight: bolder;
-        background-color: #1692a2;
-    }
+.header2 {
+    font-size: 36px;
+    font-weight: bolder;
+    background-color: #1692a2;
+}
 
-    .header3 {
-        font-size: 26px;
-        font-weight: bold;
-    }
+.header3 {
+    font-size: 26px;
+    font-weight: bold;
+}
 
-    .header4 {
-        font-size: 21px;
-    }
+.header4 {
+    font-size: 21px;
+}
 
-    .text {
-        font-size: 16px;
-        text-align: left;
-    }
+.text {
+    font-size: 16px;
+    text-align: left;
+}
 
-    tfoot td {
-        border-top: 4px solid #ffffff;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    a {
-        color: #ffffff;
-    }
+tfoot td {
+    border-top: 4px solid #ffffff;
+    font-size: 14px;
+    text-align: center;
 }
 
 ol {
