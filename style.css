@@ -312,7 +312,9 @@ li {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #080a54;
+    background-color: #1692a2;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
     min-width: 220px;
 }
 
@@ -328,14 +330,14 @@ li {
 }
 
 .navbar a:hover {
-    color: #6165eb;
-    background-color: #b8c8e3;
+    color: #f1f6fa;
+    background-color: #15427A;
     transform: scale(1.25);
 }
 
 .paths a:hover {
-    color: #4c50d9;
-    background-color: #b8c8e3;
+    color: #ffffff;
+    background-color: #15427A;
     transform: scale(1.25);
 }
 
