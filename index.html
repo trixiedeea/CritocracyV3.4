@@ -320,17 +320,25 @@
     The game ends when all players reach the final space on their chosen path. Players may finish at different times depending on their decisions. Once the game ends, all remaining players total their resources. Money, Knowledge, and Influence are combined into a final score. Any player with a resource at zero is eliminated before scoring. The highest total score determines the winner. Success requires both survival and balanced resource management. The outcome reflects long-term decision consequences.
     </p>
 </section>
+    
+<p>
+<a href="https://trixiedeea.github.io/critocracyv3.5/">
+Play Critocracy Online
+</a>
+</p>
+
+<img src="./Images/originalBoard.png" class="image-large" alt="Original Board">
 
 <form action="#" method="post">
     <fieldset> 
         <legend class="form-title">Help Us Grow Our Game</legend>
         <p class="form-description">Input your user name and playing statistics and help our devs!</p>
-            <fieldset>
+            <fieldset class="innerField">
                   <legend>User Name (optional)</legend>
                   <label for="name">Name:</label>
                   <input type="text" id="name" name="name">
             </fieldset>
-            <fieldset>
+            <fieldset class="innerField">
                     <legend>Favorite Game Role</legend>
                     <label for="gameRole">Choose Your Favorite Game Role:</label>
                     <input list="gameRoles" id="gameRole" name="gameRoles">
@@ -343,7 +351,7 @@
                             <option value="Revolutionary">
                         </datalist>
             </fieldset>
-            <fieldset>
+            <fieldset class="innerField">
                     <legend>Favorite Path</legend>
                         <span class="small-text">Please Choose Only One:</span><br>
                         <input type="checkbox" id="favorite-expansion" name="path" value="expansion">
@@ -355,7 +363,7 @@
                         <input type="checkbox" id="favorite-reckoning" name="path" value="reckoning">
                         <label for="favorite-reckoning">Age Of Reckoning</label>
             </fieldset>
-            <fieldset>
+            <fieldset class="innerField">
                     <legend>Number Of Times Played</legend>
                     <label for="timesPlayed">How Many Times Have You Played The Game:</label>
                     <input 
@@ -368,7 +376,7 @@
                         oninput="scoreOutput.value = this.value">
                     <output id="scoreOutput">25</output>
             </fieldset>
-           <fieldset>
+           <fieldset class="innerField">
                 <legend>Opponent Type</legend>
                 <!-- Changed from label to a styling span or paragraph -->
                 <span class="small-text">Do You Play With Humans, AI or both?:</span><br>
@@ -384,14 +392,6 @@
          <button type="reset">Reset</button>
     </fieldset> 
 </form>
-    
-<p>
-<a href="https://trixiedeea.github.io/critocracyv3.5/">
-Play Critocracy Online
-</a>
-</p>
-
-<img src="./Images/originalBoard.png" class="image-large" alt="Original Board">
 
 <footer>
 <p style="text-align:center;"><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Services</a> | <a href="#">News</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
