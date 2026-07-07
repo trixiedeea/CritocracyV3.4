@@ -349,8 +349,8 @@ fieldset {
 form {
     color: #ffffff;
     font-size: 14px;
-    margin-left: 65px;
-    margin-right: 65px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 form fieldset {
