@@ -21,6 +21,7 @@ h1 {
 
 h2 {
     background-color: #1692a2;
+    border-radius: 10px;
     width: 30%;
     margin: 0 auto;
     padding: 10px;
@@ -273,16 +274,18 @@ li {
 .navbar a {
     display: block;
     padding: 15px 20px;
-    color: #011536;
+    color: #04265ce8;
     text-decoration: none;
 }
 
 /*change background color back to #173159*/
 .navbar {
     list-style: none;
-    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
     padding: 0;
-    background-color: #C7DBF0;
+    border: 2px solid #ffffff;
+    background-color: #B1E1E7;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
