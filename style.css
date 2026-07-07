@@ -315,6 +315,7 @@ li {
 
 .navbar > li:hover > .paths {
     display: block;
+     transform: scale(1.25);
 }
 
 .paths a {
