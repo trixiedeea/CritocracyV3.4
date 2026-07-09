@@ -177,7 +177,7 @@ const QUESTIONS = [
   }
 ];
 
-/* End Of AI Contribution - except the verdicts. I wrote those*/
+/* End Of AI Contribution */
 
 let current = 0;
 const scores = { ARTIST: 0, HISTORIAN: 0, COLONIALIST: 0, ENTREPRENEUR: 0, POLITICIAN: 0, REVOLUTIONARY: 0 };
@@ -204,7 +204,7 @@ function renderQuestion() {
 
   if (questionText) questionText.textContent = q.text;
   if (qCounter) qCounter.textContent = `Question ${current + 1} / ${QUESTIONS.length}`;
-  if (progressFill) progressFill.style.width = `${(current / QUESTIONS.length) * 100}%`;
+  if (progressFill) progressFill.style.width = `${((current + 1) / QUESTIONS.length) * 100}%`;
 
   if (optionsWrap) {
     optionsWrap.innerHTML = '';
