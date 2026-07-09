@@ -65,7 +65,7 @@ h1 {
 #questionText {
     font-size: 20px;
     font-weight: 800;
-    background-color: #026776;
+    background-color: #1692a2;
     padding: 2%;
     margin: 2%;
     color: #ffffff;
@@ -84,7 +84,7 @@ h1 {
 }
 
 .option {
-    background-color: #026776;
+    background-color: #1692a2;
     font-size: medium;
     gap: 20px;
     border-radius: 6px;
@@ -94,7 +94,7 @@ h1 {
 }
 
 .option:hover {
-    background: #4ba7b3;
+    background: #89e1ec;
     border: 2px solid #ffffff;
     border-radius: 4px;
     transform: translateY(-10px);
@@ -106,6 +106,7 @@ h1 {
     width: 100%;
     overflow: hidden;
     text-align: center;
+    background-color: #04265ce8;
 }
 
 #roleToken {
@@ -121,12 +122,18 @@ h1 {
     margin: 1%;
     Color: #ffffff;
     text-transform: uppercase;
+    background-color: #32afc0;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
 }
 
 #roleTag {
     color: #ffffff;
     margin-bottom: 1%;
     font-size: 20px;
+    background-color: #32afc0;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
 }
 
 #statRow {
@@ -137,6 +144,9 @@ h1 {
     font-size: 20px;
     margin: 5%;
     text-transform: uppercase;
+    background-color: #32afc0;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
 }
 
 #statRow div span {
@@ -148,12 +158,14 @@ h1 {
     margin-top: 1%;
     margin-left: 5%;
     margin-right: 5%;
+    background-color: #32afc0;
     border-radius: 8px;
+    border: 2px solid #ffffff;
 }
 
 #verdictBox {
     text-align: center;
-    background-color: #026776;
+    background-color: #1692a2;
     color: #FFFFFF;
     padding:2%;
     margin-bottom: 18px;
@@ -168,7 +180,7 @@ h1 {
     font-size: 15px;
     text-align: center;
     color: #ffffff;
-    background-color: #026776;
+    background-color: #1692a2;
     margin-bottom: 24px;
     padding: 2%;
     border: 2px solid #ffffff;
