@@ -95,15 +95,10 @@ h1 {
 
 .option:hover {
     background: #4ba7b3;
-    transform: translateX(3px);
     border: 2px solid #ffffff;
     border-radius: 4px;
-}
-
-.option:active {
-    transform: translateX(1px);
-    background-color: #0596ad;
-    color: #ffffff;
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 #resultScreen {

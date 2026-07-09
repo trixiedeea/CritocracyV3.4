@@ -74,6 +74,7 @@ a {
 
 .gridContainer {
     background-color: #1692a2;
+    padding: 2%;
     margin-bottom: 2%;
 }
 
@@ -96,7 +97,7 @@ a {
 }
 
 .roleCard:hover, .gridItem:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -115,7 +116,7 @@ a {
 .roleCardText p, .cardText p {
     margin: 5px 0;
     font-size: 0.9rem;
-    color: #f1f1f1;
+    color: #ffffff;
     text-align: left;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.113);
 }
@@ -156,7 +157,6 @@ a {
     margin-left: 45%;
     margin-right: 45%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.5s;
 }
 
 .quizCtaText {
@@ -235,12 +235,14 @@ table {
 table a {
     color: #ffffff;
 }
+
 th {
     border: 2px solid #ffffff;
     text-align: center;
     vertical-align: middle;
     padding: 10px;
 }
+
 td {
     border: 2px solid #ffffff;
     text-align: left;
@@ -330,7 +332,7 @@ li {
     display: none;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 5px;
     position: absolute;
     top: 100%;
     left: 0;
