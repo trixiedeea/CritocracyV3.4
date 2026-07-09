@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="quizStyle.css">
+<title>Which Role Are You?</title>
+</head>
+<body>
+
+<div id="quizScreen">
+  <h1>Which Role Are You?</h1>
+
+  <div id="qCounter">Question 1 / 10</div>
+    <div id="progressTrack">
+      <div id="progressFill"></div>
+    </div>
+  <p id="questionText"></p>
+  <div id="optionsWrap"></div>
+</div>
+
+<div id="resultScreen" style="display:none;">
+  <img id="roleToken" src="" alt="Your Quiz Result">
+  <h2 id="roleName"></h2>
+  <p id="roleTag"></p>
+  <div id="statRow"></div>
+  <div id="verdictBox"></div>
+  <p id="oppLine"></p>
+  <button id="retakeButton" onclick="window.open('indexQuiz.html', '_self')">
+    Retake The Quiz
+  </button>
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>
