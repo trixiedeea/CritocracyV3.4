@@ -51,9 +51,6 @@ p {
     margin-left: 2%;
 }
 
-li {
-    color: #ffffff;
-}
 a {
     color: #ffffff;
     width: 50%;
@@ -61,20 +58,20 @@ a {
     margin: 0 auto;
 }
 
-.grid-Container {
+.gridContainer {
     background-color: rgba(11, 85, 98, 0);
     margin-bottom: 2%;
 }
 
-.role-Card {
+.roleCard {
     border: 2px solid #ffffff;
 }
 
-.role-Card, .grid-Item {
+.roleCard, .gridItem {
     border: 2px solid #ffffff;
     border-radius: 8px;
     padding: 15px;
-    background-color: rgba(11, 78, 86, 0.726);
+    background-color: #0b4e56b9;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex !important;
@@ -84,24 +81,24 @@ a {
     cursor: pointer;
 }
 
-.role-Card:hover, .grid-Item:hover {
+.roleCard:hover, .gridItem:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.role-Card-body, .card-Body {
+.roleCardBody, .cardBody {
     flex: 1;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.role-Card-text, .card-Text {
+.roleCardText, .cardText {
     flex: 1;
     padding-right: 10px;
 }
 
-.role-Card-text p, .card-Text p {
+.roleCardText p, .cardText p {
     margin: 5px 0;
     font-size: 0.9rem;
     color: #f1f1f1;
@@ -109,20 +106,20 @@ a {
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.113);
 }
 
-.role-Card-text strong, .card-Text strong {
+.roleCardText strong, .cardText strong {
     color: #dde8e2;
     font-weight: 600;
     text-align: left;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.113);
 }
 
-.role-Card-Image, .token-Image {
+.roleCardImage, .tokenImage {
     text-align: right;
     flex-shrink: 0;
     margin-left: 10px;
 }
 
-#role-Selection-Container {
+#roleSelectionContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
@@ -130,6 +127,33 @@ a {
         "opposes opposes opposes"
         "revolutionary politician entrepreneur";
     gap: 20px;
+}
+
+#quizButton {
+    background-color: #026776;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 45%;
+    margin-right: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s;
+}
+
+.quizCtaText {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#quizButton:hover {
+    background-color: #014a54;
+     cursor: pointer;
+     transform: scale(1.25);
 }
 
 .artist {
@@ -156,35 +180,15 @@ a {
     grid-area: entrepreneur;
 }
 
-.opposes-Banner {
-    grid-area: opposes;
-}
-
-.opposes-Banner {
-    border: 2px solid #0b4852;
-    border-radius: 8px;
-    padding: 15px;
-    background-color: rgba(11, 78, 86, 0.726);
-    text-align: center;
-    color: #ffffff;
-}
 
 @media screen and (max-width: 1024px) {
-    #role-Selection-Container {
+    #roleSelectionContainer {
         grid-template-columns: 1fr auto 1fr;
         grid-template-areas:
             "colonialist opposes revolutionary"
             "historian   opposes politician"
             "artist      opposes entrepreneur";
         gap: 20px;
-    }
-    
-    .opposes-Banner {
-        writing-mode: vertical-rl;
-        text-orientation: upright;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 }
 
@@ -211,7 +215,7 @@ table {
     border-collapse: collapse;
     color: #ffffff;
     margin: 3% auto;
-    background: #1c6fa6;
+    background: #0b4e56b9;
 }
     
 table a {
@@ -268,7 +272,7 @@ ol {
 }
 
 ul {
-    list-style-type: georgian;
+    list-style-type: disc;
 }
 
 li {
@@ -278,7 +282,7 @@ li {
 .navbar a {
     display: block;
     padding: 15px 20px;
-    color: #04265ce8;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -289,7 +293,7 @@ li {
     margin-bottom: 20px;
     padding: 0;
     border: 2px solid #ffffff;
-    background-color: #B1E1E7;
+    background-color: #1692a2;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -302,8 +306,8 @@ li {
 
 .navbar > li > a {
     display: block;
-    padding: 18px 20px;
-    color: #132838;
+    padding: 10px 12px;
+    color: #ffffff;
     text-decoration: none;
     text-align: center;
 }
@@ -319,7 +323,7 @@ li {
     background-color: #1692a2;
     border: 2px solid #ffffff;
     border-radius: 10px;
-    min-width: 220px;
+    min-width: 120px;
 }
 
 .navbar > li:hover > .paths {
@@ -328,14 +332,14 @@ li {
 
 .paths a {
     display: block;
-    padding: 12px 18px;
+    padding: 6px 9px;
     color: #ffffff;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    color: #0e5e6d;
-    background-color: #7da0d9;
+    color: #FFFFFF;
+    background-color: #15427A;
     transform: scale(1.25);
     font-weight: bold;
 }
@@ -349,26 +353,38 @@ li {
 
 fieldset {
     margin-bottom: 10px;
-    background-color: #1692a2;
+    background-color: #0b4e56b9;
 }
 
 .innerField {
-    background-color: #04265ce8;
+    background-color: #1692a2;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.fullWidth {
+    grid-column: 1 / -1;
 }
 
 form {
     color: #ffffff;
     font-size: 14px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 form fieldset {
     border: 2px solid #ffffff;
     color: #ffffff;
-    margin: 15px 0;
-    padding: 15px;
+    padding: 10px;
+    border-radius: 15px;
 }
 
 form legend {
@@ -377,13 +393,13 @@ form legend {
     font-weight: bold;
 }
 
-.form-title {
+.formTitle {
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
 }
 
-.form-description {
+.formDescription {
     text-align: center;
     font-size: 14px;
     font-weight: bold;
@@ -404,14 +420,10 @@ form output {
     color: #ffffff;
 }
 
-.small-text {
-    font-size: 11px;
-    font-weight: normal;
-}
 
-.navList > li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    color: #132838;
+.buttonRow {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
 }
