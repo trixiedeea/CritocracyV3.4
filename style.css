@@ -76,6 +76,7 @@ a {
     background-color: #1692a2;
     padding: 2%;
     margin: 2%;
+    border-radius: 8px;
 }
 
 .roleCard {
