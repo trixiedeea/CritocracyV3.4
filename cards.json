@@ -1,0 +1,22 @@
+ [
+  {
+  "deck": "Chance",
+  "name": "Digital Divide",
+  "description": "A corporate sponsor offers to fund rural connectivity in exchange for naming rights and you ignore advice and accept the sponsorship.",
+  "effects": "Resource Change: influence: -5, Movement Self -3 spaces"
+  },
+
+   {
+  "deck": "Chance",
+  "name": "New Horizons",
+  "description": "You find a previously untapped market which you can exploit",
+  "effects": "Resource Change: influence: +3, Movement Self +1 space"
+  },
+
+   {
+  "deck": "Chance",
+  "name": "Data Breach",
+  "description": "Your clients find out you've been selling their information to third parties.",
+  "effects": "Resource Change: influence: -2, Money +3"
+  }
+]
