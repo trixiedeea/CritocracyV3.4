@@ -231,6 +231,7 @@ table {
     color: #ffffff;
     margin: 3% auto;
     background: #0b4e56b9;
+    border-radius: 10px;
 }
     
 table a {
@@ -297,8 +298,10 @@ li {
 }
 
 .navbar a {
-    display: block;
-    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -311,22 +314,34 @@ li {
     padding: 0;
     border: 2px solid #ffffff;
     background-color: #04265ce8;
-    display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    position: relative;
+    align-items: stretch;
+    justify-content: center;
+    display: flex;
+    z-index: 1000;
 }
 
 .navbar > li {
+    background-color: #1692a2;
+    border-radius: 5px;
+    margin: 10px 5px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     position: relative;
+    z-index: 1000;
 }
 
 .navbar > li > a {
-    display: block;
-    padding: 10px 12px;
     color: #ffffff;
     text-decoration: none;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    z-index: 1000;
 }
 
 .paths {
@@ -345,6 +360,7 @@ li {
 
 .navbar > li:hover > .paths {
     display: block;
+    border-radius: 5px;
 }
 
 .paths a {
@@ -359,6 +375,7 @@ li {
     background-color: #15427A;
     transform: scale(1.25);
     font-weight: bold;
+    border-radius: 5px;
 }
 
 .paths a:hover {
@@ -366,6 +383,7 @@ li {
     background-color: #15427A;
     transform: scale(1.25);
     font-weight: bold;
+    border-radius: 5px;
 }
 
 fieldset {
