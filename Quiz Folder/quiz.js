@@ -11,7 +11,6 @@
   "Colonialist": "../Images/C.png"
   };
 
-  /* Start Of AI Contribution */
 
  const ROLES = {
   ARTIST: {
@@ -63,6 +62,8 @@
     verdict: "You don't need the room's approval, but you'll get its attention, eventually. You're patient about the long game and merciless about who gets left out of it."
   }
 };
+
+ /* Start Of AI Contribution */
 
 const QUESTIONS = [
   {
